@@ -1,0 +1,49 @@
+﻿
+@model BlogEngine.DTO.Post
+
+<div class="post">
+    <div class="post-meta">
+        <div class="row">
+            <!-- Post Heading -->
+            <div class="post-title">
+                <h2>@Html.PostLink(Model)</h2>
+            </div>
+        </div>
+        <div class="row">
+            
+            <!--Categories-->
+            <div class="post-category">                
+                <span>Category:</span>@Html.CategoryLink(Model.Category)
+            </div>
+
+            <!--Tags-->
+            <div class="post-tags">
+                <span>Tags:</span>@Helpers.Tags(Html,Model.Tags)
+            </div>
+
+            <!--Posted date-->
+            <div class="posted-date">
+                @Model.PostedOn.ToShortDateString()
+            </div>
+        </div>
+    </div>
+    
+    <!-- Post short description-->
+    <div class="post-body">
+        @Html.Raw(Model.ShortDescription)
+    </div>
+
+    <!--Post footer-->
+    <div class="post-foot">
+        @Html.ActionLink("Continue...", "Post", "Blog",
+         new
+         {
+             postId=Model.PostId
+         },
+         new
+         {
+             title="Continue.."
+         }
+       )
+    </div>
+</div>

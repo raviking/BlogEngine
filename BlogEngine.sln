@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine", "BlogEngine\BlogEngine.csproj", "{7C04B529-663D-4DA4-AA0D-3C290597F2EB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5395A143-96C1-4634-83A4-5AE810A48AC7} = {5395A143-96C1-4634-83A4-5AE810A48AC7}
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C} = {C6026649-4216-45B8-B515-DA8BD48B1D6C}
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992} = {7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458} = {6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine.Log", "BlogEngine.Log\BlogEngine.Log.csproj", "{C6026649-4216-45B8-B515-DA8BD48B1D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine.DAL", "BlogEngine.DAL\BlogEngine.DAL.csproj", "{5395A143-96C1-4634-83A4-5AE810A48AC7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C} = {C6026649-4216-45B8-B515-DA8BD48B1D6C}
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992} = {7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458} = {6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine.Db", "BlogEngine.DbContext\BlogEngine.Db.csproj", "{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992} = {7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogEngine.DTO", "BlogEngine.DTO\BlogEngine.DTO.csproj", "{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C04B529-663D-4DA4-AA0D-3C290597F2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C04B529-663D-4DA4-AA0D-3C290597F2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C04B529-663D-4DA4-AA0D-3C290597F2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C04B529-663D-4DA4-AA0D-3C290597F2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6026649-4216-45B8-B515-DA8BD48B1D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5395A143-96C1-4634-83A4-5AE810A48AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5395A143-96C1-4634-83A4-5AE810A48AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5395A143-96C1-4634-83A4-5AE810A48AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5395A143-96C1-4634-83A4-5AE810A48AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A59DAB1-81BF-4C39-9DD3-64CDC5AA8458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E3E717A-6EC8-4D2A-8268-1F6DCBC67992}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+@using (Html.BeginForm("Search", "Blog", FormMethod.Get, new
+{
+    id = "search-form"
+}))
+{
+    <p>@Html.TextBox("s")</p>
+    <p><input type="button" id="btnSearch" value="Search" /></p>
+}    
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnSearch").click(function () {
+            if ($("#s").val().trim() != "") {
+                $("#search-form").submit();
+            }
+            else
+                $("#s").css("border-color", "red");
+        });
+
+        $("#s").focus(function () {
+            $("#s").css("border-color", "");
+        });
+    });
+</script>

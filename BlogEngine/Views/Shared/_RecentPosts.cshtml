@@ -1,0 +1,19 @@
+﻿
+@model List<BlogEngine.DTO.Post>
+
+<div class="sidebar">
+    <h3>Recent Posts</h3>
+    @if (Model.Count > 0)
+    {
+        <ul>
+        @foreach (var post in Model)
+        {
+            <li>@Html.PostLink(post)</li>
+        }
+        </ul>
+    }
+    else
+    {
+        <p>No posts found!</p>
+    }
+</div>
