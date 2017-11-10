@@ -64,6 +64,11 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
+
+        public long UserId
+        {
+            get;set;
+        }
     }
 }
 

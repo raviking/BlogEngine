@@ -52,7 +52,9 @@ namespace BlogEngine.DAL
             User user = null;
             try
             {
-                user = dbcontext.Database.SqlQuery<User>("sp_GetCurrentUser @userName,@password",
+                long userId = 0;
+                user = dbcontext.Database.SqlQuery<User>("sp_GetCurrentUser @userId,@userName,@password",
+                            new SqlParameter("userId",userId),
                             new SqlParameter("userName",userName),
                             new SqlParameter("password",Password)).FirstOrDefault();
             }
@@ -65,7 +67,7 @@ namespace BlogEngine.DAL
         }
         #endregion User
 
-        #region Posts
+        #region Reusable Section
 
         /// <summary>
         /// Returns the post list based on categoryid and tags
@@ -90,13 +92,18 @@ namespace BlogEngine.DAL
                         post.Tags = _lsttag;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetTagAndCategoriesByPost " + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagAndCategoriesByPost - End");
             return _lstPosts;
         }
+
+        #endregion Reusable Section
+
+        #region Posts
+
         /// <summary>
         /// Returns posts based on page no & page size
         /// </summary>
@@ -427,5 +434,55 @@ namespace BlogEngine.DAL
             return _lstTag;
         }
         #endregion Posts
+
+        #region Account
+
+        /// <summary>
+        /// Returns posts belongs to User(id)
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <returns>Posts List</returns>
+        public List<Post> GetPostsByUserId(long UserId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostsByUserId -Begin");
+            List<Post> _lstPosts = null;
+            try
+            {
+                _lstPosts = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByUserId @userId",
+                            new SqlParameter("userId",UserId)).OrderByDescending(x=>x.PostedOn).ToList();
+                if (_lstPosts != null && _lstPosts.Count > 0)
+                    _lstPosts = GetTagAndCategoriesByPost(_lstPosts);
+
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostsByUserId " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostsByUserId -End");
+            return _lstPosts;
+        }
+
+        /// <summary>
+        /// Returns user details by userid
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <returns>User</returns>
+        public User GetUserDetailsById(long UserId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -Begin");
+            User objUser = null;
+            try
+            {
+                objUser = dbcontext.Database.SqlQuery<User>("sp_GetCurrentUser @userId",
+                                new SqlParameter("userId", UserId)).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetUserDetailsById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
+            return objUser;
+        }
+        #endregion Account
     }
 }

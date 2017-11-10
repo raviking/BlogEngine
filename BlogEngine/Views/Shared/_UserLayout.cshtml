@@ -1,6 +1,7 @@
 ﻿
 <!DOCTYPE html>
-
+@using BlogEngine.DTO
+@using System.Configuration
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,11 +15,18 @@
     <link href="~/Content/AdminLTE/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Ionicons -->
     <link href="~/Content/AdminLTE/Ionicons/ionicons.min.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link href="~/Content/AdminLTE/datatables.net-bootstrap/dataTables.bootstrap.min.css" rel="stylesheet" />
     <!-- Theme style -->
     <link href="~/Content/AdminLTE/AdminLTE.min.css" rel="stylesheet" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
     <link href="~/Content/AdminLTE/skins/_all-skins.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/app/UriTemplates.js"></script>
+    <script type="text/javascript">
+        var HostAddress="@ConfigurationManager.AppSettings["WebHostAddress"].ToString()";
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,9 +36,17 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">    
 
 </head>
+@{
+    User currentuser = null;
+    if (Session["CurrentUser"] != null)
+    {
+        currentuser = Session["CurrentUser"] as User;
+    }
+}
+
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
@@ -39,7 +55,7 @@
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini"><b>A</b>LT</span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b>LTE</span>
+                <span class="logo-lg"><b>Blog</b>Engine</span>
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top">
@@ -255,15 +271,15 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="~/Content/AdminLTE/img/user2-160x160.jpg" class="user-image" alt="User Image" />
-                                <span class="hidden-xs">Alexander Pierce</span>
+                                <span class="hidden-xs">The Badboy</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
                                     <img src="~/Content/AdminLTE/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                                     <p>
-                                        Alexander Pierce - Web Developer
-                                        <small>Member since Nov. 2012</small>
+                                        Raviteja Swayampu - Web Developer
+                                        <small>Member since Nov. 2015</small>
                                     </p>
                                 </li>
                                 <!-- Menu Body -->
@@ -307,7 +323,7 @@
                         <img src="~/Content/AdminLTE/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
                     </div>
                     <div class="pull-left info">
-                        <p>Alexander Pierce</p>
+                        <p>Raviteja Swayampu</p>
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
                 </div>
@@ -334,23 +350,22 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                            <li class="active"><a href="@Url.Action("Dashboard","Account")"><i class="fa fa-circle-o"></i> Dashboard</a></li>                            
                         </ul>
                     </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-files-o"></i>
-                            <span>Layout Options</span>
+                            <span>Posts</span>
                             <span class="pull-right-container">
-                                <span class="label label-primary pull-right">4</span>
+                                <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                            <li><a href="@Url.Action("AuthorCreatedPosts","Account",new {UserId=currentuser.UserId})"><i class="fa fa-circle-o"></i> All Posts</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Add New</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Categories</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>Tags</a></li>
                         </ul>
                     </li>
                     <li>
@@ -507,8 +522,7 @@
             <div class="pull-right hidden-xs">
                 <b>Version</b> 2.4.0
             </div>
-            <strong>Copyright &copy; 2017 <a href="https://adminlte.io">Blog Engine</a>.</strong> All rights
-            reserved.
+            <strong>Copyright &copy; 2017 <a href="#">Blog Engine</a>.</strong> All rights reserved.
         </footer>
 
     </div>
@@ -519,6 +533,13 @@
     <script src="~/Scripts/jquery-ui.1.12.1.js"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <!-- DataTables -->
+    <script src="~/Scripts/AdminLTE/datatables.net-bootstrap/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/AdminLTE/datatables.net-bootstrap/dataTables.bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="~/Scripts/AdminLTE/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="~/Scripts/AdminLTE/fastclick/fastclick.js"></script>
     <!-- AdminLTE App -->
     <script src="~/Scripts/AdminLTE/adminlte.min.js"></script>        
 

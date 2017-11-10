@@ -30,7 +30,6 @@ function Login() {
             type: 'POST',
             data:loginModel,
             success: function (data) {
-                debugger;
                 if (data != null && data.IsSucess == true ) {
                     if (data.ResponseMessage != "" && data.ResponseMessage != null)
                         window.location.href = data.ResponseMessage;

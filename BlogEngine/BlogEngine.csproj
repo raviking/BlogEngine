@@ -163,11 +163,13 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Extensions\ActionLinkExtensions.cs" />
+    <Compile Include="Extensions\SessionExpireFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PostUserViewModel.cs" />
     <Compile Include="Models\WidgetViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -177,6 +179,11 @@
     <Content Include="Content\AdminLTE\AdminLTE.min.css" />
     <Content Include="Content\AdminLTE\bootstrap.min.css" />
     <Content Include="Content\AdminLTE\Custom.css" />
+    <Content Include="Content\AdminLTE\datatables.net-bootstrap\dataTables.bootstrap.css" />
+    <Content Include="Content\AdminLTE\datatables.net-bootstrap\dataTables.bootstrap.min.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Scripts\AdminLTE\datatables.net-bootstrap\dataTables.bootstrap.js" />
+    <Content Include="Scripts\AdminLTE\datatables.net-bootstrap\dataTables.bootstrap.min.js" />
     <Content Include="Content\AdminLTE\font-awesome\css\font-awesome.css" />
     <Content Include="Content\AdminLTE\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\AdminLTE\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -216,6 +223,9 @@
     <Content Include="Content\AdminLTE\iCheck\futurico\futurico%402x.png" />
     <Content Include="Content\AdminLTE\iCheck\futurico\futurico.css" />
     <Content Include="Content\AdminLTE\iCheck\futurico\futurico.png" />
+    <Content Include="Scripts\AdminLTE\datatables.net-bootstrap\jquery.dataTables.js" />
+    <Content Include="Scripts\AdminLTE\datatables.net-bootstrap\jquery.dataTables.min.js" />
+    <Content Include="Scripts\AdminLTE\fastclick\fastclick.js" />
     <Content Include="Scripts\AdminLTE\iCheck\icheck.js" />
     <Content Include="Content\AdminLTE\iCheck\line\aero.css" />
     <Content Include="Content\AdminLTE\iCheck\line\blue.css" />
@@ -353,6 +363,9 @@
     <Content Include="Scripts\AdminLTE\adminlte.js" />
     <Content Include="Scripts\AdminLTE\adminlte.min.js" />
     <Content Include="Scripts\AdminLTE\iCheck\icheck.min.js" />
+    <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.js" />
+    <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Scripts\app\Account\AllPosts.js" />
     <Content Include="Scripts\app\Config.js" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\themes\simple\images\arrow.png" />
@@ -409,6 +422,10 @@
     <Content Include="Content\AdminLTE\font-awesome\scss\_screen-reader.scss" />
     <Content Include="Content\AdminLTE\font-awesome\scss\_stacked.scss" />
     <Content Include="Content\AdminLTE\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
