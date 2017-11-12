@@ -167,6 +167,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryViewModel.cs" />
     <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PostUserViewModel.cs" />
@@ -470,6 +471,8 @@
     <Content Include="Views\Security\Login.cshtml" />
     <Content Include="Views\Shared\_UserLayout.cshtml" />
     <Content Include="Views\Account\Dashboard.cshtml" />
+    <Content Include="Views\Account\NewPost.cshtml" />
+    <Content Include="Views\Account\Categories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Scripts\sweetalert\" />

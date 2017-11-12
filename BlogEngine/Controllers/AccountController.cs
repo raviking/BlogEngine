@@ -58,5 +58,41 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AuthorCreatedPosts - Begin");
             return View("AuthorPosts", objpostuserviewmodel);
         }
+
+        public ActionResult NewPost()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");            
+            try
+            {
+                //
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: NewPost" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
+            return View();
+        }
+
+        public ActionResult Categories()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            List<Category> _lstCategories = null;
+            try
+            {
+                _lstCategories = dataaccess.Categories();
+                //if (_lstCategories != null && _lstCategories.Count > 0)
+                //{
+                //    foreach (var category in _lstCategories)
+                //        category.Count = dataaccess.TotalPostsForCategory(category.CategoryId.ToString());
+                //}
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            return View(_lstCategories);
+        }
     }
 }

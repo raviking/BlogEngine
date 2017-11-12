@@ -7,7 +7,10 @@
 
 <div>
     <section class="content-header">
-        <h1>All Posts</h1>
+        <h1>All Posts</h1>     
+        <br/>   
+        <a href="@Url.Action("NewPost","Account")" class="btn btn-default" id="btnAddNewPost">New Post</a>
+        
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li><a href="#">Tables</a></li>
@@ -36,7 +39,14 @@
                                 @foreach (var post in Model.Posts)
                                 {
                                     <tr>
-                                        <td>@post.Title</td>
+                                        <td>
+                                            <h4><a href="#">@post.Title</a></h4>
+                                            <p>
+                                                <span>
+                                                    <a href="#">Edit</a>|<a href="#">Draft</a>|<a href="#">View</a>|<a href="#">Delete</a>
+                                                </span>
+                                            </p>
+                                        </td>
                                         <td>@Model.User.FirstName</td>
                                         <td>@post.Category.CategoryName</td>
                                         <td>
