@@ -27,5 +27,10 @@ namespace BlogEngine.DTO
         {
             get; set;
         }
+
+        public int PostCount
+        {
+            get;set;
+        }
     }
 }

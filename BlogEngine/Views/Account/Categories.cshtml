@@ -1,0 +1,89 @@
+﻿
+@model List<BlogEngine.DTO.Category>
+@{
+    ViewBag.Title = "Categories";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>
+    <section class="content-header">
+        <h1>Categories</h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Categories</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Add New Category</h3>
+                    </div>
+                    <div class="box-body">
+                        <form role="form">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="CategoryName">Name</label>
+                                    <input type="text" class="form-control" id="txtCategoryName">
+                                    <p><i>The name is how it appears on your site.</i></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="CategoryUrlSlug">Slug</label>
+                                    <input type="text" class="form-control" id="txtCategoryUrlSlug">
+                                    <p><i>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</i></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="CategoryDescription">Description</label>
+                                    <textarea rows="5" cols="40" class="form-control" id="txtCategoryDescription"></textarea>
+                                    <p><i>The description is not prominent by default; however, some themes may show it.</i></p>
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <button type="button" class="btn btn-primary">Add New Category</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <table id="tblCategories" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Url Slug</th>
+                                    <th>Post Count</th>
+                                    <th>Description</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var category in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <h4><a href="#">@category.CategoryName</a></h4>
+                                            <span>
+                                                <a href="#">Edit</a>|<a href="#">Delete</a>|<a href="#">View</a>
+                                            </span>
+                                        </td>
+                                        <td>@category.CategoryUrlSlug</td>
+                                        <td><a href="#">@category.Postcount</a></td>
+                                        <td>@category.CategoryDescription</td>                                        
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script src="~/Scripts/app/Account/Categories.js"></script>
+

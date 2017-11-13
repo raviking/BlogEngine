@@ -50,6 +50,7 @@ namespace BlogEngine.Controllers
             try
             {
                 objpostuserviewmodel = new PostUserViewModel(dataaccess, UserId);
+                ViewBag.Title = "Posts";
             }
             catch (Exception ex)
             {
@@ -58,5 +59,53 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AuthorCreatedPosts - Begin");
             return View("AuthorPosts", objpostuserviewmodel);
         }
+        public ActionResult Categories()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            List<Category> _lstCategory = null;
+            try
+            {
+                _lstCategory = dataaccess.Categories();
+                ViewBag.Title = "Categories";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            return View(_lstCategory);
+        }
+        public ActionResult Tags()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
+            List<Tag> _lstTags = null;
+            try
+            {
+                _lstTags = dataaccess.Tags();
+                ViewBag.Title = "Tags";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Tags" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
+            return View(_lstTags);
+        }
+        public ActionResult NewPost()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
+            WidgetViewModel widgetviewmodel = null;         
+            try
+            {
+                ViewBag.Title = "Add New Post";
+                widgetviewmodel = new WidgetViewModel(dataaccess);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: NewPost" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
+            return View(widgetviewmodel);
+        }       
     }
 }

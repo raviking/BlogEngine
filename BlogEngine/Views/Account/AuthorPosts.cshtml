@@ -36,7 +36,11 @@
                                 @foreach (var post in Model.Posts)
                                 {
                                     <tr>
-                                        <td>@post.Title</td>
+                                        <td><h4><a href="#">@post.Title</a></h4>
+                                            <span>
+                                                <a href="#">Edit</a>|<a href="#">Draft</a>|<a href="#">View</a>
+                                            </span>
+                                        </td>
                                         <td>@Model.User.FirstName</td>
                                         <td>@post.Category.CategoryName</td>
                                         <td>

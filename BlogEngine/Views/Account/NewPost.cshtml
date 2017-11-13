@@ -1,0 +1,86 @@
+﻿
+@model BlogEngine.Models.WidgetViewModel
+@{
+    ViewBag.Title = "NewPost";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<link href="~/Content/choosen/chosen.min.css" rel="stylesheet" />
+
+<div>
+    <section class="content-header">
+        <h1>Add New Post</h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Add New Post</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <input type="text" id="txtPostTitle" class="form-control input-lg" placeholder="Enter title here" />
+                        <div class="margin-top-20px">
+                            @*<button type="button" class="btn btn-default margin-bottom-10px"><i class="fa fa-fw fa-file"></i>Add Media</button>*@
+                            <textarea style="z-index:1" id="txtPostBody" class="form-control" rows="20" cols="50"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h2 class="box-title">Publish</h2>
+                    </div>
+                    <div class="box-body">
+
+                    </div>
+                </div>
+                <!--Categories-->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h2 class="box-title">Categories</h2>
+                    </div>
+                    <div class="box-body">
+
+                        <select class="ddlCategories" id="ddlCategories" multiple>
+                            <option value="">Select Category</option>
+                            @foreach (var cat in Model.Categories)
+                            {
+                                <option value="@cat.CategoryId">@cat.CategoryName</option>
+                            }
+                        </select>
+
+                    </div>
+                </div>
+                <!--Tags-->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h2 class="box-title">Tags</h2>
+                    </div>
+                    <div class="box-body">
+
+                        <select class="form-control" id="ddlTags" multiple>
+                            <option value="">Select Tags</option>
+                            @foreach (var tag in Model.Tags)
+                            {                                
+                                <option value="@tag.TagId">@tag.TagName</option>
+                            }
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script src="~/Scripts/tinymce-4.7.2/tinymce.min.js"></script>
+<script src="~/Scripts/chosen_v1.8.2/chosen.jquery.min.js"></script>
+<script src="~/Scripts/app/Account/AddNewPost.js"></script>
+

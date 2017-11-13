@@ -23,6 +23,7 @@
        folder instead of downloading all of them to reduce the load. -->
     <link href="~/Content/AdminLTE/skins/_all-skins.min.css" rel="stylesheet" />
 
+    <link href="~/Content/AdminLTE/Custom.css" rel="stylesheet" />
     <script src="~/Scripts/app/UriTemplates.js"></script>
     <script type="text/javascript">
         var HostAddress="@ConfigurationManager.AppSettings["WebHostAddress"].ToString()";
@@ -363,9 +364,9 @@
                         </a>
                         <ul class="treeview-menu">
                             <li><a href="@Url.Action("AuthorCreatedPosts","Account",new {UserId=currentuser.UserId})"><i class="fa fa-circle-o"></i> All Posts</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Add New</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i> Categories</a></li>
-                            <li><a href="#"><i class="fa fa-circle-o"></i>Tags</a></li>
+                            <li><a href="@Url.Action("NewPost","Account")"><i class="fa fa-circle-o"></i> Add New</a></li>
+                            <li><a href="@Url.Action("Categories","Account")"><i class="fa fa-circle-o"></i> Categories</a></li>
+                            <li><a href="@Url.Action("Tags","Account")"><i class="fa fa-circle-o"></i>Tags</a></li>
                         </ul>
                     </li>
                     <li>

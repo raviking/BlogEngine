@@ -483,6 +483,23 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
             return objUser;
         }
+        
+        public List<Category> GetCategoryWithPostCount()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -Begin");
+            List<Category> _lstCategory = null;
+            try
+            {
+                var context = dbcontext.Database.SqlQuery<Category>("sp_GetAllCategoriesWithPostCount");
+                _lstCategory = context.ToList();                
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetUserDetailsById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
+            return _lstCategory;
+        }
         #endregion Account
     }
 }
