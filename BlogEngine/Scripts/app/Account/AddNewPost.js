@@ -45,7 +45,7 @@ $(function () {
 
 $(document).ready(function () {
     //Choosen dropdowns initialization
-    $(".ddlCategories").chosen();
+    $("#ddlCategories").chosen();
     //$("#ddlTags").choosen();
 });
     

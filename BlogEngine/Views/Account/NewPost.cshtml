@@ -25,7 +25,7 @@
                         <input type="text" id="txtPostTitle" class="form-control input-lg" placeholder="Enter title here" />
                         <div class="margin-top-20px">
                             @*<button type="button" class="btn btn-default margin-bottom-10px"><i class="fa fa-fw fa-file"></i>Add Media</button>*@
-                            <textarea style="z-index:1" id="txtPostBody" class="form-control" rows="20" cols="50"></textarea>
+                            <textarea id="txtPostBody" class="form-control" rows="20" cols="50"></textarea>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="box-body">
 
-                        <select class="ddlCategories" id="ddlCategories" multiple>
+                        <select class="form-control" id="ddlCategories" multiple>
                             <option value="">Select Category</option>
                             @foreach (var cat in Model.Categories)
                             {
@@ -79,8 +79,9 @@
     </section>
 </div>
 
-<script src="~/Scripts/jquery-3.2.1.min.js"></script>
-<script src="~/Scripts/tinymce-4.7.2/tinymce.min.js"></script>
+@*<script src="~/Scripts/jquery-3.2.1.min.js"></script>*@
+<script src="~/Scripts/jquery-1.12.4.min.js"></script>
 <script src="~/Scripts/chosen_v1.8.2/chosen.jquery.min.js"></script>
+<script src="~/Scripts/tinymce-4.7.2/tinymce.min.js"></script>
 <script src="~/Scripts/app/Account/AddNewPost.js"></script>
 

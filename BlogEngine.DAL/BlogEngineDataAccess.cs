@@ -24,13 +24,18 @@ namespace BlogEngine.DAL
         }
 
         #region User
+
+        /// <summary>
+        /// Returns all user details from database..
+        /// </summary>
+        /// <returns>User list</returns>
         public List<User> GetUserList()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserList -Begin");
             List<User> userlist = new List<User>();
             try
             {
-                userlist = dbcontext.Database.SqlQuery<User>("exec sp_GetAllUserDetails", null).ToList();
+                userlist = dbcontext.Database.SqlQuery<User>("sp_GetAllUserDetails").ToList();
             }
             catch (Exception ex)
             {

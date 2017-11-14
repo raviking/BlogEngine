@@ -106,6 +106,22 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
             return View(widgetviewmodel);
-        }       
+        }  
+        public ActionResult Users()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
+            List<User> _lstUsers = null;
+            try
+            {
+                ViewBag.Title = "All Users";
+                _lstUsers = dataaccess.GetUserList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Users" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
+            return View(_lstUsers);
+        }    
     }
 }
