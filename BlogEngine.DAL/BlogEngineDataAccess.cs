@@ -14,6 +14,8 @@ namespace BlogEngine.DAL
 {
     public class BlogEngineDAL
     {
+        //changes done by Sridhar Thota Ji...
+
         public string classname = "BlogEngineDataAccess";
         LoggingHelper logginghelper = null;
         BlogEngineDbContext dbcontext = null;
