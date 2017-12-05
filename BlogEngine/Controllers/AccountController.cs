@@ -9,6 +9,8 @@ using BlogEngine.Extensions;
 using BlogEngine.DTO;
 using BlogEngine.DAL;
 using BlogEngine.Models;
+using System.Configuration;
+using Newtonsoft.Json.Linq;
 
 namespace BlogEngine.Controllers
 {
@@ -91,6 +93,7 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
             return View(_lstTags);
         }
+        [HttpGet]
         public ActionResult NewPost()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
@@ -98,6 +101,7 @@ namespace BlogEngine.Controllers
             try
             {
                 ViewBag.Title = "Add New Post";
+                ViewBag.HostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
                 widgetviewmodel = new WidgetViewModel(dataaccess);
             }
             catch (Exception ex)
@@ -106,6 +110,59 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost - Begin");
             return View(widgetviewmodel);
-        }       
+        }
+        [HttpPost]
+        public ActionResult NewPost(Post postObj)
+        {
+            ResponseDTO response = new ResponseDTO();                         
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost(httppost) - Begin");
+            try
+            {
+                if (Session["CurrentUser"] != null)
+                {
+                    User _currentuser = Session["CurrentUser"] as User;
+                    postObj.UserId = _currentuser.UserId;
+                    response= dataaccess.SavePost(postObj);                   
+                }                
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: NewPost(httppost)" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost(httppost) - Begin");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult Users()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
+            List<User> _lstUsers = null;
+            try
+            {
+                ViewBag.Title = "All Users";
+                _lstUsers = dataaccess.GetUserList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Users" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
+            return View(_lstUsers);
+        }
+        public ActionResult AddNewUser()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - Begin");
+            List<Role> ddlRoles = null;
+            try
+            {
+                ViewBag.Title = "Add New User";
+                ddlRoles = dataaccess.GetRoleDropdowns();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: AddNewUser" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - Begin");
+            return View(ddlRoles);
+        }
     }
 }

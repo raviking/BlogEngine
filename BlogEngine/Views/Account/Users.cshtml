@@ -1,0 +1,58 @@
+﻿
+@model List<BlogEngine.DTO.User>
+@{
+    ViewBag.Title = "Users";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>
+    <section class="content-header">
+        <h1>All Users</h1>
+        <a href="@Url.Action("AddNewUser","Account")" class="btn btn-default margin-top-10px">Add New User</a>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">All Users</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <table id="tblUsers" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>UserName</th>
+                                    <th>Role</th>
+                                    <th>Gender</th>
+                                    <th>Registration Date</th>
+                                    <td>Actions</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in Model)
+                                {
+                                    <tr>
+                                        <td>@user.FirstName @user.LastName</td>
+                                        <td>@user.UserName</td>
+                                        <td>@user.Role</td>
+                                        <td>@user.Gender</td>
+                                        <td>@user.RegistrationDate.ToShortDateString()</td>
+                                        <td><a href="#">Edit</a>|<a href="#">Delete</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script src="~/Scripts/app/Account/Users.js"></script>

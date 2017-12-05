@@ -16,16 +16,48 @@ namespace BlogEngine
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //routes.MapMvcAttributeRoutes();                      
+
+            //single post url 
             routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new
-                {
-                    controller = "Blog",
-                    action = "Posts",
-                    id = UrlParameter.Optional
-                }
+                "Post",
+                "{urlslug}",
+                new { controller = "Blog",action = "Post"}
             );
+
+            //category url
+            routes.MapRoute(
+               "Category",
+               "category/{catUrlSlug}",
+               new
+               {
+                   controller = "Blog",
+                   action = "Category"
+               }
+           );
+
+            //tag url
+            routes.MapRoute(
+               "Tag",
+               "tag/{tagSlug}",
+               new
+               {
+                   controller = "Blog",
+                   action = "Tag"
+               }
+           );
+
+            //Default route
+            routes.MapRoute(
+               name: "Default",
+               url: "{Controller}/{Action}/{id}",
+               defaults: new
+               {
+                   controller = "Blog",
+                   action = "Posts",
+                   id = UrlParameter.Optional
+               }
+           );
         }
     }
 }

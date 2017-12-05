@@ -15,6 +15,8 @@
     <link href="~/Content/AdminLTE/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <!-- Ionicons -->
     <link href="~/Content/AdminLTE/Ionicons/ionicons.min.css" rel="stylesheet" />
+    <!--Chosen -->
+    <link href="~/Content/choosen/chosen.min.css" rel="stylesheet" />
     <!-- DataTables -->
     <link href="~/Content/AdminLTE/datatables.net-bootstrap/dataTables.bootstrap.min.css" rel="stylesheet" />
     <!-- Theme style -->
@@ -23,10 +25,13 @@
        folder instead of downloading all of them to reduce the load. -->
     <link href="~/Content/AdminLTE/skins/_all-skins.min.css" rel="stylesheet" />
 
+    <!-- jQuery 3 -->
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+
     <link href="~/Content/AdminLTE/Custom.css" rel="stylesheet" />
     <script src="~/Scripts/app/UriTemplates.js"></script>
     <script type="text/javascript">
-        var HostAddress="@ConfigurationManager.AppSettings["WebHostAddress"].ToString()";
+        var HostAddress = "@ConfigurationManager.AppSettings["WebHostAddress"].ToString()";
     </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -369,27 +374,19 @@
                             <li><a href="@Url.Action("Tags","Account")"><i class="fa fa-circle-o"></i>Tags</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="pages/widgets.html">
-                            <i class="fa fa-th"></i> <span>Widgets</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-green">new</small>
-                            </span>
-                        </a>
-                    </li>
+
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-pie-chart"></i>
-                            <span>Charts</span>
+                            <span>Users</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+                            <li><a href="@Url.Action("Users","Account")"><i class="fa fa-circle-o"></i> All Users</a></li>
+                            <li><a href="@Url.Action("AddNewUser","Account")"><i class="fa fa-circle-o"></i>Add New</a></li>
+                            <li><a href="@Url.Action("UserProfile","Account")"><i class="fa fa-circle-o"></i> Your Profile</a></li>                            
                         </ul>
                     </li>
                     <li class="treeview">
@@ -433,45 +430,7 @@
                             <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
                             <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="pages/calendar.html">
-                            <i class="fa fa-calendar"></i> <span>Calendar</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-red">3</small>
-                                <small class="label pull-right bg-blue">17</small>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="pages/mailbox/mailbox.html">
-                            <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                            <span class="pull-right-container">
-                                <small class="label pull-right bg-yellow">12</small>
-                                <small class="label pull-right bg-green">16</small>
-                                <small class="label pull-right bg-red">5</small>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-folder"></i> <span>Examples</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li><a href="pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                            <li><a href="pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                            <li><a href="pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                            <li><a href="pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                            <li><a href="pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                            <li><a href="pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                            <li><a href="pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                            <li><a href="pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                            <li><a href="pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-                        </ul>
-                    </li>
+                    </li>                                                          
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-share"></i> <span>Multilevel</span>
@@ -506,8 +465,7 @@
                             </li>
                             <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
                         </ul>
-                    </li>
-                    <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>                    
+                    </li>                    
                 </ul>
             </section>
             <!-- /.sidebar -->
@@ -527,13 +485,13 @@
         </footer>
 
     </div>
-
-    <!-- jQuery 3 -->
-    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    
     <!-- jQuery UI 1.12.1 -->
     <script src="~/Scripts/jquery-ui.1.12.1.js"></script>
     <!-- Bootstrap 3.3.7 -->
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--tinyMCE-->
+    <script src="~/Scripts/tinymce/tinymce.min.js"></script>
     <!-- DataTables -->
     <script src="~/Scripts/AdminLTE/datatables.net-bootstrap/jquery.dataTables.min.js"></script>
     <script src="~/Scripts/AdminLTE/datatables.net-bootstrap/dataTables.bootstrap.min.js"></script>
@@ -541,6 +499,9 @@
     <script src="~/Scripts/AdminLTE/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <!-- FastClick -->
     <script src="~/Scripts/AdminLTE/fastclick/fastclick.js"></script>
+    
+    <!--Chosen js-->
+    @*<script src="~/Scripts/chosen_v1.8.2/chosen.jquery.min.js"></script>*@
     <!-- AdminLTE App -->
     <script src="~/Scripts/AdminLTE/adminlte.min.js"></script>        
 

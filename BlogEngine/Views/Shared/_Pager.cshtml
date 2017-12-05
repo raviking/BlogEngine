@@ -28,13 +28,13 @@ if (ViewContext.RouteData.Values["action"].ToString().Equals("search", StringCom
 }
 else if (Model.Tag != null)
 {
-    p = String.Concat("Tag?tagId=" + Model.Tag.TagId + "&", p);//p=0
-    n = String.Concat("Tag?tagId=" + Model.Tag.TagId + "&", n);
+    p = String.Concat("tag?tagId=" + Model.Tag.TagId + "&", p);//p=0
+    n = String.Concat("tag?tagId=" + Model.Tag.TagId + "&", n);
 }
 else if (Model.Category != null)
 {
-    p = String.Concat("Category?categoryId=" + Model.Category.CategoryId + "&", p);//p=0
-    n = String.Concat("Category?categoryId=" + Model.Category.CategoryId + "&", n);
+    p = String.Concat("category?categoryId=" + Model.Category.CategoryId + "&", p);//p=0
+    n = String.Concat("category?categoryId=" + Model.Category.CategoryId + "&", n);
 }
 else
 {

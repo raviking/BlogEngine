@@ -8,6 +8,7 @@ using BlogEngine.Log;
 using BlogEngine.DAL;
 using BlogEngine.Models;
 using BlogEngine.DTO;
+//using System.Web.Routing;
 
 namespace BlogEngine.Controllers
 {
@@ -19,19 +20,19 @@ namespace BlogEngine.Controllers
         BlogEngineDAL dataaccess = null;
 
         //constructor
-        public BlogController():base()
+        public BlogController() : base()
         {
             dataaccess = new BlogEngineDAL();
         }
 
         public ActionResult Index()
-        {            
+        {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Index -Begin");
             try
             {
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Index" + ex);
             }
@@ -51,11 +52,11 @@ namespace BlogEngine.Controllers
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: About" + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: About -End");
-            return View();            
+            return View();
         }
 
         public ActionResult Contact()
-        {            
+        {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Contact -Begin");
             try
             {
@@ -86,13 +87,13 @@ namespace BlogEngine.Controllers
             return View("List", viewModel);
         }
 
-        public ViewResult Category(string categoryId, int p = 1)
+        public ViewResult category(string catUrlSlug, int p = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Category - Begin");
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, categoryId, p,"Category");
+                viewModel = new ListViewModel(dataaccess, catUrlSlug, p,"Category");
                 if (viewModel.Category == null)
                     throw new HttpException(404, "Category Not Found");
                 ViewBag.Title = String.Format(@"Latest posts on category ""{0}""", viewModel.Category.CategoryName);
@@ -105,13 +106,13 @@ namespace BlogEngine.Controllers
             return View("List", viewModel);
         }
 
-        public ViewResult Tag(string tagId, int p = 1)
+        public ViewResult tag(string tagSlug, int p = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tag - Begin");
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, tagId, p, "Tag");
+                viewModel = new ListViewModel(dataaccess, tagSlug, p, "Tag");
                 if (viewModel.Tag == null)
                     throw new HttpException(404, "Tag Not Found");
                 ViewBag.Title = String.Format(@"Latest posts on Tag ""{0}""", viewModel.Tag.TagName);
@@ -141,13 +142,13 @@ namespace BlogEngine.Controllers
             return View("List",viewModel);
         }
 
-        public ViewResult Post(long postId)
+        public ViewResult Post(string urlslug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - Begin");
             Post post = null;
             try
             {
-                post = dataaccess.Post(postId);
+                post = dataaccess.Post(urlslug);
                 if (post != null)
                     throw new HttpException(404, "Post Not Found");
                 else if (post.IsPublished == false && User.Identity.IsAuthenticated==false)

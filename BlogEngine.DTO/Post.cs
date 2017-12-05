@@ -30,6 +30,10 @@ namespace BlogEngine.DTO
             get; set;
         }
 
+        public int postStatus
+        {
+            get;set;
+        }
         public string PostUrlSlug
         {
             get; set;
@@ -40,9 +44,24 @@ namespace BlogEngine.DTO
             get; set;
         }
 
-        public DateTime PostedOn
+        public DateTime? PostedOn
         {
             get; set;
+        }
+
+        public string CreatedBy
+        {
+            get;set;
+        }
+
+        public DateTime CreatedDate
+        {
+            get;set;
+        }
+
+        public string ModifiedBy
+        {
+            get;set;
         }
 
         public DateTime? ModifiedDate
@@ -70,5 +89,6 @@ namespace BlogEngine.DTO
             get;set;
         }
     }
+
 }
 

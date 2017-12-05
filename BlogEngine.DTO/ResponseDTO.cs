@@ -16,7 +16,7 @@ namespace BlogEngine.DTO
         {
             set; get;
         }
-        public int Id
+        public long Id
         {
             set; get;
         }

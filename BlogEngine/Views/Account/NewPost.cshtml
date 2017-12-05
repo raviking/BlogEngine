@@ -4,12 +4,14 @@
     ViewBag.Title = "NewPost";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
-
-<link href="~/Content/choosen/chosen.min.css" rel="stylesheet" />
-
+<style type="text/css">
+.mce-fullscreen {
+     z-index: 1050;
+}
+</style>
 <div>
     <section class="content-header">
-        <h1>Add New Post</h1>
+        <h1>Add New Post</h1>        
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
             <li class="active">Add New Post</li>
@@ -25,7 +27,9 @@
                         <input type="text" id="txtPostTitle" class="form-control input-lg" placeholder="Enter title here" />
                         <div class="margin-top-20px">
                             @*<button type="button" class="btn btn-default margin-bottom-10px"><i class="fa fa-fw fa-file"></i>Add Media</button>*@
-                            <textarea style="z-index:1" id="txtPostBody" class="form-control" rows="20" cols="50"></textarea>
+                            <span><strong><i>create premalink</i></strong>:</span><br/>
+                            <p>@ViewBag.HostUrl/<input style="max-width:200px;" type="text" id="txtPostUrlSlug" class="form-control" /></p>
+                            <textarea id="txtPostBody" class="txtPostBody" rows="50" cols="50"></textarea>
                         </div>
                     </div>
                 </div>
@@ -35,43 +39,78 @@
                 <div class="box box-primary">
                     <div class="box-header">
                         <h2 class="box-title">Publish</h2>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                        </div>
                     </div>
                     <div class="box-body">
-
+                        <button id="btnSaveDraft" class="btn btn-default">Save Draft</button>
+                        <button id="btnPreview" style="float:right;" class="btn btn-default">Preview</button>
+                        <div class="margin-top-10px">
+                            <p><i class="fa-map-pin"></i>Status:<strong> &nbsp;Draft &nbsp;</strong><a href="#">Edit</a></p>
+                            <p><i class="fa-tag"></i>Visibility: &nbsp;<strong>Public &nbsp;</strong><a href="#">Edit</a></p>
+                            <p><i class="fa-tag"></i>Publish: &nbsp;<strong>immediately &nbsp;</strong><a href="#">Edit</a></p>
+                        </div>
+                        <div>
+                            <button id="btnPublish" onclick="javascript:savePostData();" style="float:right;" class="btn btn-success">Publish</button>
+                        </div>
                     </div>
                 </div>
                 <!--Categories-->
                 <div class="box box-primary">
                     <div class="box-header">
                         <h2 class="box-title">Categories</h2>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                        </div>
                     </div>
                     <div class="box-body">
+                        
+                        @foreach (var cat in Model.Categories)
+                        {
+                            <input type="radio" name="rdlPostCategories" id="rdlCategory_@cat.CategoryId" value="@cat.CategoryId" />@cat.CategoryName
+                        }
 
-                        <select class="ddlCategories" id="ddlCategories" multiple>
-                            <option value="">Select Category</option>
-                            @foreach (var cat in Model.Categories)
-                            {
-                                <option value="@cat.CategoryId">@cat.CategoryName</option>
-                            }
-                        </select>
-
+                        <div class="margin-top-10px">
+                            <a href="#"><u>Add New Category</u></a>
+                        </div>
                     </div>
                 </div>
                 <!--Tags-->
                 <div class="box box-primary">
                     <div class="box-header">
                         <h2 class="box-title">Tags</h2>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                        </div>
                     </div>
-                    <div class="box-body">
-
-                        <select class="form-control" id="ddlTags" multiple>
+                    <div class="box-body">                        
+                        <select id="ddlTags" class="form-control" multiple="multiple">
                             <option value="">Select Tags</option>
                             @foreach (var tag in Model.Tags)
                             {                                
                                 <option value="@tag.TagId">@tag.TagName</option>
                             }
                         </select>
-
+                        <div class="margin-top-10px">
+                            <a href="#"><u>Add New Tag</u></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Search description-->
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h2 class="box-title">Search Description</h2>
+                        <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <textarea id="txtSearchDescription" rows="4" cols="4" class="form-control"></textarea>
                     </div>
                 </div>
             </div>
@@ -79,8 +118,5 @@
     </section>
 </div>
 
-<script src="~/Scripts/jquery-3.2.1.min.js"></script>
-<script src="~/Scripts/tinymce-4.7.2/tinymce.min.js"></script>
-<script src="~/Scripts/chosen_v1.8.2/chosen.jquery.min.js"></script>
 <script src="~/Scripts/app/Account/AddNewPost.js"></script>
 

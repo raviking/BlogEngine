@@ -15,7 +15,7 @@ namespace BlogEngine
             return htmlHelper.ActionLink(post.Title, "Post", "Blog",
                     new
                     {
-                        postId=post.PostId
+                        urlslug=post.PostUrlSlug
                     },
                     new
                     {
@@ -29,7 +29,7 @@ namespace BlogEngine
             return htmlHelper.ActionLink(category.CategoryName, "Category", "Blog",
                     new
                     {
-                        categoryId = category.CategoryId
+                        catUrlSlug = category.CategoryUrlSlug
                     },
                     new
                     {
@@ -43,7 +43,7 @@ namespace BlogEngine
             return htmlHelper.ActionLink(tag.TagName, "Tag", "Blog",
                     new
                     {
-                        tagId=tag.TagId
+                        tagSlug=tag.TagUrlSlug
                     },
                     new
                     {

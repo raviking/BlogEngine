@@ -24,13 +24,18 @@ namespace BlogEngine.DAL
         }
 
         #region User
+
+        /// <summary>
+        /// Returns all user details from database..
+        /// </summary>
+        /// <returns>User list</returns>
         public List<User> GetUserList()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserList -Begin");
             List<User> userlist = new List<User>();
             try
             {
-                userlist = dbcontext.Database.SqlQuery<User>("exec sp_GetAllUserDetails", null).ToList();
+                userlist = dbcontext.Database.SqlQuery<User>("sp_GetAllUserDetails").ToList();
             }
             catch (Exception ex)
             {
@@ -68,6 +73,28 @@ namespace BlogEngine.DAL
         #endregion User
 
         #region Reusable Section
+
+        /// <summary>
+        /// returns post id for a posturlslug
+        /// </summary>
+        /// <param name="postUrlSlug"></param>
+        /// <returns>postid</returns>
+        public long GetPostIdByUrlSlug(string postUrlSlug)
+        {
+            long postId = 0;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostIdByUrlSlug - Begin");
+            try
+            {
+                postId = dbcontext.Database.SqlQuery<long>("sp_GetPostIdByUrlSlug @postUrlSlug",
+                            new SqlParameter("@postUrlSlug", postUrlSlug)).SingleOrDefault();
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostIdByUrlSlug " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostIdByUrlSlug - End");
+            return postId;
+        }
 
         /// <summary>
         /// Returns the post list based on categoryid and tags
@@ -160,14 +187,14 @@ namespace BlogEngine.DAL
         /// <param name="pageNo"></param>
         /// <param name="pageSize"></param>
         /// <returns>Posts List</returns>
-        public List<Post> PostsForCategory(string categoryId, int pageNo, int pageSize)
+        public List<Post> PostsForCategory(string categorySlug, int pageNo, int pageSize)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PostsForCategory -Begin");
             List<Post> _lstPosts = null;
             try
             {
-                _lstPosts = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByCategory @categoryId",
-                            new SqlParameter("categoryId", Convert.ToInt64(categoryId))).ToList();
+                _lstPosts = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByCategorySlug @categorySlug",
+                            new SqlParameter("@categorySlug",categorySlug)).ToList();
                 
                 if (_lstPosts != null && _lstPosts.Count > 0)
                 {
@@ -190,14 +217,14 @@ namespace BlogEngine.DAL
         /// </summary>
         /// <param name="categorySlug"></param>
         /// <returns>posts count</returns>
-        public int TotalPostsForCategory(string categoryId)
+        public int TotalPostsForCategory(string categorySlug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: TotalPostsForCategory -Begin");
             int totalpostscount = 0;
             try
             {
-                totalpostscount = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByCategory @categoryId",
-                            new SqlParameter("categoryId", Convert.ToInt64(categoryId))).ToList().Where(x => x.IsPublished).Count();
+                totalpostscount = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByCategorySlug @categorySlug",
+                            new SqlParameter("categorySlug", categorySlug)).ToList().Where(x => x.IsPublished).Count();
             }
             catch(Exception ex)
             {
@@ -236,14 +263,14 @@ namespace BlogEngine.DAL
         /// <param name="pageNo"></param>
         /// <param name="pageSize"></param>
         /// <returns>post list</returns>
-        public List<Post> PostsForTag(string tagId, int pageNo, int pageSize)
+        public List<Post> PostsForTag(string tagSlug, int pageNo, int pageSize)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PostsForTag -Begin");
             List<Post> _lstPosts = null;
             try
             {
-                _lstPosts = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByTagId @tagId",
-                            new SqlParameter("tagId", Convert.ToInt64(tagId))).ToList();
+                _lstPosts = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByTagSlug @tagSlug",
+                            new SqlParameter("tagSlug", tagSlug)).ToList();
 
                 if (_lstPosts != null && _lstPosts.Count > 0)
                 {
@@ -266,14 +293,14 @@ namespace BlogEngine.DAL
         /// </summary>
         /// <param name="tagSlug"></param>
         /// <returns>posts count</returns>
-        public int TotalPostForTag(string tagId)
+        public int TotalPostForTag(string tagSlug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: TotalPostForTag -Begin");
             int totalpostscount = 0;
             try
             {
-                totalpostscount = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByTagId @tagId",
-                            new SqlParameter("tagId", Convert.ToInt64(tagId))).ToList().Where(x => x.IsPublished).Count();
+                totalpostscount = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByTagSlug @tagSlug",
+                            new SqlParameter("tagSlug",tagSlug)).ToList().Where(x => x.IsPublished).Count();
             }
             catch (Exception ex)
             {
@@ -365,14 +392,14 @@ namespace BlogEngine.DAL
         /// <param name="month"></param>
         /// <param name="titleSlug"></param>
         /// <returns>Post</returns>
-        public Post Post(long PostId)
+        public Post Post(string urlslug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -Begin");
             Post post = null;
             try
             {
-                post = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
-                            new SqlParameter("postId", PostId)).FirstOrDefault();
+                post = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostUrlSlug @postUrlSlug",
+                            new SqlParameter("@postUrlSlug", urlslug)).FirstOrDefault();
                 if (post != null)
                 {
                     Category objcategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryById @categoryId",
@@ -484,22 +511,62 @@ namespace BlogEngine.DAL
             return objUser;
         }
         
-        public List<Category> GetCategoryWithPostCount()
+        /// <summary>
+        /// Returns all roles to populate roles dropdowns
+        /// </summary>
+        /// <returns>Roles list</returns>
+        public List<Role> GetRoleDropdowns()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -Begin");
-            List<Category> _lstCategory = null;
+            List<Role> _lstRoles = null;
             try
             {
-                var context = dbcontext.Database.SqlQuery<Category>("sp_GetAllCategoriesWithPostCount");
-                _lstCategory = context.ToList();                
+                _lstRoles = dbcontext.Database.SqlQuery<Role>("sp_GetAllRoles").ToList();             
             }
             catch (Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetUserDetailsById " + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
-            return _lstCategory;
+            return _lstRoles;
         }
+
+        /// <summary>
+        /// Returns post id of after saving post details
+        /// </summary>
+        /// <param name="objPost"></param>
+        /// <returns>long</returns>
+        public ResponseDTO SavePost(Post objPost)
+        {
+            ResponseDTO response = new ResponseDTO();
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
+            try
+            {
+                response.Id = dbcontext.Database.SqlQuery<long>("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy",
+                            new SqlParameter("postId",objPost.PostId),
+                            new SqlParameter("title",objPost.Title),
+                            new SqlParameter("postDescription",objPost.PostDescription),
+                            new SqlParameter("postMeta",objPost.PostMeta),
+                            new SqlParameter("postUrlSlug",objPost.PostUrlSlug),
+                            new SqlParameter("isPublished", objPost.IsPublished),
+                            new SqlParameter("postedOn", objPost.PostedOn!=null ? objPost.PostedOn : null),
+                            new SqlParameter("modifiedDate", objPost.ModifiedDate),
+                            new SqlParameter("createdBy", objPost.CreatedBy),
+                            new SqlParameter("createdDate", objPost.CreatedDate),
+                            new SqlParameter("postStatus", objPost.postStatus),
+                            new SqlParameter("categoryId", objPost.CategoryId),
+                            new SqlParameter("userId", objPost.UserId),
+                            new SqlParameter("modifiedBy", objPost.ModifiedBy)).SingleOrDefault();
+            }
+            catch (Exception ex)
+            {
+                response.IsSucess = false;
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SavePost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
+            return response;
+        }
+
         #endregion Account
     }
 }
