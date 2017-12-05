@@ -64,7 +64,6 @@ function savePostData() {
         Tags:postTags
     };
 
-    debugger;
     $.ajax({
         url: 'NewPost',
         method: 'POST',
