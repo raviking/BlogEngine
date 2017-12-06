@@ -133,6 +133,22 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: NewPost(httppost) - Begin");
             return Json(response,JsonRequestBehavior.AllowGet);
         }
+        public ActionResult EditPost(long postId)
+        {
+            Post objPost = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditPost - Begin");
+            try
+            {                                                        
+                objPost = dataaccess.GetPostDetailsById(postId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: EditPost" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditPost - Begin");
+            return View(objPost);
+        }
+
         public ActionResult Users()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");

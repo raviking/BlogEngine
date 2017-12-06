@@ -3081,3 +3081,54 @@ The statement has been terminated.
    at BlogEngine.DAL.BlogEngineDAL.SavePost(Post objPost) in D:\GitHub\BlogEngineGit\BlogEngineRespository\BlogEngine.DAL\BlogEngineDataAccess.cs:line 547
 ClientConnectionId:7564c499-9e31-4c6b-a03f-78a014b5a021
 Error Number:2627,State:1,Class:14
+2017-12-06 21:40:45,185 [7] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 153
+2017-12-06 21:40:47,377 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tag System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at BlogEngine.DAL.BlogEngineDAL.Tag(String tagId) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 326
+2017-12-06 21:40:47,392 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Tag System.Web.HttpException (0x80004005): Tag Not Found
+   at BlogEngine.Controllers.BlogController.tag(String tagSlug, Int32 p) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 117
+2017-12-06 21:40:49,144 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tag System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at BlogEngine.DAL.BlogEngineDAL.Tag(String tagId) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 326
+2017-12-06 21:40:49,158 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Tag System.Web.HttpException (0x80004005): Tag Not Found
+   at BlogEngine.Controllers.BlogController.tag(String tagSlug, Int32 p) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 117
+2017-12-06 21:40:50,308 [9] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tag System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at BlogEngine.DAL.BlogEngineDAL.Tag(String tagId) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 326
+2017-12-06 21:40:50,325 [9] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Tag System.Web.HttpException (0x80004005): Tag Not Found
+   at BlogEngine.Controllers.BlogController.tag(String tagSlug, Int32 p) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 117
+2017-12-06 21:40:51,894 [9] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Category System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at BlogEngine.DAL.BlogEngineDAL.Category(String categoryId) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 250
+2017-12-06 21:40:51,908 [9] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Category System.Web.HttpException (0x80004005): Category Not Found
+   at BlogEngine.Controllers.BlogController.category(String catUrlSlug, Int32 p) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 98
+2017-12-06 21:40:53,747 [7] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tag System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Convert.ToInt64(String value)
+   at BlogEngine.DAL.BlogEngineDAL.Tag(String tagId) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 326
+2017-12-06 21:40:53,760 [7] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Tag System.Web.HttpException (0x80004005): Tag Not Found
+   at BlogEngine.Controllers.BlogController.tag(String tagSlug, Int32 p) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 117
+2017-12-06 21:55:51,096 [16] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost System.Data.Entity.Core.EntityCommandExecutionException: The data reader has more than one field. Multiple fields are not valid for EDM primitive or enumeration types.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.<>c__DisplayClass14`1.<ExecuteSqlQuery>b__13()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.SavePost(Post objPost) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 557

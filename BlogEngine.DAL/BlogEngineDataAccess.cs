@@ -569,8 +569,9 @@ namespace BlogEngine.DAL
                             new SqlParameter("categoryId", objPost.CategoryId),
                             new SqlParameter("userId", objPost.UserId),
                             new SqlParameter("modifiedBy", objPost.ModifiedBy!=null ? objPost.ModifiedBy:(object)DBNull.Value),
-                            new SqlParameter("tagString", tagString)).SingleOrDefault();         
-
+                            new SqlParameter("tagString", tagString)).SingleOrDefault();
+                if (response.Id > 0)
+                    response.IsSucess = true;
             }
             catch (Exception ex)
             {
@@ -581,6 +582,40 @@ namespace BlogEngine.DAL
             return response;
         }
 
+        public Post GetPostDetailsById(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -Begin");
+            Post objPost = null;
+            try
+            {
+                objPost = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
+                                new SqlParameter("postId",postId)).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostDetailsById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -End");
+            return objPost;
+        }
+        public ResponseDTO deletePost(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -Begin");
+            ResponseDTO response = null;
+            try
+            {
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_DeletePost @postId",
+                                new SqlParameter("postId", postId));
+                if (response.Id > 0)
+                    response.IsSucess = true;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: deletePost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -End");
+            return response;
+        }
         #endregion Account
     }
 }
