@@ -30,7 +30,7 @@ namespace BlogEngine.DTO
             get; set;
         }
 
-        public int postStatus
+        public int? postStatus
         {
             get;set;
         }
@@ -49,12 +49,12 @@ namespace BlogEngine.DTO
             get; set;
         }
 
-        public string CreatedBy
+        public long? CreatedBy
         {
             get;set;
         }
 
-        public DateTime CreatedDate
+        public DateTime? CreatedDate
         {
             get;set;
         }

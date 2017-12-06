@@ -1,4 +1,4 @@
-﻿
+﻿@using BlogEngine.DTO
 @model BlogEngine.Models.PostUserViewModel
 @{
     ViewBag.Title = "Account";
@@ -45,23 +45,31 @@
                                         <td>@post.Category.CategoryName</td>
                                         <td>
                                             @{
-                                                var lasttag = post.Tags.Last();
-                                                foreach (var tag in post.Tags)
+                                                if (post.Tags!=null || post.Tags.Count!=0)
                                                 {
-                                                    if (tag == lasttag)
+                                                    Tag lasttag = null;
+                                                    if (post.Tags.Count > 1)
                                                     {
-                                                        <p>@tag.TagName</p>
+                                                        lasttag = post.Tags.Last();
                                                     }
-                                                    else
+
+                                                    foreach (var tag in post.Tags)
                                                     {
-                                                        <p>@tag.TagName,</p>
+                                                        if (tag == lasttag)
+                                                        {
+                                                            <p>@tag.TagName</p>
+                                                        }
+                                                        else
+                                                        {
+                                                            <p>@tag.TagName,</p>
+                                                        }
                                                     }
                                                 }
                                             }                                            
                                         </td>
                                         <td>@post.IsPublished</td>
                                         <td>
-                                            <p>@post.PostedOn.ToShortDateString()</p>
+                                            <p>@post.PostedOn</p>
                                         </td>
                                     </tr>
                                 }

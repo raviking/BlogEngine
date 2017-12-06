@@ -122,6 +122,7 @@ namespace BlogEngine.Controllers
                 {
                     User _currentuser = Session["CurrentUser"] as User;
                     postObj.UserId = _currentuser.UserId;
+                    postObj.CreatedBy = _currentuser.UserId;
                     response= dataaccess.SavePost(postObj);                   
                 }                
             }

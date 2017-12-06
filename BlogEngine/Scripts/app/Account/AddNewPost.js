@@ -59,9 +59,10 @@ function savePostData() {
         Title: $("#txtPostTitle").val().trim(),
         PostDescription: postBody,
         PostUrlSlug: _postslug,
+        postStatus:101, //for publish
         PostMeta: $("#txtSearchDescription").val(),
         CategoryId: $("input[name='rdlPostCategories']:checked").val(),
-        Tags:postTags
+        Tags: postTags        
     };
 
     $.ajax({
@@ -71,7 +72,9 @@ function savePostData() {
         contentType: "application/json; charset=utf-8",
         data:JSON.stringify(postData),
         success: function (data) {
-            alert("Post data saved!");
+            debugger;
+            if (data.IsSucess==true)
+                alert("Post data saved!");
         },
         error: function () {
             alert("Post saving failed pls try again!");

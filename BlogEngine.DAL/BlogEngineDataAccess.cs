@@ -523,7 +523,7 @@ namespace BlogEngine.DAL
             List<Role> _lstRoles = null;
             try
             {
-                _lstRoles = dbcontext.Database.SqlQuery<Role>("sp_GetAllRoles").ToList();             
+                _lstRoles = dbcontext.Database.SqlQuery<Role>("sp_GetAllRoles").ToList();
             }
             catch (Exception ex)
             {
@@ -544,21 +544,33 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
             try
             {
-                response.Id = dbcontext.Database.SqlQuery<long>("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy",
+                string tagString = string.Empty;
+                if (objPost.Tags != null || objPost.Tags.Count > 0)
+                {
+                    foreach (var tag in objPost.Tags)
+                    {
+                        tagString += tag.TagId + ",";                        
+                    }
+                    tagString = tagString.TrimEnd(',');
+                } 
+                
+                response.Id = dbcontext.Database.SqlQuery<long>("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
                             new SqlParameter("postId",objPost.PostId),
                             new SqlParameter("title",objPost.Title),
                             new SqlParameter("postDescription",objPost.PostDescription),
                             new SqlParameter("postMeta",objPost.PostMeta),
                             new SqlParameter("postUrlSlug",objPost.PostUrlSlug),
                             new SqlParameter("isPublished", objPost.IsPublished),
-                            new SqlParameter("postedOn", objPost.PostedOn!=null ? objPost.PostedOn : null),
-                            new SqlParameter("modifiedDate", objPost.ModifiedDate),
+                            new SqlParameter("postedOn", objPost.PostedOn!=null ? objPost.PostedOn : (object)DBNull.Value),
+                            new SqlParameter("modifiedDate", objPost.ModifiedDate != null ? objPost.PostedOn : (object)DBNull.Value),
                             new SqlParameter("createdBy", objPost.CreatedBy),
-                            new SqlParameter("createdDate", objPost.CreatedDate),
+                            new SqlParameter("createdDate", objPost.CreatedDate!=null ? objPost.CreatedDate:DateTime.Now),
                             new SqlParameter("postStatus", objPost.postStatus),
                             new SqlParameter("categoryId", objPost.CategoryId),
                             new SqlParameter("userId", objPost.UserId),
-                            new SqlParameter("modifiedBy", objPost.ModifiedBy)).SingleOrDefault();
+                            new SqlParameter("modifiedBy", objPost.ModifiedBy!=null ? objPost.ModifiedBy:(object)DBNull.Value),
+                            new SqlParameter("tagString", tagString)).SingleOrDefault();         
+
             }
             catch (Exception ex)
             {
