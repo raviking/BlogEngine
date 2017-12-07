@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Category.cs" />
     <Compile Include="CommonUtilities\CommonUtilities.cs" />
+    <Compile Include="Country.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="ResponseDTO.cs" />
     <Compile Include="Roles.cs" />

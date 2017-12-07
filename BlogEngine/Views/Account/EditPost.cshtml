@@ -27,7 +27,7 @@
                         <input type="text" id="txtPostTitle" class="form-control input-lg" placeholder="Enter title here" />
                         <div class="margin-top-20px">                            
                             <span><strong><i>create premalink</i></strong>:</span><br />
-                            <p>@ViewBag.HostUrl/<input style="max-width:200px;" type="text" id="txtPostUrlSlug" class="form-control" /></p>
+                            <p>@ViewBag.HostUrl/<input type="text" id="txtPostUrlSlug" class="form-control" /></p>
                             <textarea id="txtPostBody" class="txtPostBody" rows="50" cols="50"></textarea>
                         </div>
                     </div>
@@ -48,8 +48,7 @@
                         <button id="btnPreview" style="float:right;" class="btn btn-default">Preview</button>
                         <div class="margin-top-10px">
                             <p><i class="fa-map-pin"></i>Status:<strong> &nbsp;Draft &nbsp;</strong><a href="#">Edit</a></p>
-                            <p><i class="fa-tag"></i>Visibility: &nbsp;<strong>Public &nbsp;</strong><a href="#">Edit</a></p>
-                            <p><i class="fa-tag"></i>Publish: &nbsp;<strong>immediately &nbsp;</strong><a href="#">Edit</a></p>
+                            <p><i class="fa-tag"></i>Visibility: &nbsp;<strong>Public &nbsp;</strong><a href="#">Edit</a></p>                            
                         </div>
                         <div>
                             <button id="btnPublish" onclick="javascript:savePostData();" style="float:right;" class="btn btn-success">Publish</button>

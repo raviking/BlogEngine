@@ -1,5 +1,5 @@
 ﻿
-@model List<BlogEngine.DTO.Role>
+@model BlogEngine.Models.UserDropdowns
 @{
     ViewBag.Title = "AddNewUser";
     Layout = "~/Views/Shared/_UserLayout.cshtml";
@@ -31,35 +31,34 @@
                                 <label class="col-md-4 control-label" for="UserName">User Name<i>(required)</i></label>
                                 <div class="col-sm-6">
                                     <input type="text" id="txtUserName" class="form-control" />
-                                    <span style="display:none;" class="help-block" id="spntxtUserName"></span>
+                                    <span style="display:none;" class="Error_Msg" id="spntxtUserName"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="Password">Password<i>(required)</i></label>
                                 <div class="col-sm-6">
                                     <input type="password" id="txtPassword" class="form-control" />
-                                    <span style="display:none;" class="help-block" id="spntxtPassword"></span>
+                                    <span style="display:none;" class="Error_Msg" id="spntxtPassword"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="Email">Email<i>(required)</i></label>
                                 <div class="col-sm-6">
                                     <input type="email" id="txtEmail" class="form-control" />
-                                    <span style="display:none;" class="help-block" id="spntxtEmail"></span>
+                                    <span style="display:none;" class="Error_Msg" id="spntxtEmail"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="FirstName">FirstName<i>(required)</i></label>
                                 <div class="col-sm-6">
                                     <input type="text" id="txtFirstName" class="form-control" />
-                                    <span style="display:none;" class="help-block" id="spnFirstName"></span>
+                                    <span style="display:none;" class="Error_Msg" id="spntxtFirstName"></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="LastName">LastName</label>
                                 <div class="col-sm-6">
                                     <input type="text" id="txtLastName" class="form-control" />
-                                    <span class="help-block" id="spntxtLastName"></span>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -69,28 +68,56 @@
                                         <input type="radio" id="rdlMale" name="rdlGender" /><strong>Male</strong>
                                     </label>
                                     <label>
-                                        <input type="radio" id="rdlFeMale" name="rdlGender" /><strong>FeMale</strong>
-                                    </label>
-                                </div>
-                                <span class="help-block" style="display:none;" id="spnrdlGender"></span>
+                                        <input type="radio" id="rdlFemale" name="rdlGender" /><strong>Female</strong>
+                                    </label><br/>
+                                    <span class="Error_Msg" style="display:none;" id="spnrdlGender"></span>
+                                </div>                         
                             </div>
+                            
                             <div class="form-group">
                                 <label class="col-md-4 control-label" for="Role">Role<i>(required)</i></label>
                                 <div class="col-md-6">
                                     <select class="form-control" id="ddlRoles">
                                         <option value="">Select Role</option>
-                                        @foreach (var role in Model)
+                                        @foreach (var role in Model.Roles)
                                         {
                                             <option value="@role.RoleId">@role.RoleName</option>
                                         }
                                     </select>
-                                    <span class="help-block" style="display:none;" id="spnddlRoles"></span>
+                                    <span class="Error_Msg" style="display:none;" id="spnddlRoles"></span>
                                 </div>
                             </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="Country">Country<i>(required)</i></label>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="ddlCountry">
+                                        <option value="">Select Country</option>
+                                        @foreach (var country in Model.Countries)
+                                        {
+                                            <option value="@country.Id">@country.CountryName</option>
+                                        }
+                                    </select>
+                                    <span class="Error_Msg" style="display:none;" id="spnddlCountry"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="userstatus">User Status<i>(required)</i></label>
+                                <div class="col-md-6">
+                                    <select class="form-control" id="ddlUserStatus">
+                                        <option value="">Select Status</option>
+                                        <option value="101">Active</option>
+                                        <option value="102">Inactive</option>
+                                    </select>
+                                    <span class="Error_Msg" style="display:none;" id="spnddlUserStatus"></span>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <div class="col-md-offset-4">
-                                    <button type="button" class="btn btn-primary">Add New User</button>
-                                    <button type="button" class="btn btn-warning">Reset</button>
+                                    <button type="button" onclick="javascript: addNewUser();" class="btn btn-primary">Add New User</button>
+                                    <button type="button" onclick="javascript: resetUserForm();" class="btn btn-warning">Reset</button>
                                 </div>
                             </div>
                         </form>
@@ -100,4 +127,6 @@
         </div>
     </section>
 </div>
+
+<script src="~/Scripts/app/Account/addUser.js"></script>
 

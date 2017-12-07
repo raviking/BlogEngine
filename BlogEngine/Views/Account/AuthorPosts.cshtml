@@ -38,31 +38,26 @@
                                     <tr>
                                         <td><h4><a href="#">@post.Title</a></h4>
                                             <span>
-                                                <a href="#">Edit</a>|<a href="#">Draft</a>|<a href="#">View</a>
+                                                <a href="@Url.Action("EditPost","Account",new {postId=post.PostId})">Edit</a>|
+                                                @*<a href="#">Draft</a>|*@
+                                                <a href="#">View</a>|
+                                                <a href="@Url.Action("DeletePost","Account",new {postId=post.PostId})">Delete</a>
                                             </span>
                                         </td>
                                         <td>@Model.User.FirstName</td>
                                         <td>@post.Category.CategoryName</td>
                                         <td>
                                             @{
-                                                if (post.Tags!=null || post.Tags.Count!=0)
+                                                var lasttag = post.Tags.Last();
+                                                foreach (var tag in post.Tags)
                                                 {
-                                                    Tag lasttag = null;
-                                                    if (post.Tags.Count > 1)
+                                                    if (tag == lasttag)
                                                     {
-                                                        lasttag = post.Tags.Last();
+                                                        <p>@tag.TagName</p>
                                                     }
-
-                                                    foreach (var tag in post.Tags)
+                                                    else
                                                     {
-                                                        if (tag == lasttag)
-                                                        {
-                                                            <p>@tag.TagName</p>
-                                                        }
-                                                        else
-                                                        {
-                                                            <p>@tag.TagName,</p>
-                                                        }
+                                                        <p>@tag.TagName,</p>
                                                     }
                                                 }
                                             }                                            

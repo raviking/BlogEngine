@@ -34,6 +34,29 @@ $(function () {
         external_plugins: { "filemanager": HostAddress + "/filemanager/plugin.min.js" },
         filemanager_title: "BlogEngine File Manager"
     });
+
+    var postid = $("#hdnPostId").val();
+    $.ajax({
+        url: 'GetPostDetailsById',
+        method: 'GET',
+        datatype: 'json',
+        data: {postId:postid},
+        success: function (data) {
+            $("#txtPostTitle").val(data.Title);
+            $("#txtPostUrlSlug").val(data.PostUrlSlug);
+            $("#txtSearchDescription").val(data.PostMeta);
+            tinymce.get("txtPostBody").setContent(data.PostDescription);
+            //tinymce.activeEditor.setContent(data.PostDescription);
+            $("#rdlCategory_" + data.CategoryId).prop('checked', true);
+            for (var i = 0; i < data.Tags.length; i++) {
+                $("#ddlTags option[value='"+data.Tags[i].TagId+"']").prop("selected", "selected");
+            }
+        },
+        error: function () {
+            alert("Unable to get post details from server");
+            console.log("Unable to get post details from server");
+        }
+    });
 });
 
 //save post data
@@ -55,7 +78,7 @@ function savePostData() {
     var postBody = tinyMCE.activeEditor.getContent();
 
     var postData = {
-        PostId: 0,
+        PostId: $("#hdnPostId").val(),
         Title: $("#txtPostTitle").val().trim(),
         PostDescription: postBody,
         PostUrlSlug: _postslug,
@@ -72,12 +95,12 @@ function savePostData() {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(postData),
         success: function (data) {
-            debugger;
             if (data.IsSucess == true)
-                alert("Post data saved!");
+                alert("post data updated successfully");
         },
         error: function () {
-            alert("Post saving failed pls try again!");
+            alert("post updation failed");
+            console.log("post updation failed");
         }
     });
 

@@ -40,7 +40,7 @@ namespace BlogEngine.DTO
         {
             get; set;
         }
-        public string Country
+        public int Country
         {
             get; set;
         }

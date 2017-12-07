@@ -72,6 +72,34 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCurrentUser -End");
             return user;
         }
+
+        public ResponseDTO SaveUser(User objUser)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveUser -Begin");
+            ResponseDTO response = null;
+            try
+            {
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_GetCurrentUser @userId,@firstName,@lastName,@userName,@password,@role,@gender,@email,@country,@designation",
+                            new SqlParameter("userId", objUser.UserId),
+                            new SqlParameter("firstName", objUser.FirstName),
+                            new SqlParameter("lastName", objUser.LastName),
+                            new SqlParameter("userName",objUser.UserName),
+                            new SqlParameter("password", objUser.Password),
+                            new SqlParameter("role", objUser.Role),
+                            new SqlParameter("gender", objUser.Gender),
+                            new SqlParameter("email", objUser.Email),
+                            new SqlParameter("country", objUser.Country),
+                            new SqlParameter("designation", objUser.Designation));
+                if (response.Id > 0)
+                    response.IsSucess = true;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveUser " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveUser -End");
+            return response;
+        }
         #endregion User
 
         #region Reusable Section
@@ -127,6 +155,23 @@ namespace BlogEngine.DAL
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagAndCategoriesByPost - End");
             return _lstPosts;
+        }
+
+        public List<Tag> GetTagsByPostId(long postId)
+        {
+            List<Tag> _lsttag = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagsByPostId - Begin");
+            try
+            {
+                _lsttag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagsByPostId @postId",
+                            new SqlParameter("postId", postId)).ToList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetTagsByPostId " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagsByPostId - End");
+            return _lsttag;
         }
 
         #endregion Reusable Section
@@ -512,7 +557,8 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
             return objUser;
         }
-        
+
+        #region Dropdowns
         /// <summary>
         /// Returns all roles to populate roles dropdowns
         /// </summary>
@@ -532,6 +578,28 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
             return _lstRoles;
         }
+
+        /// <summary>
+        /// Gets all countries data
+        /// </summary>
+        /// <returns>Country List</returns>
+        public List<Country> GetCountryDropdowns()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCountryDropdowns -Begin");
+            List<Country> _lstCountries = null;
+            try
+            {
+                _lstCountries = dbcontext.Database.SqlQuery<Country>("sp_GetAllCountries").ToList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetCountryDropdowns " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCountryDropdowns -End");
+            return _lstCountries;
+        }
+
+        #endregion Dropdowns
 
         /// <summary>
         /// Returns post id of after saving post details
@@ -554,7 +622,7 @@ namespace BlogEngine.DAL
                     tagString = tagString.TrimEnd(',');
                 } 
                 
-                response.Id = dbcontext.Database.SqlQuery<long>("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
                             new SqlParameter("postId",objPost.PostId),
                             new SqlParameter("title",objPost.Title),
                             new SqlParameter("postDescription",objPost.PostDescription),
@@ -569,7 +637,7 @@ namespace BlogEngine.DAL
                             new SqlParameter("categoryId", objPost.CategoryId),
                             new SqlParameter("userId", objPost.UserId),
                             new SqlParameter("modifiedBy", objPost.ModifiedBy!=null ? objPost.ModifiedBy:(object)DBNull.Value),
-                            new SqlParameter("tagString", tagString)).SingleOrDefault();
+                            new SqlParameter("tagString", tagString));
                 if (response.Id > 0)
                     response.IsSucess = true;
             }
@@ -590,6 +658,9 @@ namespace BlogEngine.DAL
             {
                 objPost = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
                                 new SqlParameter("postId",postId)).FirstOrDefault();
+                var tags = GetTagsByPostId(postId);
+                if (tags != null)
+                    objPost.Tags = tags;
             }
             catch (Exception ex)
             {

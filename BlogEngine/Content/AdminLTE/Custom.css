@@ -11,3 +11,8 @@
 .width-100px{
     width:100px;
 }
+
+.Error_Msg{
+    color:red;
+    font-style:italic;
+}

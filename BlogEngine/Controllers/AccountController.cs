@@ -31,6 +31,7 @@ namespace BlogEngine.Controllers
             dataaccess= new BlogEngineDAL();
         }
 
+        #region Dashboard
         public ActionResult Dashboard()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Dashboard - Begin");
@@ -45,6 +46,10 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Dashboard - End");
             return View();
         }
+
+        #endregion Dashboard
+
+        #region Author Content
         public ActionResult AuthorCreatedPosts(long UserId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AuthorCreatedPosts - Begin");
@@ -121,9 +126,18 @@ namespace BlogEngine.Controllers
                 if (Session["CurrentUser"] != null)
                 {
                     User _currentuser = Session["CurrentUser"] as User;
-                    postObj.UserId = _currentuser.UserId;
-                    postObj.CreatedBy = _currentuser.UserId;
-                    response= dataaccess.SavePost(postObj);                   
+                    if (postObj.PostId > 0)
+                    {
+                        postObj.ModifiedBy = _currentuser.UserId.ToString();
+                        postObj.ModifiedDate = DateTime.Now;
+                        response = dataaccess.SavePost(postObj);
+                    }
+                    else
+                    {
+                        postObj.UserId = _currentuser.UserId;
+                        postObj.CreatedBy = _currentuser.UserId;
+                        response = dataaccess.SavePost(postObj);
+                    }                                      
                 }                
             }
             catch (Exception ex)
@@ -182,6 +196,9 @@ namespace BlogEngine.Controllers
             return Json(response,JsonRequestBehavior.AllowGet);
         }
 
+        #endregion Author Content
+
+        #region Users
         public ActionResult Users()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
@@ -198,21 +215,40 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
             return View(_lstUsers);
         }
+        [HttpGet]
         public ActionResult AddNewUser()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - Begin");
-            List<Role> ddlRoles = null;
+            UserDropdowns objuserDropdowns = null;
             try
             {
                 ViewBag.Title = "Add New User";
-                ddlRoles = dataaccess.GetRoleDropdowns();
+                objuserDropdowns = new UserDropdowns(dataaccess);
             }
             catch (Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: AddNewUser" + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - Begin");
-            return View(ddlRoles);
+            return View(objuserDropdowns);
         }
+
+        public JsonResult SaveUser(User objUser)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser(Post) - Begin");
+            ResponseDTO response = null;
+            try
+            {
+                response = dataaccess.SaveUser(objUser);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  AddNewUser(Post)" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  AddNewUser(Post) - Begin");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion Users
     }
 }

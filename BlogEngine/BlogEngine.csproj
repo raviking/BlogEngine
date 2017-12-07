@@ -235,6 +235,7 @@
     <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PostUserViewModel.cs" />
+    <Compile Include="Models\UserDropdowns.cs" />
     <Compile Include="Models\WidgetViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewEngine\PhpView.cs" />
@@ -695,6 +696,7 @@
     <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.js" />
     <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.min.js" />
     <Content Include="Scripts\app\Account\AddNewPost.js" />
+    <Content Include="Scripts\app\Account\addUser.js" />
     <Content Include="Scripts\app\Account\AllPosts.js" />
     <Content Include="Scripts\app\Account\Categories.js" />
     <Content Include="Scripts\app\Account\Tags.js" />
