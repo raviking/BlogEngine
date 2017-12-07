@@ -135,18 +135,51 @@ namespace BlogEngine.Controllers
         }
         public ActionResult EditPost(long postId)
         {
-            Post objPost = null;
+            WidgetViewModel widgetviewmodel = null;
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditPost - Begin");
             try
-            {                                                        
-                objPost = dataaccess.GetPostDetailsById(postId);
+            {
+                ViewBag.Title = "Edit Post";
+                ViewBag.PostId = postId;
+                ViewBag.HostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
+                widgetviewmodel = new WidgetViewModel(dataaccess);                                
             }
             catch (Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: EditPost" + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditPost - Begin");
-            return View(objPost);
+            return View(widgetviewmodel);
+        }
+        public JsonResult GetPostDetailsById(long postId)
+        {
+            Post objPost = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById - Begin");
+            try
+            {                                
+                objPost = dataaccess.GetPostDetailsById(postId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostDetailsById" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById - Begin");
+            return Json(objPost,JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult DeletePost(long postId)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeletePost - Begin");
+            try
+            {
+                response = dataaccess.deletePost(postId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeletePost" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeletePost - Begin");
+            return Json(response,JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Users()
