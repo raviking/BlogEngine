@@ -286,14 +286,14 @@ namespace BlogEngine.DAL
         /// </summary>
         /// <param name="categorySlug"></param>
         /// <returns> Category</returns>
-        public Category Category(string categoryId)
+        public Category Category(string categorySlug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Category -Begin");
             Category objcategory = null;
             try
             {
-                objcategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryById @categoryId",
-                            new SqlParameter("categoryId", Convert.ToInt64(categoryId))).FirstOrDefault();
+                objcategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryByCatSlug @categoryUrlSlug",
+                            new SqlParameter("categoryUrlSlug", categorySlug)).FirstOrDefault();
             }
             catch (Exception ex)
             {
@@ -362,14 +362,14 @@ namespace BlogEngine.DAL
         /// </summary>
         /// <param name="tagSlug"></param>
         /// <returns>Tag</returns>
-        public Tag Tag(string tagId)
+        public Tag Tag(string tagSlug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tag -Begin");
             Tag objTag = null;
             try
             {
-                objTag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagByTagId @tagId",
-                            new SqlParameter("tagId", Convert.ToInt64(tagId))).FirstOrDefault();
+                objTag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagByTagSlug @tagSlug",
+                            new SqlParameter("@tagSlug", tagSlug)).FirstOrDefault();
             }
             catch (Exception ex)
             {

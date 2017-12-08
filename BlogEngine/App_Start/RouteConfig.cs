@@ -16,46 +16,59 @@ namespace BlogEngine
 
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            //routes.MapMvcAttributeRoutes();                      
+            //routes.MapMvcAttributeRoutes();                                            
+
+            routes.MapRoute(
+               "Homepage",
+               "page/{page}",
+               defaults:new
+               {
+                   controller = "Blog",
+                   action = "Posts",
+                   page = UrlParameter.Optional
+               }
+           );
 
             //single post url 
             routes.MapRoute(
                 "Post",
                 "{urlslug}",
                 new { controller = "Blog",action = "Post"}
-            );
+            );           
 
             //category url
             routes.MapRoute(
                "Category",
-               "category/{catUrlSlug}",
+               "category/{catUrlSlug}/{p}",
                new
                {
                    controller = "Blog",
-                   action = "Category"
+                   action = "category",
+                   p = UrlParameter.Optional 
                }
            );
 
             //tag url
             routes.MapRoute(
                "Tag",
-               "tag/{tagSlug}",
+               "tag/{tagSlug}/{tp}", //tags pagination
                new
                {
                    controller = "Blog",
-                   action = "Tag"
+                   action = "tag",
+                   tp = UrlParameter.Optional
                }
            );
 
             //Default route
             routes.MapRoute(
                name: "Default",
-               url: "{Controller}/{Action}/{id}",
+               url: "{Controller}/{Action}/{p}",
                defaults: new
                {
                    controller = "Blog",
                    action = "Posts",
-                   id = UrlParameter.Optional
+                   p = UrlParameter.Optional
                }
            );
         }

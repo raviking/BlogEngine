@@ -70,13 +70,13 @@ namespace BlogEngine.Controllers
             return View();
         }
 
-        public ViewResult Posts(int p=1)
+        public ViewResult Posts(int page = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Posts -Begin");
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, p);
+                viewModel = new ListViewModel(dataaccess, page);
                 ViewBag.Title = "Latest Posts";
             }
             catch (Exception ex)
@@ -106,13 +106,13 @@ namespace BlogEngine.Controllers
             return View("List", viewModel);
         }
 
-        public ViewResult tag(string tagSlug, int p = 1)
+        public ViewResult tag(string tagSlug, int tp = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tag - Begin");
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, tagSlug, p, "Tag");
+                viewModel = new ListViewModel(dataaccess, tagSlug, tp, "Tag");
                 if (viewModel.Tag == null)
                     throw new HttpException(404, "Tag Not Found");
                 ViewBag.Title = String.Format(@"Latest posts on Tag ""{0}""", viewModel.Tag.TagName);

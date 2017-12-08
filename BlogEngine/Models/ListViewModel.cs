@@ -17,13 +17,17 @@ namespace BlogEngine.Models
 
         }
         public ListViewModel(BlogEngineDAL dataaccess, int p)
-        {            
+        {
+            PageNo = p;
+            isHomePage = true;
             Posts = dataaccess.Posts(p - 1, postsCountInHomePage);
             TotalPosts = dataaccess.TotalPosts();
         }
 
         public ListViewModel(BlogEngineDAL dataaccess, string searchType, int p,string type)
         {
+            isHomePage = false;
+            PageNo = p; //page number
             switch (type)
             {
                 case "Tag":
@@ -44,6 +48,7 @@ namespace BlogEngine.Models
             }
             
         }
+       
         public List<Post> Posts
         {
             get;private set;
@@ -61,6 +66,14 @@ namespace BlogEngine.Models
             get;private set;
         }
         public string Search
+        {
+            get;private set;
+        }
+        public int PageNo
+        {
+            get; private set;
+        }
+        public bool isHomePage
         {
             get;private set;
         }

@@ -3,52 +3,85 @@
 @model BlogEngine.Models.ListViewModel
 
 @* Read the current page and total pages *@
-
 @{
     int postsCountInHomePage = Convert.ToInt32(ConfigurationManager.AppSettings["NumberOfPostsOnHomePage"].ToString());
-    var currentPage = ViewContext.RequestContext.HttpContext.Request["p"] != null ? int.Parse(ViewContext.RequestContext.HttpContext.Request["p"]): 1;
-
     var totalPages = Math.Ceiling((double)Model.TotalPosts / postsCountInHomePage);
 }
-
-@* Check do we need to display pagination links *@
-
-@if (currentPage > 1 || currentPage < totalPages)
+<!-- Pagination for Home page -->
+@if (Model.PageNo > 1 || Model.PageNo < totalPages)
 {
-    var p = string.Format("p={0}", currentPage - 1);
-    var n = string.Format("p={0}", currentPage + 1);
+    string webhostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
+    if (Model.isHomePage == true)
+    {
+        var _previous = string.Format("/page/{0}", Model.PageNo - 1);
+        var _next = string.Format("/page/{0}", Model.PageNo + 1);
 
-    @* If the view is rendered for "search" action append the pagination value with "&" *@
+        <div class="pager">
+            <!--Home page pagination links-->
+            <a href="@webhostUrl@_previous" title="Previous" class="previous"
+               style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
+            <a href="@webhostUrl@_next" title="Next" class="next"
+               style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
+        </div>
+    }
+    else
+    {
+        int _previd = Model.PageNo - 1;
+        int _nextid = Model.PageNo + 1;
+        if (Model.Category != null)
+        {
+            <div class="pager">
+                <!--Home page pagination links-->
+                <a href="@Url.Action("category", "Blog", new
+                    {
+                        catUrlSlug = Model.Category.CategoryUrlSlug,
+                        p = _previd
+                    })" title="Previous" class="previous"
+                   style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
+                <a href="@Url.Action("category", "Blog", new
+                    {
+                        catUrlSlug = Model.Category.CategoryUrlSlug,
+                        p = _nextid
+                    })" title="Next" class="next"
+                   style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
+            </div>
+        }
+        else if (Model.Tag != null)
+        {
+            <div class="pager">
+                <!--Home page pagination links-->
+                <a href="@Url.Action("tag", "Blog", new
+                    {
+                        tagSlug = Model.Tag.TagUrlSlug,
+                        tp = _previd
+                    })" title="Previous" class="previous"
+                   style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
+                <a href="@Url.Action("tag", "Blog", new
+                    {
+                        tagSlug = Model.Tag.TagUrlSlug,
+                        tp = _nextid
+                    })" title="Next" class="next"
+                   style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
+            </div>
+        }
+        else
+        {
+            <div class="pager">
+                <!--Home page pagination links-->
+                <a href="@Url.Action("Search", "Blog", new
+                    {
+                        s = Model.Search,
+                        p = _previd
+                    })" title="Previous" class="previous"
+                   style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
+                <a href="@Url.Action("Search", "Blog", new
+                    {
+                        s = Model.Search,
+                        p = _nextid
+                    })" title="Next" class="next"
+                   style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
+            </div>
+        }
+    }
+}
 
-if (ViewContext.RouteData.Values["action"].ToString().Equals("search", StringComparison.OrdinalIgnoreCase))
-{
-    var s = String.Format("?s={0}", ViewContext.RequestContext.HttpContext.Request.QueryString["s"]);
-    p = String.Format("{0}&{1}", s, p);
-    n = String.Format("{0}&{1}", s, n);
-}
-else if (Model.Tag != null)
-{
-    p = String.Concat("tag?tagId=" + Model.Tag.TagId + "&", p);//p=0
-    n = String.Concat("tag?tagId=" + Model.Tag.TagId + "&", n);
-}
-else if (Model.Category != null)
-{
-    p = String.Concat("category?categoryId=" + Model.Category.CategoryId + "&", p);//p=0
-    n = String.Concat("category?categoryId=" + Model.Category.CategoryId + "&", n);
-}
-else
-{
-    p = String.Concat("?", p);//?p=1
-    n = String.Concat("?", n);
-}
-
-  <!--pagination links-->
-    <div class="pager">     
-        <!--Home page pagination links-->
-        <a href="@p" title="Previous" class="previous"
-           style="visibility:@(currentPage > 1 ? "visible" : "collapse")"><< previous</a>
-
-        <a href="@n" title="Next" class="next"
-           style="visibility:@(currentPage < totalPages ? "visible" : "collapse")">next >></a>
-    </div>
-}

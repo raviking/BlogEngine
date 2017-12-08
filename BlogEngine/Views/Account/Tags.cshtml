@@ -27,21 +27,25 @@
                                 <div class="form-group">
                                     <label for="TagName">Name</label>
                                     <input type="text" class="form-control" id="txtTagName">
+                                    <span id="spntxtTagName" class="Error_Msg" style="display:none;"></span>
                                     <p><i>The name is how it appears on your site.</i></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="TagUrlSlug">Slug</label>
-                                    <input type="text" class="form-control" id="txtTagUrlSlug">
+                                    <input type="text" class="form-control" onchange="javascript: checkIsSlugExists();" id="txtTagUrlSlug">
+                                    <span id="spntxtTagUrlSlug" class="Error_Msg" style="display:none;"></span>
                                     <p><i>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</i></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="TagDescription">Description</label>
                                     <textarea rows="5" cols="40" class="form-control" id="txtTagDescription"></textarea>
+                                    <span id="spntxtTagDescription" class="Error_Msg" style="display:none;"></span>
                                     <p><i>The description is not prominent by default; however, some themes may show it.</i></p>
                                 </div>
                             </div>
                             <div class="box-footer">
-                                <button type="button" class="btn btn-primary">Add New Tag</button>
+                                <button type="button" class="btn btn-primary" onclick="javascript:addNewTag();">Add New Tag</button>
+                                <button type="button" class="btn btn-primary" onclick="javascript:resetForm();">Reset</button>
                             </div>
                         </form>
                     </div>
