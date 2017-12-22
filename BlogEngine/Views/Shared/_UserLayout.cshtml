@@ -386,7 +386,7 @@
                         <ul class="treeview-menu">
                             <li><a href="@Url.Action("Users","Account")"><i class="fa fa-circle-o"></i> All Users</a></li>
                             <li><a href="@Url.Action("AddNewUser","Account")"><i class="fa fa-circle-o"></i>Add New</a></li>
-                            <li><a href="@Url.Action("UserProfile","Account")"><i class="fa fa-circle-o"></i> Your Profile</a></li>                            
+                            <li><a href="@Url.Action("UserProfile","Account",new {userId=currentuser.UserId})"><i class="fa fa-circle-o"></i> Your Profile</a></li>                            
                         </ul>
                     </li>
                     <li class="treeview">

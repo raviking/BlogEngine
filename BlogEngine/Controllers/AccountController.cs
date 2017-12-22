@@ -49,7 +49,9 @@ namespace BlogEngine.Controllers
 
         #endregion Dashboard
 
-        #region Author Content
+        #region Admin    
+                   
+        #region Posts
         public ActionResult AuthorCreatedPosts(long UserId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AuthorCreatedPosts - Begin");
@@ -65,38 +67,6 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AuthorCreatedPosts - Begin");
             return View("AuthorPosts", objpostuserviewmodel);
-        }
-        public ActionResult Categories()
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
-            List<Category> _lstCategory = null;
-            try
-            {
-                _lstCategory = dataaccess.Categories();
-                ViewBag.Title = "Categories";
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories" + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
-            return View(_lstCategory);
-        }
-        public ActionResult Tags()
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
-            List<Tag> _lstTags = null;
-            try
-            {
-                _lstTags = dataaccess.Tags();
-                ViewBag.Title = "Tags";
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Tags" + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
-            return View(_lstTags);
         }
         [HttpGet]
         public ActionResult NewPost()
@@ -195,8 +165,174 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeletePost - Begin");
             return Json(response,JsonRequestBehavior.AllowGet);
         }
+        #endregion Posts
 
-        #endregion Author Content
+        #region Categories
+
+        public ActionResult Categories()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            List<Category> _lstCategory = null;
+            try
+            {
+                _lstCategory = dataaccess.Categories();
+                ViewBag.Title = "Categories";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            return View(_lstCategory);
+        }
+        public JsonResult SaveCategory(Category objCategory)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCategory - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                response = dataaccess.SaveCategory(objCategory);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveCategory" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCategory - Begin");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
+        public ActionResult EditCategory(long categoryId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditCategory - Begin");
+           Category objCategory = null;
+            try
+            {
+                objCategory = dataaccess.GetCategoryById(categoryId);
+                ViewBag.Title = "Edit Category";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: EditCategory" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditCategory - Begin");
+            return View(objCategory);
+        }
+        public JsonResult DeleteCategory(long categoryId)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteCategory - Begin");
+            try
+            {
+                response = dataaccess.DeleteCategory(categoryId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteCategory" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteCategory - End");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult IsCategorySlugExists(string categorySlug)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsCategorySlugExists - Begin");
+            try
+            {
+                response = dataaccess.IsCategorySlugExists(categorySlug);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsCategorySlugExists" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsCategorySlugExists - End");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion Categories
+
+        #region Tags
+
+        public ActionResult Tags()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
+            List<Tag> _lstTags = null;
+            try
+            {
+                _lstTags = dataaccess.Tags();
+                ViewBag.Title = "Tags";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Tags" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - Begin");
+            return View(_lstTags);
+        }
+        public JsonResult SaveTag(Tag objTag)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveTag - Begin");
+            try
+            {
+                response = dataaccess.SaveTag(objTag);
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveTag" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveTag - End");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
+        public ViewResult EditTag(long tagId)
+        {
+            Tag objTag = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditTag - Begin");
+            try
+            {
+                objTag = dataaccess.GetTagById(tagId);
+                ViewBag.Title = "Edit Tag";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: EditTag" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditTag - End");
+            return View(objTag);
+        }
+        public JsonResult DeleteTag(long tagId)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteTag - Begin");
+            try
+            {
+                response = dataaccess.DeleteTag(tagId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteTag" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteTag - End");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult IsTagSlugExists(string tagSlug)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsTagSlugExists - Begin");
+            try
+            {
+                response = dataaccess.IsTagSlugExists(tagSlug);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsTagSlugExists" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsTagSlugExists - End");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion Tags
+
+        #endregion Admin
 
         #region Users
         public ActionResult Users()
@@ -212,7 +348,7 @@ namespace BlogEngine.Controllers
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Users" + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - End");
             return View(_lstUsers);
         }
         [HttpGet]
@@ -229,7 +365,7 @@ namespace BlogEngine.Controllers
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: AddNewUser" + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - Begin");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - End");
             return View(objuserDropdowns);
         }
 
@@ -245,10 +381,42 @@ namespace BlogEngine.Controllers
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  AddNewUser(Post)" + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  AddNewUser(Post) - Begin");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  AddNewUser(Post) - End");
             return Json(response,JsonRequestBehavior.AllowGet);
         }
 
+        public ViewResult UserProfile(long userId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: UserProfile - Begin");
+            UserDropdowns objuserDropdowns = null;
+            try
+            {
+                objuserDropdowns = new UserDropdowns(dataaccess);
+                ViewBag.Title = "User Profile";
+                ViewBag.UserId = userId;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  UserProfile" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  UserProfile - End");
+            return View(objuserDropdowns);
+        }
+        public JsonResult UserDetailsById(long userId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: UserDetailsById - Begin");
+            User objUser = new User();
+            try
+            {
+                objUser = dataaccess.GetUserDetailsById(userId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  UserDetailsById" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  UserDetailsById - End");
+            return Json(objUser,JsonRequestBehavior.AllowGet);
+        }
         #endregion Users
     }
 }

@@ -27,21 +27,24 @@
                                 <div class="form-group">
                                     <label for="CategoryName">Name</label>
                                     <input type="text" class="form-control" id="txtCategoryName">
+                                    <span id="spntxtCategoryName" class="Error_Msg" style="display:none;"></span>
                                     <p><i>The name is how it appears on your site.</i></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="CategoryUrlSlug">Slug</label>
-                                    <input type="text" class="form-control" id="txtCategoryUrlSlug">
+                                    <input type="text" class="form-control" id="txtCategoryUrlSlug" onchange="javascript: checkIsSlugExists();">
+                                    <span id="spntxtCategoryUrlSlug" class="Error_Msg" style="display:none;"></span>
                                     <p><i>The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</i></p>
                                 </div>
                                 <div class="form-group">
                                     <label for="CategoryDescription">Description</label>
-                                    <textarea rows="5" cols="40" class="form-control" id="txtCategoryDescription"></textarea>
+                                    <textarea rows="5" cols="40" class="form-control" id="txtCategoryDescription"></textarea>                                    
                                     <p><i>The description is not prominent by default; however, some themes may show it.</i></p>
                                 </div>
                             </div>
                             <div class="box-footer">
-                                <button type="button" class="btn btn-primary">Add New Category</button>
+                                <button type="button" class="btn btn-primary" onclick="javascript:addNewCategory('ADD');">Add New Category</button>
+                                <button type="button" class="btn btn-primary" onclick="javascript:resetForm();">Reset</button>
                             </div>
                         </form>
                     </div>
@@ -67,7 +70,8 @@
                                         <td>
                                             <h4><a href="#">@category.CategoryName</a></h4>
                                             <span>
-                                                <a href="#">Edit</a>|<a href="#">Delete</a>|<a href="#">View</a>
+                                                <a href="@Url.Action("EditCategory","Account",new {categoryId=category.CategoryId})">Edit</a>|
+                                                <a href="#" onclick="javascript:deleteCategory(@category.CategoryId)">Delete</a>
                                             </span>
                                         </td>
                                         <td>@category.CategoryUrlSlug</td>

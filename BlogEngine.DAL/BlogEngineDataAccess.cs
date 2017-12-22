@@ -466,27 +466,7 @@ namespace BlogEngine.DAL
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -End");
             return post;
-        }
-
-        /// <summary>
-        /// Returns all categories
-        /// </summary>
-        /// <returns>Category List</returns>
-        public List<Category> Categories()
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
-            List<Category> _lstCategory = null;
-            try
-            {
-                _lstCategory = dbcontext.Database.SqlQuery<Category>("sp_GetAllCategories").OrderBy(x=>x.CategoryName).ToList();
-            }
-            catch(Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories " + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - End");
-            return _lstCategory;
-        }
+        }        
 
         /// <summary>
         /// Returns all tags to display on sidebar
@@ -498,7 +478,7 @@ namespace BlogEngine.DAL
             List<Tag> _lstTag = null;
             try
             {
-                _lstTag = dbcontext.Database.SqlQuery<Tag>("sp_GetAllTags").OrderBy(x => x.TagName).ToList();
+                _lstTag = dbcontext.Database.SqlQuery<Tag>("sp_GetAllTags").OrderBy(x => x.TagName).OrderByDescending(x=>x.TagId).ToList();
             }
             catch (Exception ex)
             {
@@ -510,6 +490,8 @@ namespace BlogEngine.DAL
         #endregion Posts
 
         #region Account
+
+        #region Posts
 
         /// <summary>
         /// Returns posts belongs to User(id)
@@ -537,6 +519,108 @@ namespace BlogEngine.DAL
         }
 
         /// <summary>
+        /// Returns post id of after saving post details
+        /// </summary>
+        /// <param name="objPost"></param>
+        /// <returns>long</returns>
+        public ResponseDTO SavePost(Post objPost)
+        {
+            ResponseDTO response = new ResponseDTO();
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
+            try
+            {
+                string tagString = string.Empty;
+                if (objPost.Tags != null || objPost.Tags.Count > 0)
+                {
+                    foreach (var tag in objPost.Tags)
+                    {
+                        tagString += tag.TagId + ",";
+                    }
+                    tagString = tagString.TrimEnd(',');
+                }
+
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
+                            new SqlParameter("postId", objPost.PostId),
+                            new SqlParameter("title", objPost.Title),
+                            new SqlParameter("postDescription", objPost.PostDescription),
+                            new SqlParameter("postMeta", objPost.PostMeta),
+                            new SqlParameter("postUrlSlug", objPost.PostUrlSlug),
+                            new SqlParameter("isPublished", objPost.IsPublished),
+                            new SqlParameter("postedOn", objPost.PostedOn != null ? objPost.PostedOn : (object)DBNull.Value),
+                            new SqlParameter("modifiedDate", objPost.ModifiedDate != null ? objPost.PostedOn : (object)DBNull.Value),
+                            new SqlParameter("createdBy", objPost.CreatedBy),
+                            new SqlParameter("createdDate", objPost.CreatedDate != null ? objPost.CreatedDate : DateTime.Now),
+                            new SqlParameter("postStatus", objPost.postStatus),
+                            new SqlParameter("categoryId", objPost.CategoryId),
+                            new SqlParameter("userId", objPost.UserId),
+                            new SqlParameter("modifiedBy", objPost.ModifiedBy != null ? objPost.ModifiedBy : (object)DBNull.Value),
+                            new SqlParameter("tagString", tagString));
+                if (response.Id > 0)
+                    response.IsSucess = true;
+            }
+            catch (Exception ex)
+            {
+                response.IsSucess = false;
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SavePost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
+            return response;
+        }
+
+        /// <summary>
+        /// Gets post object by postib
+        /// </summary>
+        /// <param name="postId"></param>
+        /// <returns>post</returns>
+        public Post GetPostDetailsById(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -Begin");
+            Post objPost = null;
+            try
+            {
+                objPost = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
+                                new SqlParameter("postId", postId)).FirstOrDefault();
+                var tags = GetTagsByPostId(postId);
+                if (tags != null)
+                    objPost.Tags = tags;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostDetailsById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -End");
+            return objPost;
+        }
+
+        /// <summary>
+        /// Deletes post by postid
+        /// </summary>
+        /// <param name="postId"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO deletePost(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -Begin");
+            ResponseDTO response = null;
+            try
+            {
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_DeletePost @postId",
+                                new SqlParameter("postId", postId));
+                if (response.Id > 0)
+                    response.IsSucess = true;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: deletePost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -End");
+            return response;
+        }
+
+        #endregion Posts
+
+        #region Users
+
+        /// <summary>
         /// Returns user details by userid
         /// </summary>
         /// <param name="UserId"></param>
@@ -557,6 +641,8 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
             return objUser;
         }
+
+        #endregion Users
 
         #region Dropdowns
         /// <summary>
@@ -599,94 +685,226 @@ namespace BlogEngine.DAL
             return _lstCountries;
         }
 
-        #endregion Dropdowns
+        #endregion Dropdowns       
+
+        #region Tags
 
         /// <summary>
-        /// Returns post id of after saving post details
+        /// Saves new tag
         /// </summary>
-        /// <param name="objPost"></param>
-        /// <returns>long</returns>
-        public ResponseDTO SavePost(Post objPost)
+        /// <param name="objTag"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO SaveTag(Tag objTag)
         {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveTag -Begin");
             ResponseDTO response = new ResponseDTO();
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
             try
             {
-                string tagString = string.Empty;
-                if (objPost.Tags != null || objPost.Tags.Count > 0)
-                {
-                    foreach (var tag in objPost.Tags)
-                    {
-                        tagString += tag.TagId + ",";                        
-                    }
-                    tagString = tagString.TrimEnd(',');
-                } 
-                
-                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
-                            new SqlParameter("postId",objPost.PostId),
-                            new SqlParameter("title",objPost.Title),
-                            new SqlParameter("postDescription",objPost.PostDescription),
-                            new SqlParameter("postMeta",objPost.PostMeta),
-                            new SqlParameter("postUrlSlug",objPost.PostUrlSlug),
-                            new SqlParameter("isPublished", objPost.IsPublished),
-                            new SqlParameter("postedOn", objPost.PostedOn!=null ? objPost.PostedOn : (object)DBNull.Value),
-                            new SqlParameter("modifiedDate", objPost.ModifiedDate != null ? objPost.PostedOn : (object)DBNull.Value),
-                            new SqlParameter("createdBy", objPost.CreatedBy),
-                            new SqlParameter("createdDate", objPost.CreatedDate!=null ? objPost.CreatedDate:DateTime.Now),
-                            new SqlParameter("postStatus", objPost.postStatus),
-                            new SqlParameter("categoryId", objPost.CategoryId),
-                            new SqlParameter("userId", objPost.UserId),
-                            new SqlParameter("modifiedBy", objPost.ModifiedBy!=null ? objPost.ModifiedBy:(object)DBNull.Value),
-                            new SqlParameter("tagString", tagString));
-                if (response.Id > 0)
-                    response.IsSucess = true;
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_AddorUpdateTag @tagId,@tagName,@tagUrlSlug,@tagDescription",
+                            new SqlParameter("tagId", objTag.TagId),
+                            new SqlParameter("tagName",objTag.TagName),
+                            new SqlParameter("tagUrlSlug",objTag.TagUrlSlug),
+                            new SqlParameter("tagDescription",objTag.TagDescription));
+                if (count > 0)
+                    response.IsSucess = true;                
             }
             catch (Exception ex)
             {
-                response.IsSucess = false;
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SavePost " + ex);
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveTag " + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SavePost -Begin");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveTag -End");
             return response;
         }
+        /// <summary>
+        /// Get Tag by tagid
+        /// </summary>
+        /// <param name="tagId"></param>
+        /// <returns>Tag</returns>
+        public Tag GetTagById(long tagId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagById -Begin");
+            Tag objTag = null;
+            try
+            {
+                objTag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagByTagId @tagId",
+                            new SqlParameter("tagId", tagId)).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetTagById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetTagById -End");
+            return objTag;
+        }
+        /// <summary>
+        /// Deletes Tag by tagid
+        /// </summary>
+        /// <param name="tagId"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO DeleteTag(long tagId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteTag -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_DeleteTagByTagId @tagId",
+                            new SqlParameter("tagId", tagId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteTag " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteTag -End");
+            return response;
+        }        
+        public ResponseDTO IsTagSlugExists(string tagSlug)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsTagSlugExists -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                var objTag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagByTagSlug @tagSlug",
+                            new SqlParameter("tagSlug", tagSlug)).FirstOrDefault();
+                if (objTag!=null && objTag.TagId>0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsTagSlugExists " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsTagSlugExists -End");
+            return response;
+        }
+        #endregion Tags
 
-        public Post GetPostDetailsById(long postId)
+        #region Categories
+
+        /// <summary>
+        /// Returns all categories
+        /// </summary>
+        /// <returns>Category List</returns>
+        public List<Category> Categories()
         {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -Begin");
-            Post objPost = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - Begin");
+            List<Category> _lstCategory = null;
             try
             {
-                objPost = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
-                                new SqlParameter("postId",postId)).FirstOrDefault();
-                var tags = GetTagsByPostId(postId);
-                if (tags != null)
-                    objPost.Tags = tags;
+                _lstCategory = dbcontext.Database.SqlQuery<Category>("sp_GetAllCategories").OrderBy(x => x.CategoryName).ToList();
             }
             catch (Exception ex)
             {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetPostDetailsById " + ex);
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Categories " + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetPostDetailsById -End");
-            return objPost;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Categories - End");
+            return _lstCategory;
         }
-        public ResponseDTO deletePost(long postId)
+        /// <summary>
+        /// Saves or upates category
+        /// </summary>
+        /// <param name="objCategory"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO SaveCategory(Category objCategory)
         {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -Begin");
-            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCategory - Begin");
+            ResponseDTO response = new ResponseDTO();
             try
             {
-                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_DeletePost @postId",
-                                new SqlParameter("postId", postId));
-                if (response.Id > 0)
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_AddorUpdateCategory @categoryId,@categoryName,@categoryUrlSlug,@categoryDescription",
+                            new SqlParameter("categoryId",objCategory.CategoryId),
+                            new SqlParameter("categoryName",objCategory.CategoryName),
+                            new SqlParameter("categoryUrlSlug",objCategory.CategoryUrlSlug),
+                            new SqlParameter("categoryDescription",objCategory.CategoryDescription));
+                if (count > 0)
                     response.IsSucess = true;
+                else
+                    response.IsSucess = false;
             }
             catch (Exception ex)
             {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: deletePost " + ex);
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveCategory " + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -End");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCategory - End");
             return response;
         }
+        /// <summary>
+        /// Get Category by category id
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns>Category</returns>
+        public Category GetCategoryById(long categoryId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCategoryById - Begin");
+            Category objCategory = new Category();
+            try
+            {
+                objCategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryById @categoryId",
+                            new SqlParameter("categoryId", categoryId)).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetCategoryById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCategoryById - End");
+            return objCategory;
+        }
+        /// <summary>
+        /// Deletes category by category id
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO DeleteCategory(long categoryId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteCategory - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_DeleteCategoryById @categoryId",
+                            new SqlParameter("categoryId", categoryId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteCategory " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteCategory - End");
+            return response;
+        }
+        /// <summary>
+        /// Checks whether category slug exists
+        /// </summary>
+        /// <param name="categorySlug"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO IsCategorySlugExists(string categorySlug)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsCategorySlugExists -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                var objCategory = dbcontext.Database.SqlQuery<Category>(" sp_GetCategoryByCatSlug @categoryUrlSlug",
+                            new SqlParameter("categoryUrlSlug", categorySlug)).FirstOrDefault();
+                if (objCategory != null && objCategory.CategoryId > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsCategorySlugExists " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsCategorySlugExists -End");
+            return response;
+        }
+        #endregion Categories
+
         #endregion Account
     }
 }
