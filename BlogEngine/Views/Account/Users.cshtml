@@ -41,7 +41,10 @@
                                         <td>@user.Role</td>
                                         <td>@user.Gender</td>
                                         <td>@user.RegistrationDate.ToShortDateString()</td>
-                                        <td><a href="#">Edit</a>|<a href="#">Delete</a></td>
+                                        <td>
+                                            <a href="@Url.Action("UserProfile","Account",new { userId=user.UserId})">Edit</a>|
+                                            <a href="#" onclick="javascript: DeleteUser(@user.UserId);">Delete</a>
+                                        </td>
                                     </tr>
                                 }
                             </tbody>

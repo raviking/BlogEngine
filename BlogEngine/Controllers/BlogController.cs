@@ -23,22 +23,7 @@ namespace BlogEngine.Controllers
         public BlogController() : base()
         {
             dataaccess = new BlogEngineDAL();
-        }
-
-        public ActionResult Index()
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Index -Begin");
-            try
-            {
-
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Index" + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Index -End");
-            return View();
-        }
+        }        
 
         public ActionResult About()
         {

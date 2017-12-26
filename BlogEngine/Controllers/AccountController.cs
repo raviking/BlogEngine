@@ -335,6 +335,7 @@ namespace BlogEngine.Controllers
         #endregion Admin
 
         #region Users
+
         public ActionResult Users()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Users - Begin");
@@ -368,7 +369,6 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser - End");
             return View(objuserDropdowns);
         }
-
         public JsonResult SaveUser(User objUser)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: AddNewUser(Post) - Begin");
@@ -384,7 +384,6 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  AddNewUser(Post) - End");
             return Json(response,JsonRequestBehavior.AllowGet);
         }
-
         public ViewResult UserProfile(long userId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: UserProfile - Begin");
@@ -417,6 +416,57 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  UserDetailsById - End");
             return Json(objUser,JsonRequestBehavior.AllowGet);
         }
+        public JsonResult DeleteUser(long userId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteUser - Begin");
+            ResponseDTO response = new ResponseDTO();     
+            try
+            {
+                response = dataaccess.DeleteUser(userId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  DeleteUser" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  DeleteUser - End");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
+
         #endregion Users
+
+        #region Comments
+
+        public ViewResult Comments()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Comments - Begin");
+            List<Comment> lstComments = new List<Comment>();
+            try
+            {
+                lstComments = dataaccess.GetAllComments();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  Comments" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  Comments - End");
+            return View(lstComments);
+        }
+        //public ViewResult Comments()
+        //{
+        //    logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Comments - Begin");
+        //    List<Comment> lstComments = new List<Comment>();
+        //    try
+        //    {
+        //        lstComments = dataaccess.GetAllComments();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  Comments" + ex);
+        //    }
+        //    logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  Comments - End");
+        //    return View(lstComments);
+        //}
+
+        #endregion Comments
     }
 }

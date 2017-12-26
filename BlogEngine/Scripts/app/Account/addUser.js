@@ -1,5 +1,32 @@
 ﻿
 $(function () {
+    var userid = $("#hdnUserId").val();
+    if (userid != undefined && userid != "") {
+        var url = HostAddress + "/Account/UserDetailsById?userId=" + userid;
+        $.get(url, function (data) {
+            if (data != null) {
+                $("#txtUserName").val(data.UserName);
+                $("#txtPassword").val(data.Password);
+                $("#txtEmail").val(data.Email);
+                $("#txtFirstName").val(data.FirstName);
+                $("#txtLastName").val(data.LastName);
+                if (data.Gender == "Male") {
+                    $("#rdlMale").prop("checked", true);
+                }
+                else {
+                    $("#rdlFemale").prop("checked", true);
+                }
+                $("#ddlRoles option").each(function () {
+                    if ($(this).text() == data.Role) {
+                        $(this).attr('selected', 'selected');
+                    }
+                });
+                $("#ddlCountry").val(data.Country);
+                $("#ddlUserStatus").val(data.UserStatus);
+            }
+        });
+    }   
+
     $("#txtUserName").focus(function () {
         if ($("#txtUserName").val() != "") {
             $("#spntxtUserName").hide();
@@ -37,11 +64,10 @@ $(function () {
     });
 });
 
-function addNewUser() {
-    debugger;
+function addNewUser(type) {
     if (validateForm()) {
         var objUser = {
-            UserId: 0,
+            UserId: $("#hdnUserId").val()!=null ? $("#hdnUserId").val() : 0,
             FirstName: $("#txtFirstName").val().trim(),
             LastName: $("#txtLastName").val().trim(),
             UserName: $("#txtUserName").val().trim(),
@@ -61,15 +87,25 @@ function addNewUser() {
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(objUser),
             success: function (response) {
-                debugger;
                 if (response.IsSucess == true) {
-                    alert("User Added Successfully");
+                    if (type == 'ADD') {
+                        alert("User Added Successfully");
+                    }
+                    else {
+                        alert("User updated Successfully");
+                    }
                     window.location.href = HostAddress + "/Account/Users";
                 }                    
             },
             error: function () {
-                alert("Saving User Failed!");
-                console.log("Saving user failed!");
+                if (type == 'ADD') {
+                    console.log("Adding user failed");
+                    alert("Saving User Failed!");
+                }
+                else {
+                    console.log("Updating user failed");
+                    alert("Updating User Failed!");
+                }                
             }
         });
     }    

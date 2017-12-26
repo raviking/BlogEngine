@@ -641,6 +641,31 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetUserDetailsById -End");
             return objUser;
         }
+        /// <summary>
+        /// Delets user by userid
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO DeleteUser(long userId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteUser -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_DeleteUser @userId",
+                                new SqlParameter("userId", userId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteUser " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteUser -Begin");
+            return response;
+        }
 
         #endregion Users
 
@@ -903,7 +928,28 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsCategorySlugExists -End");
             return response;
         }
+
         #endregion Categories
+
+        #region Comments
+
+        public List<Comment> GetAllComments()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllComments -Begin");
+            List<Comment> lstComments = new List<Comment>();
+            try
+            {
+                lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetAllComments").ToList();                            
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetAllComments " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllComments -End");
+            return lstComments;
+        }
+
+        #endregion Comments
 
         #endregion Account
     }

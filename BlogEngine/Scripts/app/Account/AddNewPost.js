@@ -72,7 +72,6 @@ function savePostData() {
         contentType: "application/json; charset=utf-8",
         data:JSON.stringify(postData),
         success: function (data) {
-            debugger;
             if (data.IsSucess==true)
                 alert("Post data saved!");
         },
