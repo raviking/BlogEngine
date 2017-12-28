@@ -9,33 +9,60 @@
     <div class="post">
         <div class="post-meta">
             <div class="row">
-
                 <div class="post-title">
                     <h1>@Html.PostLink(Model)</h1>
                 </div>
-
             </div>
             <div class="row">
-
                 <div class="post-category">
                     <span>Category:</span> @Html.CategoryLink(Model.Category)
                 </div>
-
                 <div class="post-tags">
                     <span>Tags:</span> @Helpers.Tags(Html, Model.Tags)
+                    @if (Model.Comments.Count() > 0)
+                    {
+                        <span>Comments(@Model.Comments.Count)</span>
+                    }
+                    else
+                    {
+                        <span>Comments(0)</span>
+                    }
                 </div>
-
                 <div class="posted-date">
                     @Model.PostedOn
                 </div>
-
             </div>
         </div>
-
         <div class="post-body">
             @Html.Raw(Model.PostDescription)
         </div>
-
+        <hr />
+        <h1>Comments</h1>
+        @if (Model.Comments.Count() > 0)
+        {
+            <div class="post-comments">
+                @foreach (var comment in Model.Comments)
+                {
+                    <h3>@comment.Comment_Author</h3>
+                    <p>@comment.Comment_Content</p>
+                }
+            </div>
+        }
+        else
+        {
+            <p>No Comments found for this post</p>
+        }
+        <div class="comment-form">
+            <h2>Fell free to comment</h2>
+            <label>Full Name</label><br />
+            <input type="text" style="width:300px;" placeholder="Name" id="txt_comment_author_name" /><br /><br />
+            <label>Email</label><br />
+            <input type="email" style="width:300px;" placeholder="Email" id="txt_comment_author_email" /><br/><br />
+            <label>Comment Content</label><br />
+            <textarea id="txt_comment_content" rows="5" cols="50"></textarea><br/><br/>
+            <input type="button" id="submit_comment" value="submit" />
+        </div>
     </div>
 </div>
+
 

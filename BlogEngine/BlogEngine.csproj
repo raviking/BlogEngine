@@ -52,11 +52,11 @@
     </Reference>
     <Reference Include="BlogEngine.Db, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BlogEngine.DbContext\bin\Debug\BlogEngine.Db.dll</HintPath>
+      <HintPath>..\BlogEngine.DbContext\obj\Debug\BlogEngine.Db.dll</HintPath>
     </Reference>
     <Reference Include="BlogEngine.DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BlogEngine.DTO\bin\Debug\BlogEngine.DTO.dll</HintPath>
+      <HintPath>..\BlogEngine.DTO\obj\Debug\BlogEngine.DTO.dll</HintPath>
     </Reference>
     <Reference Include="BlogEngine.Log, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

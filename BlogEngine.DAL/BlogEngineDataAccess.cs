@@ -454,6 +454,11 @@ namespace BlogEngine.DAL
                     if (objcategory != null)
                         post.Category = objcategory;
 
+                    List<Comment> _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
+                                    new SqlParameter("postId", post.PostId)).ToList();
+                    if (_lstComments != null)
+                        post.Comments = _lstComments;
+
                     List<Tag> _lsttag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagsByPostId @postId",
                             new SqlParameter("postId", post.PostId)).ToList();
                     if (_lsttag != null && _lsttag.Count > 0)
@@ -487,6 +492,7 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - End");
             return _lstTag;
         }
+       
         #endregion Posts
 
         #region Account
@@ -933,6 +939,10 @@ namespace BlogEngine.DAL
 
         #region Comments
 
+        /// <summary>
+        /// Get comments for all posts to display in Admin section
+        /// </summary>
+        /// <returns>Comments</returns>
         public List<Comment> GetAllComments()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllComments -Begin");

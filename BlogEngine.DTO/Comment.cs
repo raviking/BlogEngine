@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BlogEngine.DTO
 {
     public class Comment
     {
+        [Key]
         public long Comment_Id
         {
             get;set;

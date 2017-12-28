@@ -162,6 +162,6 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Sidebars - End");
             return PartialView("_Sidebars", widgetviewmodel);
-        }
+        }       
     }
 }

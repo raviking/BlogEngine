@@ -13,7 +13,7 @@ namespace BlogEngine.Models
         {
             Categories = dataaccess.Categories();
             Tags = dataaccess.Tags();
-            LatestPosts = dataaccess.Posts(0, 10);
+            LatestPosts = dataaccess.Posts(0, 10);            
         }
 
         public List<Category> Categories

@@ -4095,3 +4095,1040 @@ Error Number:8178,State:1,Class:16
    at BlogEngine.DAL.BlogEngineDAL.IsTagSlugExists(String tagSlug) in D:\GitHub\BlogEngineGit\BlogEngineRespository\BlogEngine.DAL\BlogEngineDataAccess.cs:line 791
 2017-12-22 17:03:28,425 [30] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: DeleteTag System.NullReferenceException: Object reference not set to an instance of an object.
    at BlogEngine.DAL.BlogEngineDAL.DeleteTag(Int64 tagId) in D:\GitHub\BlogEngineGit\BlogEngineRespository\BlogEngine.DAL\BlogEngineDataAccess.cs:line 775
+2017-12-28 21:21:36,580 [7] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 21:50:07,902 [45] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 21:50:48,385 [53] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 448
+2017-12-28 21:50:48,392 [53] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 21:50:49,849 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:50:49,861 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:51:06,694 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:51:06,701 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:51:08,192 [53] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:51:08,200 [53] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:51:08,390 [45] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:51:08,397 [45] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:51:08,574 [48] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:51:08,584 [48] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:51:08,775 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:51:08,784 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:53:18,597 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:53:18,607 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:09,636 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:09,642 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:17,134 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:17,141 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:18,038 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:18,045 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:18,655 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:18,664 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:18,859 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:18,865 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:19,057 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:19,068 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:23,940 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:23,947 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:25,737 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:25,743 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:54:35,078 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:54:35,084 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:55:02,395 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:55:02,401 [41] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:55:03,572 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:55:03,579 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:55:03,995 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:55:04,007 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:55:04,192 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:55:04,200 [52] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:55:06,688 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:55:06,694 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:56:12,187 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:56:12,384 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:58:27,996 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Posts(Int32 pageNo, Int32 pageSize) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 193
+2017-12-28 21:58:28,006 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts System.Data.Entity.ModelConfiguration.ModelValidationException: One or more validation errors were detected during model generation:
+
+BlogEngine.Db.Comment: : EntityType 'Comment' has no key defined. Define the key for this EntityType.
+Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has no keys defined.
+
+   at System.Data.Entity.Core.Metadata.Edm.EdmModel.Validate()
+   at System.Data.Entity.DbModelBuilder.Build(DbProviderManifest providerManifest, DbProviderInfo providerInfo)
+   at System.Data.Entity.DbModelBuilder.Build(DbConnection providerConnection)
+   at System.Data.Entity.Internal.LazyInternalContext.CreateModel(LazyInternalContext internalContext)
+   at System.Data.Entity.Internal.RetryLazy`2.GetValue(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ObjectContext()
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery[TElement](String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalContext.ExecuteSqlQuery(Type elementType, String sql, Nullable`1 streaming, Object[] parameters)
+   at System.Data.Entity.Internal.InternalSqlNonSetQuery.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbRawSqlQuery`1.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.TotalPosts() in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 220
+2017-12-28 21:59:54,000 [37] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'BlogEngine.Db.Comment'. A member of the type, 'postName', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-28 21:59:54,004 [37] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:04:51,423 [31] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'BlogEngine.Db.Comment'. A member of the type, 'postName', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-28 22:04:51,427 [31] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:08:21,096 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.Entity.Core.EntityCommandExecutionException: The data reader is incompatible with the specified 'BlogEngine.Db.Comment'. A member of the type, 'postName', does not have a corresponding column in the data reader with the same name.
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetMemberOrdinalFromReader(DbDataReader storeDataReader, EdmMember member, EdmType currentType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.GetColumnMapsForType(DbDataReader storeDataReader, EdmType edmType, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Query.InternalTrees.ColumnMapFactory.CreateColumnMapFromReaderAndType(DbDataReader storeDataReader, EdmType edmType, EntitySet entitySet, Dictionary`2 renameList)
+   at System.Data.Entity.Core.Objects.ObjectContext.InternalTranslate[TElement](DbDataReader reader, String entitySetName, MergeOption mergeOption, Boolean streaming, EntitySet& entitySet, TypeUsage& edmType)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryInternal[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__68()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass69`1.<ExecuteStoreQueryReliably>b__67()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQueryReliably[TElement](String commandText, String entitySetName, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreQuery[TElement](String commandText, ExecutionOptions executionOptions, Object[] parameters)
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-28 22:08:21,158 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:10:21,021 [37] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:11:54,343 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:13:22,415 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:14:32,510 [50] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:19:08,397 [30] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:24:14,966 [15] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:24:37,565 [15] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:30:46,087 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:31:42,064 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:32:37,846 [10] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:33:48,540 [21] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:34:23,003 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:35:11,688 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:35:38,475 [19] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:36:02,121 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:36:34,059 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:36:52,005 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:37:13,454 [13] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-28 22:37:38,392 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139

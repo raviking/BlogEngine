@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BlogEngine.DTO
 {
     public class Post
     {
+        [Key]
         public long PostId
         {
             get;set;
@@ -77,6 +79,11 @@ namespace BlogEngine.DTO
         public List<Tag> Tags
         {
             get; set;
+        }
+
+        public List<Comment> Comments
+        {
+            get;set;
         }
 
         public long CategoryId
