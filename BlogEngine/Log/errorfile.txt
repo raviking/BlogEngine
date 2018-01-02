@@ -5132,3 +5132,262 @@ Comments: EntityType: EntitySet 'Comments' is based on type 'Comment' that has n
    at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
 2017-12-28 22:37:38,392 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
    at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:14:28,906 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:15:01,859 [22] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:15:14,688 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:15:33,113 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:18:10,626 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:19:04,267 [15] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:20:39,361 [15] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:22:59,673 [18] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:27:51,389 [8] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:34:11,851 [16] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-30 10:37:52,032 [47] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:43:17,464 [12] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:44:15,397 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:45:34,458 [5] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:47:08,379 [22] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:47:31,964 [17] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:54:09,834 [36] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 09:54:10,702 [37] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:00:36,183 [40] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:10:10,272 [38] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:10:29,900 [38] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:11:05,389 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:11:06,050 [34] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:11:06,276 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:11:06,480 [35] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:11:06,747 [43] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:23:38,659 [36] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:25:34,932 [22] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:26:47,032 [25] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:27:06,574 [25] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:27:58,622 [25] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:28:58,954 [25] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:29:02,080 [25] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:30:04,918 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveComment System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Comments__Commen__3E52440B". The conflict occurred in database "BlogEngine", table "dbo.Post", column 'PostId'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteStoreCommandInternal(String commandText, Object[] parameters)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass59.<ExecuteStoreCommand>b__57()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at BlogEngine.DAL.BlogEngineDAL.SaveComment(Comment objComment) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 529
+ClientConnectionId:38b13db2-1927-48d6-aab4-11e203da9a60
+Error Number:547,State:0,Class:16
+2017-12-31 10:32:58,863 [20] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:20,732 [20] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:20,799 [20] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:33,866 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:33,924 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:36,087 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:36,150 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:37,163 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:37,227 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:37,838 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:37,902 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:34:39,061 [26] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:34:39,123 [26] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:20,603 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:20,660 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:34,277 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:34,339 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:36,344 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:36,403 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:36,953 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:37,011 [32] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:39,666 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:39,728 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:41,155 [33] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:35:41,221 [33] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:35:50,706 [24] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:36:06,852 [26] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:36:06,912 [26] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:44:10,528 [28] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post System.Data.ConstraintException: The 'UserId' property on 'Comment' could not be set to a 'null' value. You must set this property to a non-null value of type 'System.Int64'. 
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.ErrorHandlingValueReader`1.GetValue(DbDataReader reader, Int32 ordinal)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper.HandleEntityAppendOnly[TEntity](Func`2 constructEntityDelegate, EntityKey entityKey, EntitySet entitySet)
+   at lambda_method(Closure , Shaper )
+   at System.Data.Entity.Core.Common.Internal.Materialization.Coordinator`1.ReadNextElement(Shaper shaper)
+   at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlogEngine.DAL.BlogEngineDAL.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine.DAL\BlogEngineDataAccess.cs:line 457
+2017-12-31 10:44:10,588 [28] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139
+2017-12-31 10:45:24,850 [16] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post System.Web.HttpException (0x80004005): Post Not Found
+   at BlogEngine.Controllers.BlogController.Post(String urlslug) in F:\Github\BlogEngineRepository\BlogEngineMVC\BlogEngine\Controllers\BlogController.cs:line 139

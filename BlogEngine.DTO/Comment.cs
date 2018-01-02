@@ -38,7 +38,11 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
-        public long UserId
+        public long Comment_PostId
+        {
+            get;set;
+        }
+        public long? UserId
         {
             get;set;                            
         }

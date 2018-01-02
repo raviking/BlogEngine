@@ -162,6 +162,37 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Sidebars - End");
             return PartialView("_Sidebars", widgetviewmodel);
-        }       
+        }
+        public PartialViewResult LoadCommentsForPost(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - Begin");
+            List<Comment> _lstComments = new List<Comment>();
+            try
+            {
+                _lstComments = dataaccess.GetCommentsByPostId(postId);
+                ViewBag.PostId = postId;
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: LoadCommentsForPost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - End");
+            return PartialView(_lstComments);
+        }   
+        public JsonResult SaveComment(Comment objComment)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                response = dataaccess.SaveComment(objComment);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveComment " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - Begin");
+            return Json(response);
+        }
     }
 }

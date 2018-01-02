@@ -703,6 +703,7 @@
     <Content Include="Scripts\app\Account\Tags.js" />
     <Content Include="Scripts\app\Account\updatePost.js" />
     <Content Include="Scripts\app\Account\Users.js" />
+    <Content Include="Scripts\app\Blog\addComment.js" />
     <Content Include="Scripts\app\Config.js" />
     <Content Include="Content\themes\simple\images\arrow.png" />
     <Content Include="Content\themes\simple\images\back.png" />
@@ -1022,6 +1023,7 @@
     <Content Include="Views\Account\UserProfile.cshtml" />
     <Content Include="Views\Blog\About.cshtml" />
     <Content Include="Views\Account\Comments.cshtml" />
+    <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

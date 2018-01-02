@@ -1,0 +1,48 @@
+﻿
+@model List<BlogEngine.DTO.Comment>
+<h1>Comments</h1>
+@if (Model.Count() > 0)
+{
+    <div class="post-comments">
+        @foreach (var comment in Model)
+        {
+            <div class="commet-content">
+                <h3>@comment.Comment_Author</h3>
+                <p>@comment.Comment_Content</p>
+            </div>
+            foreach (var reply in Model)
+            {
+                if (reply.Comment_Parent == comment.Comment_Id)
+                {
+                    <div class="reply-content" style="margin-left:40px;">
+                        <h3>@reply.Comment_Author</h3>
+                        <p>@reply.Comment_Content</p>
+                    </div>
+                }
+            }
+        }
+    </div>
+}
+else
+{
+    <p>No Comments found for this post</p>
+}
+<input type="hidden" id="hdnPostId" value="@ViewBag.PostId" />
+
+<span id="spnAddCommentSuccessDisplay" style="color:green;display:none;"></span>
+<div class="comment-form">
+    <h2>Fell free to comment</h2>
+    <label>Full Name</label><br />
+    <input type="text" style="width:300px;" placeholder="Name" id="txt_comment_author_name" />
+    <span id="spntxt_comment_author_name" style="color:red;"></span><br /><br />
+    <label>Email</label><br />
+    <input type="email" style="width:300px;" placeholder="Email" id="txt_comment_author_email" />
+    <span id="spntxt_comment_author_email" style="color:red;"></span><br /><br />
+    <label>Comment Content</label><br />
+    <textarea id="txt_comment_content" rows="5" cols="50"></textarea>
+    <span id="spntxt_comment_content" style="color:red;"></span><br /><br />
+    <input type="button" onclick="javascript:AddComment();" id="submit_comment" value="submit" />
+</div>
+
+<script src="~/Scripts/jquery-3.2.1.min.js"></script>
+<script src="~/Scripts/app/Blog/addComment.js"></script>

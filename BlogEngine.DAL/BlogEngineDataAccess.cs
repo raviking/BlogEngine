@@ -452,17 +452,17 @@ namespace BlogEngine.DAL
                     Category objcategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryById @categoryId",
                             new SqlParameter("categoryId", post.CategoryId)).FirstOrDefault();
                     if (objcategory != null)
-                        post.Category = objcategory;
-
-                    List<Comment> _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
-                                    new SqlParameter("postId", post.PostId)).ToList();
-                    if (_lstComments != null)
-                        post.Comments = _lstComments;
+                        post.Category = objcategory;                    
 
                     List<Tag> _lsttag = dbcontext.Database.SqlQuery<Tag>("sp_GetTagsByPostId @postId",
                             new SqlParameter("postId", post.PostId)).ToList();
                     if (_lsttag != null && _lsttag.Count > 0)
                         post.Tags = _lsttag;
+
+                    List<Comment> _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
+                                    new SqlParameter("postId", post.PostId)).ToList();
+                    if (_lstComments != null)
+                        post.Comments = _lstComments;
                 }
             }
             catch (Exception ex)
@@ -471,7 +471,29 @@ namespace BlogEngine.DAL
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -End");
             return post;
-        }        
+        }
+
+        /// <summary>
+        /// Gets all commets by postid
+        /// </summary>
+        /// <param name="postId"></param>
+        /// <returns>Comments list</returns>
+        public List<Comment> GetCommentsByPostId(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -Begin");
+            List<Comment> _lstComments = new List<Comment>();
+            try
+            {
+                _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
+                                     new SqlParameter("postId", postId)).ToList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Post " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -End");
+            return _lstComments;
+        }
 
         /// <summary>
         /// Returns all tags to display on sidebar
@@ -492,7 +514,40 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tags - End");
             return _lstTag;
         }
-       
+        
+        /// <summary>
+        /// Saves comment added by user
+        /// </summary>
+        /// <param name="objComment"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO SaveComment(Comment objComment)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment @comment_Id,@comment_Content,@comment_Date,@comment_Author,@Comment_AuthorEmail,@Comment_Parent,@Comment_Approved,@Comment_PostId",
+                                new SqlParameter("comment_Id", objComment.Comment_Id),
+                                new SqlParameter("comment_Content", objComment.Comment_Content),
+                                new SqlParameter("comment_Date", objComment.Comment_Date),
+                                new SqlParameter("comment_Author", objComment.Comment_Author),
+                                new SqlParameter("Comment_AuthorEmail", objComment.Comment_AuthorEmail),
+                                new SqlParameter("Comment_Parent", objComment.Comment_Parent),
+                                new SqlParameter("Comment_Approved", objComment.Comment_Approved),
+                                new SqlParameter("Comment_PostId",objComment.Comment_PostId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveComment " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - End");
+            return response;
+        }
+
         #endregion Posts
 
         #region Account

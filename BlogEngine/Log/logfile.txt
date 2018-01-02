@@ -5955,3 +5955,973 @@
 2017-12-28 22:37:44,649 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
 2017-12-28 22:37:44,649 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
 2017-12-28 22:37:44,649 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:13:27,099 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:13:27,210 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:13:49,530 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:13:49,983 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:13:49,983 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:13:49,985 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:13:50,095 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:13:59,942 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:14:09,185 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:14:09,186 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:14:09,245 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:14:09,247 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:14:09,331 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:14:09,331 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:14:09,338 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:14:09,435 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:14:09,435 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:14:09,435 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:14:28,561 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:14:28,563 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:14:28,737 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:14:28,931 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:15:01,715 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:15:01,716 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:15:01,800 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:15:01,860 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:15:14,592 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:15:14,593 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:15:14,626 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:15:14,689 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:15:19,476 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:15:19,476 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:15:19,483 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:15:19,515 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:15:19,516 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:15:19,516 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:15:19,522 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:15:19,522 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:15:19,528 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:15:19,529 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:15:19,536 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:15:19,537 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:15:19,544 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:15:19,544 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:15:19,549 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:15:19,617 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:15:19,617 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:15:19,617 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:15:27,413 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:15:27,414 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:15:27,419 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:15:27,458 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:15:27,458 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:15:27,458 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:15:27,464 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:15:27,464 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:15:27,468 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:15:27,468 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:15:27,472 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:15:27,472 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:15:27,476 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:15:27,477 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:15:27,482 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:15:27,554 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:15:27,554 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:15:27,554 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:15:32,991 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:15:32,991 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:15:33,040 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:15:33,113 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:18:06,221 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:18:06,253 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:18:10,624 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:18:10,627 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:19:00,434 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:19:00,465 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:19:04,241 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:19:04,267 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:20:39,240 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:20:39,241 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:20:39,361 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:20:39,362 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:22:54,938 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:22:54,972 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:22:59,648 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:22:59,673 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:26:55,708 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:26:55,747 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:26:57,938 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:26:57,938 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:05,775 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:05,958 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:06,023 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:06,024 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:06,025 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:27:06,032 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:27:06,169 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:27:06,172 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:06,172 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:06,172 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:27:06,179 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:27:06,179 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:27:14,460 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:27:14,460 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:27:14,461 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:27:14,461 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:27:14,470 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:27:14,471 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:27:14,482 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:27:14,482 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:14,487 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:14,553 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:14,553 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:14,554 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:27:14,570 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:27:14,570 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:27:14,575 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:27:14,575 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:14,579 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:14,658 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:14,659 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:14,659 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:27:44,938 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:27:44,938 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:44,945 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:44,986 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:44,986 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:44,986 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:27:44,992 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:27:44,992 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:27:44,997 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:27:44,997 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:27:45,001 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:27:45,002 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:27:45,006 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:27:45,006 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:45,011 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:45,085 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:45,085 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:45,086 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:27:47,393 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:27:47,393 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:47,403 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:47,443 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:47,443 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:47,443 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:27:47,449 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:27:47,449 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:27:47,455 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:27:47,455 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:27:47,460 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:27:47,461 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:27:47,466 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:27:47,466 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:27:47,471 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:27:47,547 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:27:47,547 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:27:47,547 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:27:51,256 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:27:51,259 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:27:51,327 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:27:51,389 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:30:09,185 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:30:09,230 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:30:17,279 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:30:17,430 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:30:17,430 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:30:17,432 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:30:17,442 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:30:17,611 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:30:26,427 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:30:26,429 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:30:26,441 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:30:26,442 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:30:26,475 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:30:26,476 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:30:26,484 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:30:26,569 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:30:26,569 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:30:26,570 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:34:06,380 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:34:06,381 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:34:06,391 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:34:06,440 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:34:06,440 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:34:06,440 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:34:06,446 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:34:06,447 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:34:06,454 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:34:06,455 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:34:06,464 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:34:06,464 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:34:06,473 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:34:06,474 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:34:06,479 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:34:06,554 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:34:06,555 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:34:06,555 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:34:08,010 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:34:08,011 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:34:08,017 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:34:08,056 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:34:08,057 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:34:08,057 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:34:08,062 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:34:08,062 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:34:08,066 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:34:08,066 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:34:08,071 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:34:08,071 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:34:08,075 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:34:08,075 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:34:08,081 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:34:08,165 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:34:08,166 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:34:08,166 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:34:11,669 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:34:11,671 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:34:11,786 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:34:11,851 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:37:27,849 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:37:27,887 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:35,135 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:35,211 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:35,212 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:35,213 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:37:35,220 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:37:35,371 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:37:44,077 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:37:44,078 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:37:44,089 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:37:44,091 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:37:44,102 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:37:44,103 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:44,113 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:44,248 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:44,248 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:44,248 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:37:47,201 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:37:47,202 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:47,223 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:47,273 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:47,273 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:47,273 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:37:47,279 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:37:47,279 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:37:47,287 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:37:47,287 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:37:47,295 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:37:47,296 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:37:47,305 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:37:47,305 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:47,316 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:47,582 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:47,583 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:47,583 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:37:48,352 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-30 10:37:48,353 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:48,362 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:48,427 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:48,427 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:48,428 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-30 10:37:48,433 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-30 10:37:48,433 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-30 10:37:48,438 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:37:48,438 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:37:48,445 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:37:48,446 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:37:48,454 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:37:48,455 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:37:48,460 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:37:48,541 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:37:48,541 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:37:48,541 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-30 10:37:51,925 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-30 10:37:51,928 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:37:51,968 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:37:52,032 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-30 10:38:06,373 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-30 10:38:06,375 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-30 10:38:06,383 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-30 10:38:06,383 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-30 10:38:06,389 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-30 10:38:06,389 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-30 10:38:06,398 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-30 10:38:06,399 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-30 10:38:06,406 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-30 10:38:06,407 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-30 10:38:06,414 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-30 10:38:06,486 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-30 10:38:06,486 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-30 10:38:06,486 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:40:16,368 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 09:40:16,400 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:40:36,414 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:40:36,869 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:40:36,870 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:40:36,872 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 09:40:36,878 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 09:40:37,399 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 09:40:48,956 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:40:48,957 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:40:49,010 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:40:49,012 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:40:49,091 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:40:49,092 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:40:49,099 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:40:49,199 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:40:49,200 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:40:49,200 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:43:12,347 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 09:43:12,348 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:43:12,360 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:43:12,408 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:43:12,409 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:43:12,409 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 09:43:12,414 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 09:43:12,414 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 09:43:12,422 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:43:12,422 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:43:12,432 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:43:12,433 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:43:12,442 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:43:12,442 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:43:12,448 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:43:12,527 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:43:12,528 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:43:12,528 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:43:13,610 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 09:43:13,610 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:43:13,620 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:43:13,679 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:43:13,679 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:43:13,680 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 09:43:13,685 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 09:43:13,685 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 09:43:13,709 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:43:13,709 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:43:13,718 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:43:13,718 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:43:13,726 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:43:13,727 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:43:13,737 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:43:13,930 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:43:13,930 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:43:13,930 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:43:16,953 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:43:16,955 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:43:17,103 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:43:17,465 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:43:17,607 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:43:17,608 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:43:17,612 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:43:17,612 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:44:15,316 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:44:15,317 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:44:15,334 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:44:15,397 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:44:15,400 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:44:15,400 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:44:15,404 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:44:15,404 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:44:25,568 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:44:25,568 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:44:25,579 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:44:25,580 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:44:25,589 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:44:25,589 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:44:25,597 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:44:25,683 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:44:25,683 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:44:25,683 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:45:34,366 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:45:34,367 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:45:34,398 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:45:34,458 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:45:34,461 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:45:34,461 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:45:34,465 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:45:34,465 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:45:34,468 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:45:34,469 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:45:34,477 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:45:34,478 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:45:34,487 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:45:34,487 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:45:34,494 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:45:34,568 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:45:34,569 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:45:34,569 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:47:08,252 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:47:08,253 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:47:08,312 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:47:08,380 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:47:08,383 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:47:08,383 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:47:08,387 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:47:08,387 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:47:08,390 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:47:08,391 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:47:08,399 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:47:08,400 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:47:08,409 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:47:08,409 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:47:08,417 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:47:08,505 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:47:08,505 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:47:08,506 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:47:31,863 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:47:31,864 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:47:31,899 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:47:31,964 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:47:31,966 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:47:31,966 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:47:31,971 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:47:31,971 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:47:31,973 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:47:31,974 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:47:31,981 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:47:31,982 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:47:31,990 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:47:31,990 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:47:31,997 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:47:32,067 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:47:32,067 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:47:32,067 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 09:54:09,262 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:54:09,263 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:54:09,450 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 09:54:09,450 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:54:09,651 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:54:09,835 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:54:10,642 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:54:10,702 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 09:54:10,704 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 09:54:10,704 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 09:54:10,708 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 09:54:10,709 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 09:54:32,935 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 09:54:32,935 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 09:54:32,947 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 09:54:32,947 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 09:54:32,978 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 09:54:32,979 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 09:54:34,295 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 09:54:34,380 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 09:54:34,380 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 09:54:34,380 [37] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:00:36,056 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:00:36,057 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:00:36,182 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:00:36,183 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:00:36,186 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:00:36,186 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:00:36,190 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:00:36,190 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:00:36,193 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:00:36,194 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:00:36,202 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:00:36,202 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:00:36,211 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:00:36,211 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:00:36,220 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:00:36,308 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:00:36,308 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:00:36,308 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:02:25,699 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:02:25,749 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:02:34,719 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:02:34,798 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:02:34,798 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:02:34,799 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:02:34,804 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:02:34,944 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:03:02,224 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:03:02,226 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:03:02,244 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:03:02,247 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:03:02,264 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:03:02,264 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:03:02,275 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:03:02,407 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:03:02,407 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:03:02,408 [40] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:10:05,282 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:10:05,282 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:10:05,291 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:10:05,332 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:10:05,332 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:10:05,333 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:10:05,337 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:10:05,337 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:10:05,345 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:10:05,345 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:10:05,353 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:10:05,353 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:10:05,360 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:10:05,361 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:10:05,365 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:10:05,427 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:10:05,427 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:10:05,427 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:10:06,542 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:10:06,542 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:10:06,548 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:10:06,623 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:10:06,623 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:10:06,623 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:10:06,628 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:10:06,628 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:10:06,632 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:10:06,632 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:10:06,636 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:10:06,637 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:10:06,640 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:10:06,640 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:10:06,646 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:10:06,717 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:10:06,717 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:10:06,717 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:10:09,998 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:10:10,000 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:10:10,206 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:10:10,272 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:10:10,420 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:10:10,422 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:10:10,430 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:10:10,430 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:10:10,439 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:10:10,440 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:10:10,451 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:10:10,451 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:10:10,479 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:10:10,480 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:10:10,490 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:10:10,626 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:10:10,626 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:10:10,626 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:10:29,831 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:10:29,831 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:10:29,838 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:10:29,900 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:11:05,320 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:11:05,320 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:11:05,327 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:11:05,389 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:11:05,986 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:11:05,986 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:11:05,990 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:11:06,050 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:11:06,214 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:11:06,215 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:11:06,218 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:11:06,276 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:11:06,418 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:11:06,419 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:11:06,423 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:11:06,480 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:11:06,581 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:11:06,663 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:11:06,687 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:11:06,748 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:23:38,523 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:23:38,524 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:23:38,600 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:23:38,659 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:23:38,663 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:23:38,663 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:23:38,667 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:23:38,668 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:23:38,671 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:23:38,671 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:23:38,682 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:23:38,682 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:23:38,692 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:23:38,692 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:23:38,699 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:23:38,769 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:23:38,769 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:23:38,770 [36] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:25:34,842 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:25:34,842 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:25:34,871 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:25:34,932 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:25:34,935 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:25:34,935 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:25:34,939 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:25:34,939 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:25:34,942 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:25:34,942 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:25:34,949 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:25:34,950 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:25:34,958 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:25:34,958 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:25:34,965 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:25:35,035 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:25:35,035 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:25:35,035 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:26:46,937 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:26:46,937 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:26:46,967 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:26:47,032 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:26:47,035 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:26:47,035 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:26:47,041 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:26:47,041 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:26:47,045 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:26:47,045 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:26:47,149 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:26:47,149 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:26:47,157 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:26:47,157 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:26:47,164 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:26:47,375 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:26:47,375 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:26:47,375 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:27:06,496 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:27:06,497 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:27:06,515 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:27:06,574 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:27:06,576 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:27:06,576 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:27:06,580 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:27:06,580 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:27:06,582 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:27:06,583 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:27:06,587 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:27:06,587 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:27:06,591 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:27:06,591 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:27:06,596 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:27:06,668 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:27:06,668 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:27:06,668 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:27:58,507 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:27:58,507 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:27:58,534 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:27:58,622 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:28:58,844 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:28:58,845 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:28:58,883 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:28:58,954 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:28:58,959 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:28:58,960 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:28:58,967 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:28:58,967 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:28:58,972 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:28:58,972 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:28:58,987 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:28:58,987 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:28:58,998 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:28:58,998 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:28:59,006 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:28:59,081 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:28:59,082 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:28:59,082 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:29:02,000 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:29:02,000 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:29:02,019 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:29:02,081 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:29:02,083 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:29:02,083 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:29:02,087 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:29:02,087 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:29:02,089 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:29:02,089 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:29:02,093 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:29:02,094 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:29:02,097 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:29:02,098 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:29:02,102 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:29:02,178 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:29:02,178 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:29:02,178 [25] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:30:03,497 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: SaveComment - Begin
+2017-12-31 10:30:03,502 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveComment - Begin
+2017-12-31 10:30:04,919 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveComment - End
+2017-12-31 10:30:04,919 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: SaveComment - Begin
+2017-12-31 10:32:40,769 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:32:40,805 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:32:45,247 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:32:45,252 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:32:58,516 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:32:58,599 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:32:58,599 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:32:58,600 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:32:58,606 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:32:58,747 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:32:58,785 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:32:58,863 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:33:07,439 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:33:07,440 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:33:07,445 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:33:07,727 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:33:09,423 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:33:09,423 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:33:09,425 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:33:09,425 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:33:09,433 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:33:09,433 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:33:09,435 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:33:09,435 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:33:09,444 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:33:09,445 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:33:09,452 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:33:09,455 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:33:09,455 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:33:09,463 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:33:09,553 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:33:09,553 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:33:09,553 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:33:09,605 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:33:09,605 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:33:09,605 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:33:52,325 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: SaveComment - Begin
+2017-12-31 10:33:55,372 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveComment - Begin
+2017-12-31 10:34:06,016 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveComment - End
+2017-12-31 10:34:10,079 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: SaveComment - Begin
+2017-12-31 10:34:20,374 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:20,375 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:20,732 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:20,799 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:34:33,659 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:33,659 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:33,867 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:33,924 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:34:35,885 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:35,885 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:36,087 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:36,150 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:34:36,960 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:36,961 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:37,163 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:37,227 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:34:37,642 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:37,643 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:37,838 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:37,902 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:34:38,854 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:34:38,855 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:34:39,062 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:34:39,123 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:20,389 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:20,390 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:20,604 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:20,661 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:34,074 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:34,074 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:34,278 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:34,340 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:36,138 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:36,138 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:36,345 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:36,403 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:36,743 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:36,743 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:36,954 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:37,011 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:39,461 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:39,461 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:39,666 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:39,728 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:40,946 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:40,947 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:41,155 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:41,221 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:46,664 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:35:46,665 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:35:46,674 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:35:46,725 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:35:46,725 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:35:46,726 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:35:46,731 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:35:46,732 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:35:46,870 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:35:46,870 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:35:46,879 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:35:46,879 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:35:46,889 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:35:46,889 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:35:46,894 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:35:46,972 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:35:46,972 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:35:46,972 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:35:50,605 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:35:50,606 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:50,646 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:50,707 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:35:50,708 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:35:50,708 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:35:50,712 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:35:50,712 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:35:50,715 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:35:50,715 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:35:50,719 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:35:50,719 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:35:50,723 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:35:50,723 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:35:50,728 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:35:50,808 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:35:50,809 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:35:50,809 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:36:00,148 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:36:00,148 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:00,153 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:00,190 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:00,190 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:00,190 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:36:00,195 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:36:00,195 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:36:00,199 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:36:00,200 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:36:00,204 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:36:00,204 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:36:00,208 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:36:00,208 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:00,213 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:00,284 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:00,285 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:00,285 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:36:01,901 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:36:01,901 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:01,906 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:01,944 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:01,944 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:01,944 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:36:01,949 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:36:01,949 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:36:01,954 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:36:01,954 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:36:01,959 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:36:01,959 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:36:01,963 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:36:01,963 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:01,968 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:02,038 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:02,038 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:02,038 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:36:02,645 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:36:02,645 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:02,650 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:02,684 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:02,684 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:02,684 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:36:02,689 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:36:02,689 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:36:02,693 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:36:02,693 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:36:02,697 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:36:02,698 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:36:02,702 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:36:02,702 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:36:02,708 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:36:02,784 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:36:02,784 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:36:02,784 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:36:06,627 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:36:06,627 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:36:06,853 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:36:06,912 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:43:51,768 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:43:51,769 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:44:10,529 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:44:10,588 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:45:00,130 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:45:00,180 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:45:01,823 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2017-12-31 10:45:01,827 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:45:13,903 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:45:21,609 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:45:24,850 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2017-12-31 10:45:24,853 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:45:24,853 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:45:24,855 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:45:24,862 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:45:25,001 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:45:31,668 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2017-12-31 10:45:31,669 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2017-12-31 10:45:31,674 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2017-12-31 10:45:31,877 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2017-12-31 10:45:33,452 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:45:33,452 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:45:33,453 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:45:33,453 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:45:33,462 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:45:33,462 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:45:33,464 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:45:33,464 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:45:33,473 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:45:33,473 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:45:33,473 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:45:33,473 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:45:33,479 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:45:33,479 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:45:33,555 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:45:33,555 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:45:33,555 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:45:33,555 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:45:33,555 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:45:33,556 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:46:20,214 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2017-12-31 10:46:20,288 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:46:27,350 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:46:27,489 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:46:27,489 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:46:27,490 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2017-12-31 10:46:27,496 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2017-12-31 10:46:27,660 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2017-12-31 10:46:34,167 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2017-12-31 10:46:34,305 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2017-12-31 10:46:35,632 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - Begin
+2017-12-31 10:46:35,634 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:46:35,645 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:46:35,647 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:46:35,657 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:46:35,658 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:46:35,663 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:46:35,738 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:46:35,738 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:46:35,738 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Sidebars - End
+2017-12-31 10:46:39,835 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2017-12-31 10:46:39,837 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2017-12-31 10:46:40,084 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2017-12-31 10:46:40,380 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2017-12-31 10:46:40,461 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2017-12-31 10:46:40,598 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2017-12-31 10:46:59,122 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Comments - Begin
+2017-12-31 10:46:59,124 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetAllComments -Begin
+2017-12-31 10:46:59,159 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetAllComments -End
+2017-12-31 10:46:59,159 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController ::  Comments - End
+2017-12-31 10:48:17,812 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2017-12-31 10:48:17,814 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2017-12-31 10:48:17,852 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:48:18,009 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:48:18,009 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2017-12-31 10:48:18,011 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2017-12-31 10:48:18,125 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2017-12-31 10:48:18,258 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2017-12-31 10:48:20,754 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2017-12-31 10:48:21,151 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:48:21,159 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:48:21,159 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:48:21,167 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:48:21,167 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:48:21,174 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:48:21,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:48:21,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:48:21,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2017-12-31 10:48:22,425 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2017-12-31 10:48:22,427 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2017-12-31 10:48:22,624 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2017-12-31 10:48:22,628 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2017-12-31 10:48:22,628 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2017-12-31 10:48:22,628 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2017-12-31 10:48:32,199 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2017-12-31 10:48:32,199 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2017-12-31 10:48:32,208 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2017-12-31 10:48:32,208 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2017-12-31 10:48:32,212 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2017-12-31 10:48:32,213 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2017-12-31 10:48:32,218 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2017-12-31 10:48:32,291 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2017-12-31 10:48:32,291 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2017-12-31 10:48:32,292 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2017-12-31 10:48:32,971 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2017-12-31 10:48:32,972 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2017-12-31 10:48:32,991 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2017-12-31 10:48:32,996 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2017-12-31 10:48:32,996 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2017-12-31 10:48:32,996 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
