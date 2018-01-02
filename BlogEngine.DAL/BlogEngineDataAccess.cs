@@ -439,14 +439,18 @@ namespace BlogEngine.DAL
         /// <param name="month"></param>
         /// <param name="titleSlug"></param>
         /// <returns>Post</returns>
-        public Post Post(string urlslug)
+        public Post Post(string urlslug,long? postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post -Begin");
             Post post = null;
             try
             {
-                post = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostUrlSlug @postUrlSlug",
-                            new SqlParameter("@postUrlSlug", urlslug)).FirstOrDefault();
+                if (postId != null && postId > 0)
+                    post = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostId @postId",
+                                new SqlParameter("postId", postId)).FirstOrDefault();
+                else
+                    post = dbcontext.Database.SqlQuery<Post>("sp_GetPostsByPostUrlSlug @postUrlSlug",
+                                new SqlParameter("@postUrlSlug", urlslug)).FirstOrDefault();
                 if (post != null)
                 {
                     Category objcategory = dbcontext.Database.SqlQuery<Category>("sp_GetCategoryById @categoryId",
@@ -1012,6 +1016,53 @@ namespace BlogEngine.DAL
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllComments -End");
             return lstComments;
+        }
+
+        /// <summary>
+        /// Get Comment details by commentid
+        /// </summary>
+        /// <param name="commentId"></param>
+        /// <returns>Comment</returns>
+        public Comment GetCommentById(long commentId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCommentById -Begin");
+            Comment objComment = new Comment();
+            try
+            {
+                objComment = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentById").FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetCommentById " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetCommentById -End");
+            return objComment;
+        }
+
+        /// <summary>
+        /// Deletes comment based on comment id
+        /// </summary>
+        /// <param name="commentId"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO DeleteComment(long commentId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteComment -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_DeleteComment @commentId",
+                                new SqlParameter("commentId",commentId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: DeleteComment " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteComment -End");
+            return response;
         }
 
         #endregion Comments

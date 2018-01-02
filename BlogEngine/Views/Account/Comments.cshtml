@@ -37,16 +37,25 @@
                                     <tr>
                                         <td>@comment.Comment_Author</td>
                                         <td>@comment.Comment_AuthorEmail</td>
-                                        <td>@comment.Comment_Content</td>
+                                        <td>
+                                            <p>@comment.Comment_Content</p>
+                                            <p>
+                                                <a href="@Url.Action("ApproveOrUnApproveComment","Account",new {commentId=comment.Comment_Id})">Approve</a> |
+                                                <a href="#">Reply</a> |
+                                                <a href="#" onclick="javascript: displayEditCommentForm(@comment.Comment_Id);">Edit</a> |
+                                                <a href="#" onclick="javascript:DeleteComment(@comment.Comment_Id);">Delete</a>                                               
+                                            </p>
+                                        </td>
                                         <td>
                                             <p>@comment.postName</p>
-                                            <p><a href="#">View Post</a></p>
+                                            <p><a target="_blank" href="@Url.Action("PostById","Blog",new {postId=comment.Comment_PostId})">View Post</a></p>
                                         </td>
                                         <td>@comment.Comment_Date</td>                                                                               
                                     </tr>
                                  }
                             </tbody>
-                        </table>
+                        </table>                                                
+                        <div id="DisplayForms"></div>
                     </div>
                     <!-- /.box-body -->
                 </div>

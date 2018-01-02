@@ -451,21 +451,37 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  Comments - End");
             return View(lstComments);
         }
-        //public ViewResult Comments()
-        //{
-        //    logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Comments - Begin");
-        //    List<Comment> lstComments = new List<Comment>();
-        //    try
-        //    {
-        //        lstComments = dataaccess.GetAllComments();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  Comments" + ex);
-        //    }
-        //    logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  Comments - End");
-        //    return View(lstComments);
-        //}
+
+        public PartialViewResult EditCommentViewPartial(long commentId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditCommentViewPartial - Begin");
+            Comment objComment = new Comment();
+            try
+            {
+                objComment = dataaccess.GetCommentById(commentId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  EditCommentViewPartial" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  EditCommentViewPartial - End");
+            return PartialView("_EditCommentViewPartial",objComment);
+        }
+        public JsonResult DeleteComment(long commentId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteComment - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                response = dataaccess.DeleteComment(commentId);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  DeleteComment" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  DeleteComment - End");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
 
         #endregion Comments
     }

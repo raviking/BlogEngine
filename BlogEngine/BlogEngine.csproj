@@ -1024,6 +1024,7 @@
     <Content Include="Views\Blog\About.cshtml" />
     <Content Include="Views\Account\Comments.cshtml" />
     <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
+    <Content Include="Views\Shared\_EditCommentViewPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

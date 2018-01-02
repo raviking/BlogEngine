@@ -127,14 +127,15 @@ namespace BlogEngine.Controllers
             return View("List",viewModel);
         }
 
+        //Get post by post urlslug
         public ViewResult Post(string urlslug)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - Begin");
             Post post = null;
             try
             {
-                post = dataaccess.Post(urlslug);
-                if (post != null)
+                post = dataaccess.Post(urlslug,null);
+                if (post == null)
                     throw new HttpException(404, "Post Not Found");
                 else if (post.IsPublished == false && User.Identity.IsAuthenticated==false)
                     throw new HttpException(401, "Post Not Published");
@@ -145,6 +146,27 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - End");
             return View(post);
+        }
+
+        //Get post by postId
+        public ViewResult PostById(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - Begin");
+            Post post = null;
+            try
+            {
+                post = dataaccess.Post(null, postId);
+                if (post == null)
+                    throw new HttpException(404, "Post Not Found");
+                else if (post.IsPublished == false && User.Identity.IsAuthenticated == false)
+                    throw new HttpException(401, "Post Not Published");
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Post " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - End");
+            return View("Post",post);
         }
 
         [ChildActionOnly]
