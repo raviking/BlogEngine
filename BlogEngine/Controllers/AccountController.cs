@@ -452,21 +452,6 @@ namespace BlogEngine.Controllers
             return View(lstComments);
         }
 
-        public PartialViewResult EditCommentViewPartial(long commentId)
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: EditCommentViewPartial - Begin");
-            Comment objComment = new Comment();
-            try
-            {
-                objComment = dataaccess.GetCommentById(commentId);
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  EditCommentViewPartial" + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  EditCommentViewPartial - End");
-            return PartialView("_EditCommentViewPartial",objComment);
-        }
         public JsonResult DeleteComment(long commentId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeleteComment - Begin");
