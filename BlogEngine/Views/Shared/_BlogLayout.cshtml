@@ -1,58 +1,136 @@
 ﻿
 <!DOCTYPE html>
 <html>
-<head>   
+<head>
     <title>@ViewBag.Title</title>
-    <!--meta tag section for blog begin-->
-    <meta name="viewport" content="width=device-width,initial-scale=1" />    
-    <meta name="author" content="raviteja swayampu" />
-    <meta name="language" content="en-us" />    
-    <!--meta tag section for blog begin-->
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="~/Content/themes/simple/style.css" />
-    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <!--meta tag section for blog begin-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="raviteja swayampu" />
+    <meta name="language" content="en-us" />
+
+    <!--meta tag section for blog begin-->
+    <link href="~/Content/AdminLTE/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link href="~/Content/AdminLTE/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    @*<link rel="stylesheet" type="text/css" href="~/Content/themes/simple/style.css" />*@
+    <link href="~/Content/themes/Clean-Blog/css/clean-blog.css" rel="stylesheet" />    
+
 </head>
 @using System.Configuration
 @{
     string webhostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
 }
-<body>
-    <div id="main">
+<body>    
 
-        <!-- Header -->
-        <div id="header">
-            <div id="logo">
-                <div id="logo_text">
-                    <h1><a href="@webhostUrl">Blog<span class="logo_colour">Engine</span></a></h1>
-                    <h2>Writings, Experiments and More...</h2>
-                </div>
-            </div>
-
-            <!-- Navigation -->
-            <div id="menubar">
-                <ul id="menu">
-                    <li><a href="@webhostUrl">Posts</a></li>
-                    <li>@Html.ActionLink("Contact","Contact","Blog")</li>
-                    <li>@Html.ActionLink("AboutMe","AboutMe","Blog")</li>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="post.html">Sample Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
-
         </div>
+    </nav>
 
-        <!-- Site Content -->
-        <div id="site_content">
-            @Html.Partial("_Search")
-            @RenderBody()
-
-            @*Calls to render sidebar*@
-            @Html.Action("Sidebars")
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../BlogEngine/Content/themes/Clean-Blog/img/home-bg.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Clean Blog</h1>
+                        <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
 
-        <!-- Footer -->
-        <div id="footer">
-            Copyright ï¿½ @DateTime.Now.Year BlogEngine All Rights Reserved
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                @RenderBody()           
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                @*Calls to render sidebar*@
+                @Html.Action("Sidebars")
+            </div>
         </div>
     </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="~/Content/themes/Clean-Blog/js/clean-blog.js"></script>
 </body>
 </html>

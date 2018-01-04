@@ -4,11 +4,10 @@
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
-<div id="content">
-    <h1>@ViewBag.Title</h1>
+    @*<h1>@ViewBag.Title</h1>*@
 
     @*Paging at top*@
-    @Html.Partial("_Pager",Model)
+    @*@Html.Partial("_Pager",Model)*@
 
     @if (Model.Posts.Count > 0)
     {
@@ -23,6 +22,5 @@
     }
 
     @*Paging at end of post*@
-    @Html.Partial("_Pager",Model)
+    @*@Html.Partial("_Pager",Model)*@
 
-</div>

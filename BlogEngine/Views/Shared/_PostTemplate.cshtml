@@ -1,7 +1,25 @@
 ﻿
 @model BlogEngine.DTO.Post
 
-<div class="post">
+<div class="post-preview">
+    <a href="#">
+        <h2 class="post-title">
+            @*@Html.PostLink(Model)*@
+            Man must explore, and this is exploration at its greatest
+        </h2>
+        <h3 class="post-subtitle">
+            @*@Html.Raw(Model.ShortDescription)*@
+            Problems look mighty small from 150 miles up
+        </h3>
+    </a>
+    <p class="post-meta">
+        Posted by
+        <a href="#">Start Bootstrap</a>
+        on September 24, 2017
+    </p>
+</div>
+
+@*<div class="post">
     <div class="post-meta">
         <div class="row">
             <!-- Post Heading -->
@@ -30,7 +48,7 @@
     
     <!-- Post short description-->
     <div class="post-body">
-        @Html.Raw(Model.ShortDescription)
+       @Html.Raw(Model.ShortDescription)
     </div>
 
     <!--Post footer-->
@@ -46,4 +64,4 @@
          }
        )
     </div>
-</div>
+</div>*@

@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>@ViewBag.Title</title>
+    <!--meta tag section for blog begin-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />    
+    <meta name="author" content="raviteja swayampu" />
+    <meta name="language" content="en-us" />    
+    <!--meta tag section for blog begin-->
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="~/Content/themes/simple/style.css" />
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+</head>
+@using System.Configuration
+@{
+    string webhostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
+}
+<body>
+    <div id="main">
+
+        <!-- Header -->
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <h1><a href="@webhostUrl">Blog<span class="logo_colour">Engine</span></a></h1>
+                    <h2>Writings, Experiments and More...</h2>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="@webhostUrl">Posts</a></li>
+                    <li>@Html.ActionLink("Contact","Contact","Blog")</li>
+                    <li>@Html.ActionLink("AboutMe","AboutMe","Blog")</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Site Content -->
+        <div id="site_content">
+            @Html.Partial("_Search")
+            @RenderBody()
+
+            @*Calls to render sidebar*@
+            @Html.Action("Sidebars")
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            Copyright ï¿½ @DateTime.Now.Year BlogEngine All Rights Reserved
+        </div>
+    </div>
+</body>
+</html>
