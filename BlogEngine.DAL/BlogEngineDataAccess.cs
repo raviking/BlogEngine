@@ -1065,6 +1065,39 @@ namespace BlogEngine.DAL
             return response;
         }
 
+        /// <summary>
+        /// Saves comment reply content
+        /// </summary>
+        /// <param name="objReply"></param>
+        /// <returns>ResponseDTO</returns>
+        public ResponseDTO SaveCommentReply(Comment objReply)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCommentReply -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment_Reply @commentId,@commentContent,@commentApproved,@commentDate,@commentAuthor,@commentAuthorEmail,@commentParent,@commentPostId,@userId",
+                                new SqlParameter("commentId",objReply.Comment_Id),
+                                new SqlParameter("commentContent", objReply.Comment_Content),
+                                new SqlParameter("commentApproved", objReply.Comment_Approved),
+                                new SqlParameter("commentDate", objReply.Comment_Date),
+                                new SqlParameter("commentAuthor", objReply.Comment_Author),
+                                new SqlParameter("commentAuthorEmail", objReply.Comment_AuthorEmail),
+                                new SqlParameter("commentParent", objReply.Comment_Parent),
+                                new SqlParameter("commentPostId", objReply.Comment_PostId),
+                                new SqlParameter("userId",objReply.UserId));
+                if (count > 0)
+                    response.IsSucess = true;
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: SaveCommentReply " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCommentReply -End");
+            return response;
+        }
         #endregion Comments
 
         #endregion Account

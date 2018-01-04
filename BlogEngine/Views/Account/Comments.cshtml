@@ -41,7 +41,7 @@
                                             <p>@comment.Comment_Content</p>
                                             <p>
                                                 <a href="@Url.Action("ApproveOrUnApproveComment","Account",new {commentId=comment.Comment_Id})">Approve</a> |
-                                                <a href="#" onclick="javascript:displayReplyTextBox(@comment.Comment_Id);">Reply</a> |
+                                                <a href="#" onclick="javascript:displayReplyTextBox(@comment.Comment_Id,@comment.Comment_PostId);">Reply</a> |
                                                 <a href="#" onclick="javascript: displayEditCommentForm(@comment.Comment_Id);">Edit</a> |
                                                 <a href="#" onclick="javascript:DeleteComment(@comment.Comment_Id);">Delete</a>                                               
                                             </p>
@@ -52,16 +52,6 @@
                                         </td>
                                         <td>@comment.Comment_Date</td>                                                                               
                                     </tr>
-                                    @*<tr id="reply_row" style="width:100%">
-                                        <td>
-                                            <div class="form-group">
-                                                <label>Replycomment</label>
-                                                <textarea rows="5" id="txt_replybox_@comment.Comment_Id" class="form-control input-lg input-large"></textarea>
-                                                <input type="button" value="Reply" class="btn btn-success" />
-                                                <input type="button" value="cancel" class="btn btn-default" />
-                                            </div>
-                                        </td>
-                                    </tr>*@
                                  }
                             </tbody>
                         </table>                                                
@@ -75,8 +65,8 @@
         <!-- /.row -->
     </section>
 </div>
-<input type="button" class="btn btn-default" onclick="openmodel();" value="open modal" />
-<div id="disply">hi man jsdhfksd sdkjhsdfk</div>
+
+<div id="reply_comment"></div>
 
 <script src="~/Scripts/jquery-3.2.1.min.js"></script>
 <script src="~/Scripts/app/Account/Comments.js"></script>

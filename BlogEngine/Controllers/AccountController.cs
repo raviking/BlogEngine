@@ -468,6 +468,30 @@ namespace BlogEngine.Controllers
             return Json(response,JsonRequestBehavior.AllowGet);
         }
 
+        public JsonResult SaveCommentReply(Comment objReply)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveReply - Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                if (Session["CurrentUser"] != null)
+                {
+                    User _currentUser = Session["CurrentUser"] as User;
+                    objReply.Comment_Author = _currentUser.FirstName + _currentUser.LastName;
+                    objReply.Comment_AuthorEmail = _currentUser.Email;
+                    objReply.UserId = _currentUser.UserId;
+
+                    response = dataaccess.SaveCommentReply(objReply);
+                }                
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  SaveReply" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  SaveReply - End");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
+
         #endregion Comments
     }
 }
