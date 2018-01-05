@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {    
   "use strict"; // Start of use strict
 
   // Floating label headings for the contact form

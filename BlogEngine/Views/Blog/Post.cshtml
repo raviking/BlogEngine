@@ -5,7 +5,38 @@
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
-<div id="content">
+ <!-- Page Header -->
+<header class="masthead">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 mx-auto">
+                <div class="post-heading">
+                    <h1>@Model.Title</h1>
+                    <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                    <span class="meta">
+                        Posted by
+                        <a href="#">Start Bootstrap</a>
+                        on @Model.CreatedDate
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+ <!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                @Html.Raw(Model.PostDescription)
+            </div>
+        </div>
+    </div>
+</article>
+
+@*<div id="content">
     <div class="post">
         <div class="post-meta">
             <div class="row">
@@ -39,6 +70,6 @@
         <hr />
         @Html.Action("LoadCommentsForPost",new { postId=Model.PostId})
     </div>
-</div>
+</div>*@
 
 

@@ -5,22 +5,51 @@
 }
 
     @*<h1>@ViewBag.Title</h1>*@
+    
+     <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../BlogEngine/Content/themes/Clean-Blog/img/home-bg.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>Clean Blog</h1>
+                        <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    @*Paging at top*@
-    @*@Html.Partial("_Pager",Model)*@
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                @if (Model.Posts.Count > 0)
+                {
+                    foreach (var post in Model.Posts)
+                    {
+                        @Html.Partial("_PostTemplate", post)
+                    }
+                }
+                else
+                {
+                    <p>No posts found!</p>
+                }
 
-    @if (Model.Posts.Count > 0)
-    {
-        foreach (var post in Model.Posts)
-        {
-            @Html.Partial("_PostTemplate", post)
-        }
-    }
-    else
-    {
-        <p>No posts found!</p>
-    }
+                @*Paging at end of post*@
+                @*@Html.Partial("_Pager",Model)*@
 
-    @*Paging at end of post*@
-    @*@Html.Partial("_Pager",Model)*@
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                @*@Html.Action("Sidebars")*@
+            </div>
+        </div>
+    </div>
+    <hr>
+   
 
