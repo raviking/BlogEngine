@@ -40,8 +40,9 @@
                                             <span>
                                                 <a href="@Url.Action("EditPost","Account",new {postId=post.PostId})">Edit</a>|
                                                 @*<a href="#">Draft</a>|*@
-                                                <a href="#">View</a>|
-                                                <a href="@Url.Action("DeletePost","Account",new {postId=post.PostId})">Delete</a>
+                                                <a target="_blank" href="@Url.Action("PostById","Blog",new {postId=post.PostId})">View</a>|
+                                                <a href="@Url.Action("DeletePost","Account",new {postId=post.PostId})">Delete</a>|
+                                                <a href="@Url.Action("NotifyPostToSubscribers","Account",new {postId=post.PostId,postUrlSlug=post.PostUrlSlug})">Notify Subscribers</a>
                                             </span>
                                         </td>
                                         <td>@Model.User.FirstName</td>

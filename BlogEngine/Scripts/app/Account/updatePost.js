@@ -1,7 +1,33 @@
 ﻿
 $(function () {
+    debugger;
+    InitializeTinyMCE();
+    var postid = $("#hdnPostId").val();
+    $.ajax({
+        url: 'GetPostDetailsById',
+        method: 'GET',
+        datatype: 'json',
+        data: {postId:postid},
+        success: function (data) {
+            $("#txtPostTitle").val(data.Title);
+            $("#txtPostUrlSlug").val(data.PostUrlSlug);
+            $("#txtSearchDescription").val(data.PostMeta);
+            //tinymce.get("txtPostBody").setContent(data.PostDescription);
+            tinymce.activeEditor.setContent(data.PostDescription);
+            $("#rdlCategory_" + data.CategoryId).prop('checked', true);
+            for (var i = 0; i < data.Tags.length; i++) {
+                $("#ddlTags option[value='"+data.Tags[i].TagId+"']").prop("selected", "selected");
+            }
+        },
+        error: function () {
+            alert("Unable to get post details from server");
+            console.log("Unable to get post details from server");
+        }
+    });
+});
 
-    //initilizing tinyMCE editor
+//initilizing tinyMCE editor
+function InitializeTinyMCE() {
     tinymce.init({
         //selector: "textarea",
         theme: "modern",
@@ -32,35 +58,19 @@ $(function () {
         wordcount_cleanregex: /[0-9.(),;:!?%#$?\x27\x22_+=\\\/\-]*/g,
         external_filemanager_path: HostAddress + "/filemanager/",
         external_plugins: { "filemanager": HostAddress + "/filemanager/plugin.min.js" },
-        filemanager_title: "BlogEngine File Manager"
-    });
+        filemanager_title: "BlogEngine File Manager",
 
-    var postid = $("#hdnPostId").val();
-    $.ajax({
-        url: 'GetPostDetailsById',
-        method: 'GET',
-        datatype: 'json',
-        data: {postId:postid},
-        success: function (data) {
-            $("#txtPostTitle").val(data.Title);
-            $("#txtPostUrlSlug").val(data.PostUrlSlug);
-            $("#txtSearchDescription").val(data.PostMeta);
-            tinymce.get("txtPostBody").setContent(data.PostDescription);
-            //tinymce.activeEditor.setContent(data.PostDescription);
-            $("#rdlCategory_" + data.CategoryId).prop('checked', true);
-            for (var i = 0; i < data.Tags.length; i++) {
-                $("#ddlTags option[value='"+data.Tags[i].TagId+"']").prop("selected", "selected");
-            }
-        },
-        error: function () {
-            alert("Unable to get post details from server");
-            console.log("Unable to get post details from server");
-        }
+        //setup: function (e) {
+        //    e.onInit.add(function (ed) {
+        //        alert("after initialization");
+        //    });
+        //}
     });
-});
+}
 
 //save post data
 function savePostData() {
+    debugger;
     var _postslug = "";
     var postTags = [];
 
@@ -95,10 +105,12 @@ function savePostData() {
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(postData),
         success: function (data) {
+            debugger;
             if (data.IsSucess == true)
                 alert("post data updated successfully");
         },
         error: function () {
+            debugger;
             alert("post updation failed");
             console.log("post updation failed");
         }
