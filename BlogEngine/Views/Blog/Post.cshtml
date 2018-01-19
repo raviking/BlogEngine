@@ -5,6 +5,11 @@
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
+<style>
+    input{
+        max-width:400px
+    }
+</style>
  <!-- Page Header -->
 <header class="masthead">
     <div class="overlay"></div>
@@ -20,7 +25,7 @@
                         on @Model.CreatedDate
                     </span>
                 </div>
-            </div>
+            </div>            
         </div>
     </div>
 </header>
@@ -29,12 +34,18 @@
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-8 col-md-8 mx-auto">
                 @Html.Raw(Model.PostDescription)
+                <hr/>
+                @Html.Action("LoadCommentsForPost", new { postId = Model.PostId })
+            </div>
+            <div class="col-md-4">
+                @Html.Action("Sidebars", "Blog")
             </div>
         </div>
     </div>
 </article>
+
 
 @*<div id="content">
     <div class="post">

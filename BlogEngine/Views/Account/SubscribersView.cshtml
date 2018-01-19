@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "SubscribersView";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<section class="content-header">
+    <h1>All Subscribers</h1>    
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">All Subscribers</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-body">
+                    <table id="tblUsers" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>UserName</th>         
+                                <th>Gender</th>
+                                <th>Registration Date</th>
+                                <td>Actions</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                <tr>
+                                    <td>@user.FirstName @user.LastName</td>
+                                    <td>@user.UserName</td>                                    
+                                    <td>@user.Gender</td>
+                                    <td>@user.RegistrationDate.ToShortDateString()</td>
+                                    <td>
+                                        <a href="@Url.Action("UserProfile","Account",new { userId=user.UserId})">Edit</a>|
+                                        <a href="#" onclick="javascript: DeleteUser(@user.UserId);">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

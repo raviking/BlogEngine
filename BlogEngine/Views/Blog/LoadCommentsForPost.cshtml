@@ -32,17 +32,24 @@ else
 <span id="spnAddCommentSuccessDisplay" style="color:green;display:none;"></span>
 <div class="comment-form">
     <h2>Fell free to comment</h2>
-    <label>Full Name</label><br />
-    <input type="text" style="width:300px;" placeholder="Name" id="txt_comment_author_name" />
-    <span id="spntxt_comment_author_name" style="color:red;"></span><br /><br />
-    <label>Email</label><br />
-    <input type="email" style="width:300px;" placeholder="Email" id="txt_comment_author_email" />
-    <span id="spntxt_comment_author_email" style="color:red;"></span><br /><br />
-    <label>Comment Content</label><br />
-    <textarea id="txt_comment_content" rows="5" cols="50"></textarea>
-    <span id="spntxt_comment_content" style="color:red;"></span><br /><br />
-    <input type="button" onclick="javascript:AddComment();" id="submit_comment" value="submit" />
+    <div class="form-group">
+        <label class="label">Full Name</label><br />
+        <input type="text" class="form-control" style="width:300px;" placeholder="Name" id="txt_comment_author_name" />
+        <span id="spntxt_comment_author_name" style="color:red;"></span>
+    </div>
+    <div class="form-group">
+        <label class="label">Email</label><br />
+        <input type="email" class="form-control" style="width:300px;" placeholder="Email" id="txt_comment_author_email" />
+        <span id="spntxt_comment_author_email" style="color:red;"></span>
+    </div>
+    <div class="form-group">
+        <label class="label">Comment Content</label><br />
+        <textarea id="txt_comment_content" class="form-control" rows="5" cols="50"></textarea>
+        <span id="spntxt_comment_content" style="color:red;"></span>        
+    </div>
+    <div class="form-group">        
+        <input type="button" class="btn btn-primary" onclick="javascript:AddComment();" id="submit_comment" value="submit" />
+    </div>
 </div>
-
 <script src="~/Scripts/jquery-3.2.1.min.js"></script>
 <script src="~/Scripts/app/Blog/addComment.js"></script>

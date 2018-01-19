@@ -1117,6 +1117,8 @@
     <Content Include="Views\Account\Comments.cshtml" />
     <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
+    <Content Include="Views\Blog\Contact.cshtml" />
+    <Content Include="Views\Account\SubscribersView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1100,6 +1100,30 @@ namespace BlogEngine.DAL
         }
         #endregion Comments
 
+        #region Subscribers
+
+        /// <summary>
+        /// Get all subscribers from database
+        /// </summary>
+        /// <returns>User List</returns>
+        public List<User> GetAllSubscribers()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllSubscribers - Begin");
+            List<User> _lstSubscribers = new List<DTO.User>();
+            try
+            {
+                _lstSubscribers = dbcontext.Users.Where(x => x.Role == "4").ToList();
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  GetAllSubscribers" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllSubscribers - End");
+            return _lstSubscribers;
+        }
+
+        #endregion Subscribers
+
         #endregion Account
     }
 }

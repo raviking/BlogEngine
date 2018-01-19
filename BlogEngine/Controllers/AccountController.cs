@@ -493,5 +493,25 @@ namespace BlogEngine.Controllers
         }
 
         #endregion Comments
+
+        #region Subscribers
+        
+        public ViewResult SubscribersView()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SubscribersView - Begin");
+            List<User> _lstSubscribers = new List<DTO.User>();
+            try
+            {
+                _lstSubscribers = dataaccess.GetAllSubscribers();
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  SubscribersView" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SubscribersView - End");
+            return View(_lstSubscribers);
+        }
+
+        #endregion Subscribers
     }
 }

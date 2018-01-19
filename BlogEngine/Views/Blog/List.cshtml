@@ -3,53 +3,61 @@
 @{
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
-
-    @*<h1>@ViewBag.Title</h1>*@
-    
-     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('../BlogEngine/Content/themes/Clean-Blog/img/home-bg.jpg')">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <div class="site-heading">
-                        <h1>Clean Blog</h1>
-                        <span class="subheading">A Blog Theme by Start Bootstrap</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+<style>
+    input {
+        max-width: 400px;
+    }
+</style>
+@*<h1>@ViewBag.Title</h1>*@
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('../Content/themes/Clean-Blog/img/home-bg.jpg')">
+    <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
-                @if (Model.Posts.Count > 0)
-                {
-                    foreach (var post in Model.Posts)
-                    {
-                        @Html.Partial("_PostTemplate", post)
-                    }
-                }
-                else
-                {
-                    <p>No posts found!</p>
-                }
-
-                @*Paging at end of post*@
-                @*@Html.Partial("_Pager",Model)*@
-
-                <!-- Pager -->
-                <div class="clearfix">
-                    <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                @*@Html.Action("Sidebars")*@
+            <div class="col-md-12 mx-auto">
+                <div class="site-heading">
+                    <h1>Be your own Boss</h1>
+                    <span class="subheading">Sign up and receive our exclusive blogging and digital marketing tips right in your inbox</span>
+                    <div class="input-group" style="padding:30px;">
+                        <input type="text" class="form-control" id="txt_Name" placeholder="Your Name" />&nbsp;
+                        <input type="email" required class="form-control" id="txt_Email" placeholder="Your Email" />&nbsp;
+                        <input type="button" class="btn btn-default" value="submit" />
+                    </div>                    
+                </div>                
             </div>
         </div>
     </div>
-    <hr>
+</header>
+
+<!-- Main Content -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            @if (Model.Posts.Count > 0)
+            {
+                foreach (var post in Model.Posts)
+                {
+                    @Html.Partial("_PostTemplate", post)
+                }
+            }
+            else
+            {
+                <p>No posts found!</p>
+            }
+
+            <!-- Pager -->
+            <div class="clearfix">
+                @Html.Partial("_Pager", Model)                
+            </div>
+        </div>
+        <div class="col-md-4">
+            @*@Html.Action("Sidebars")*@
+        </div>               
+    </div>    
+</div>
+
+
+
    
 
