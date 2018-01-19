@@ -78,8 +78,7 @@ function savePostData() {
         error: function () {
             alert("Post saving failed pls try again!");
         }
-    });
- 
+    }); 
 }
 
 

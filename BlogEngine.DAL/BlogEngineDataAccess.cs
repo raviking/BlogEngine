@@ -612,12 +612,12 @@ namespace BlogEngine.DAL
                             new SqlParameter("postUrlSlug", objPost.PostUrlSlug),
                             new SqlParameter("isPublished", objPost.IsPublished),
                             new SqlParameter("postedOn", objPost.PostedOn != null ? objPost.PostedOn : (object)DBNull.Value),
-                            new SqlParameter("modifiedDate", objPost.ModifiedDate != null ? objPost.PostedOn : (object)DBNull.Value),
-                            new SqlParameter("createdBy", objPost.CreatedBy),
+                            new SqlParameter("modifiedDate", objPost.ModifiedDate != null ? objPost.ModifiedDate : (object)DBNull.Value),
+                            new SqlParameter("createdBy", objPost.CreatedBy!=null ? objPost.CreatedBy:(object)DBNull.Value),
                             new SqlParameter("createdDate", objPost.CreatedDate != null ? objPost.CreatedDate : DateTime.Now),
                             new SqlParameter("postStatus", objPost.postStatus),
                             new SqlParameter("categoryId", objPost.CategoryId),
-                            new SqlParameter("userId", objPost.UserId),
+                            new SqlParameter("userId", objPost.UserId > 0 ? objPost.UserId:(object)DBNull.Value),
                             new SqlParameter("modifiedBy", objPost.ModifiedBy != null ? objPost.ModifiedBy : (object)DBNull.Value),
                             new SqlParameter("tagString", tagString));
                 if (response.Id > 0)

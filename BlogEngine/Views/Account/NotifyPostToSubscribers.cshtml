@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "NotifyPostToSubscribers";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>
+    <section class="content-header">
+        <h1>Notify post to Subscribers</h1>
+        <p>Sends post alert to all subscribers</p>        
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active treeview">NotifyPostToSubscribers</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-body">
+                        <div class="box-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="PostTitle">Post Title</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="txtPostTitle" class="form-control" />
+                                        <span style="display:none;" class="Error_Msg" id="spntxtPostTitle"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Template">Password<i>(required)</i></label>
+                                    <div class="col-sm-6">
+                                        <input type="password" id="txtPassword" class="form-control" />
+                                        <span style="display:none;" class="Error_Msg" id="spntxtPassword"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="Email">Email<i>(required)</i></label>
+                                    <div class="col-sm-6">
+                                        <input type="email" id="txtEmail" class="form-control" />
+                                        <span style="display:none;" class="Error_Msg" id="spntxtEmail"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="FirstName">FirstName<i>(required)</i></label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="txtFirstName" class="form-control" />
+                                        <span style="display:none;" class="Error_Msg" id="spntxtFirstName"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="LastName">LastName</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" id="txtLastName" class="form-control" />
+                                    </div>
+                                </div>                            
+
+                                <div class="form-group">
+                                    <div class="col-md-offset-4">
+                                        <button type="button" onclick="javascript: addNewUser('ADD');" class="btn btn-primary">Add New User</button>
+                                        <button type="button" onclick="javascript: resetUserForm();" class="btn btn-warning">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </section>
+</div>
+

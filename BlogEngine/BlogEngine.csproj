@@ -1119,6 +1119,7 @@
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Blog\Contact.cshtml" />
     <Content Include="Views\Account\SubscribersView.cshtml" />
+    <Content Include="Views\Account\NotifyPostToSubscribers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

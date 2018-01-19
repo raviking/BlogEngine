@@ -494,6 +494,26 @@ namespace BlogEngine.Controllers
 
         #endregion Comments
 
+        #region NotifyPostToSubscribers
+
+        public ViewResult NotifyPostToSubscribers(long postId,string postUrlSlug)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  NotifyPostToSubscribers - Begin");
+            Post objPost = new Post();
+            try
+            {                
+                objPost = dataaccess.Post(postUrlSlug, postId);
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  NotifyPostToSubscribers" + ex);
+            }            
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " ::  NotifyPostToSubscribers - End");
+            return View(objPost);
+        }
+
+        #endregion NotifyPostToSubscribers
+
         #region Subscribers
         
         public ViewResult SubscribersView()
