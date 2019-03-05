@@ -12,8 +12,8 @@ $(function () {
             $("#txtPostTitle").val(data.Title);
             $("#txtPostUrlSlug").val(data.PostUrlSlug);
             $("#txtSearchDescription").val(data.PostMeta);
-            //tinymce.get("txtPostBody").setContent(data.PostDescription);
-            tinymce.activeEditor.setContent(data.PostDescription);
+            tinymce.get("txtPostBody").setContent(data.PostDescription);
+            //tinymce.activeEditor.setContent(data.PostDescription);
             $("#rdlCategory_" + data.CategoryId).prop('checked', true);
             for (var i = 0; i < data.Tags.length; i++) {
                 $("#ddlTags option[value='"+data.Tags[i].TagId+"']").prop("selected", "selected");

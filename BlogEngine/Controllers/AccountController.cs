@@ -60,6 +60,7 @@ namespace BlogEngine.Controllers
             {
                 objpostuserviewmodel = new PostUserViewModel(dataaccess, UserId);
                 ViewBag.Title = "Posts";
+                ViewBag.UserId = UserId;
             }
             catch (Exception ex)
             {
@@ -522,7 +523,7 @@ namespace BlogEngine.Controllers
             List<User> _lstSubscribers = new List<DTO.User>();
             try
             {
-                _lstSubscribers = dataaccess.GetAllSubscribers();
+                _lstSubscribers = dataaccess.GetUserList().Where(x => x.Role.ToUpper() == "SUBSCRIBER").ToList();                
             }
             catch(Exception ex)
             {

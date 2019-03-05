@@ -41,7 +41,7 @@
                                                 <a href="@Url.Action("EditPost","Account",new {postId=post.PostId})">Edit</a>|
                                                 @*<a href="#">Draft</a>|*@
                                                 <a target="_blank" href="@Url.Action("PostById","Blog",new {postId=post.PostId})">View</a>|
-                                                <a href="@Url.Action("DeletePost","Account",new {postId=post.PostId})">Delete</a>|
+                                                <a href="#" onclick="javascript: DeletePost(@post.PostId);">Delete</a>|
                                                 <a href="@Url.Action("NotifyPostToSubscribers","Account",new {postId=post.PostId,postUrlSlug=post.PostUrlSlug})">Notify Subscribers</a>
                                             </span>
                                         </td>
@@ -83,4 +83,35 @@
 </div>
 
 <script src="~/Scripts/jquery-3.2.1.min.js"></script>
-<script src="~/Scripts/app/Account/AllPosts.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#tblAllPosts").DataTable();
+        //$("#tblAllPosts").DataTable({
+        //    'paging': true,
+        //    'lengthChange': false,
+        //    'searching': false,
+        //    'ordering': true,
+        //    'info': true,
+        //    'autoWidth': false
+        //});
+    });
+
+    function DeletePost(postId) {
+        debugger;
+        var confirmDelete = confirm("Are you sure you want to Delete");       
+        var userid='@Convert.ToInt64(ViewBag.UserId)';
+        if (confirmDelete) {
+            $.post("@Url.Action("DeletePost","Account")", { postId: postId }, function (res) {
+                if (res.IsSucess == true) {
+                    alert("Post deleted successfully");
+                    window.location.href="@Url.Action("AuthorCreatedPosts","Account")?UserId="+userid;
+                }
+                else {
+                    alert("Something went wrong post not deleted");
+                }
+            });
+        }
+    }
+
+</script>

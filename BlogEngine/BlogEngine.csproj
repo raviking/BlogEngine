@@ -26,7 +26,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <TypeScriptToolsVersion>2.7</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -232,6 +232,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CommentsViewModel.cs" />
     <Compile Include="Models\ListViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\PostUserViewModel.cs" />
@@ -300,6 +301,68 @@
     <Content Include="Content\themes\Clean-Blog\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\themes\Clean-Blog\vendor\jquery\jquery.js" />
     <Content Include="Content\themes\Clean-Blog\vendor\jquery\jquery.min.js" />
+    <Content Include="Content\themes\Hola10\blog-single.html" />
+    <Content Include="Content\themes\Hola10\blog.html" />
+    <Content Include="Content\themes\Hola10\css\base.css" />
+    <Content Include="Content\themes\Hola10\css\fonts.css" />
+    <Content Include="Content\themes\Hola10\css\iconic\css\iconmonstr-iconic-font.css" />
+    <Content Include="Content\themes\Hola10\css\iconic\css\iconmonstr-iconic-font.min.css" />
+    <Content Include="Content\themes\Hola10\css\main.css" />
+    <Content Include="Content\themes\Hola10\css\vendor.css" />
+    <Content Include="Content\themes\Hola10\favicon.ico" />
+    <Content Include="Content\themes\Hola10\images\avatars\user-01.jpg" />
+    <Content Include="Content\themes\Hola10\images\avatars\user-02.jpg" />
+    <Content Include="Content\themes\Hola10\images\avatars\user-03.jpg" />
+    <Content Include="Content\themes\Hola10\images\avatars\user-04.jpg" />
+    <Content Include="Content\themes\Hola10\images\avatars\user-05.jpg" />
+    <Content Include="Content\themes\Hola10\images\blog\blog-bg-01.jpg" />
+    <Content Include="Content\themes\Hola10\images\blog\blog-bg-02.jpg" />
+    <Content Include="Content\themes\Hola10\images\contact-bg.jpg" />
+    <Content Include="Content\themes\Hola10\images\count-bg.jpg" />
+    <Content Include="Content\themes\Hola10\images\hero-bg.jpg" />
+    <Content Include="Content\themes\Hola10\images\logo.png" />
+    <Content Include="Content\themes\Hola10\images\photoswipe\default-skin.png" />
+    <Content Include="Content\themes\Hola10\images\photoswipe\default-skin.svg" />
+    <Content Include="Content\themes\Hola10\images\photoswipe\preloader.gif" />
+    <Content Include="Content\themes\Hola10\images\portfolio\beetle%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\beetle.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-beetle.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-bicycle.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-liberty.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-lighthouse.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-minimalismo.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-salad.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-shutterbug.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-skaterboy.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\gallery\g-woodcraft.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\liberty%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\liberty.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\lighthouse%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\lighthouse.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\minimalismo%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\minimalismo.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\salad%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\salad.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\shutterbug%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\shutterbug.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\skaterboy%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\skaterboy.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\woodcraft%402x.jpg" />
+    <Content Include="Content\themes\Hola10\images\portfolio\woodcraft.jpg" />
+    <Content Include="Content\themes\Hola10\images\sample-image.jpg" />
+    <Content Include="Content\themes\Hola10\images\testimonial-bg.jpg" />
+    <Content Include="Content\themes\Hola10\images\wheel-1000.jpg" />
+    <Content Include="Content\themes\Hola10\images\wheel-2000.jpg" />
+    <Content Include="Content\themes\Hola10\images\wheel-500.jpg" />
+    <Content Include="Content\themes\Hola10\inc\sendEmail.php" />
+    <Content Include="Content\themes\Hola10\index.html" />
+    <Content Include="Content\themes\Hola10\js\jquery-3.2.1.min.js" />
+    <Content Include="Content\themes\Hola10\js\main.js" />
+    <Content Include="Content\themes\Hola10\js\modernizr.js" />
+    <Content Include="Content\themes\Hola10\js\pace.min.js" />
+    <Content Include="Content\themes\Hola10\js\plugins.js" />
+    <Content Include="Content\themes\Hola10\readme.txt" />
+    <Content Include="Content\themes\Hola10\styles.html" />
     <Content Include="filemanager\ajax_calls.php" />
     <Content Include="filemanager\config\config.php" />
     <Content Include="filemanager\css\style.css" />
@@ -744,15 +807,13 @@
     <Content Include="Scripts\AdminLTE\iCheck\icheck.min.js" />
     <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.js" />
     <Content Include="Scripts\AdminLTE\jquery-slimscroll\jquery.slimscroll.min.js" />
-    <Content Include="Scripts\app\Account\AddNewPost.js" />
     <Content Include="Scripts\app\Account\addUser.js" />
-    <Content Include="Scripts\app\Account\AllPosts.js" />
     <Content Include="Scripts\app\Account\Categories.js" />
     <Content Include="Scripts\app\Account\Comments.js" />
     <Content Include="Scripts\app\Account\Tags.js" />
     <Content Include="Scripts\app\Account\updatePost.js" />
     <Content Include="Scripts\app\Account\Users.js" />
-    <Content Include="Scripts\app\Blog\addComment.js" />
+    <Content Include="Scripts\app\Blog\BlogLayout.js" />
     <Content Include="Scripts\app\Config.js" />
     <Content Include="Content\themes\simple\images\arrow.png" />
     <Content Include="Content\themes\simple\images\back.png" />
@@ -876,6 +937,34 @@
     <Content Include="Content\themes\Clean-Blog\vendor\font-awesome\scss\_screen-reader.scss" />
     <Content Include="Content\themes\Clean-Blog\vendor\font-awesome\scss\_stacked.scss" />
     <Content Include="Content\themes\Clean-Blog\vendor\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\themes\Hola10\css\iconic\fonts\iconmonstr-iconic-font.eot" />
+    <Content Include="Content\themes\Hola10\css\iconic\fonts\iconmonstr-iconic-font.ttf" />
+    <Content Include="Content\themes\Hola10\css\iconic\fonts\iconmonstr-iconic-font.woff" />
+    <Content Include="Content\themes\Hola10\css\iconic\fonts\iconmonstr-iconic-font.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-bold-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-bold-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-italic-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-italic-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-regular-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\librebaskerville\librebaskerville-regular-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-black-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-black-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-bold-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-bold-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-extrabold-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-extrabold-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-extralight-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-extralight-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-light-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-light-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-medium-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-medium-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-regular-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-regular-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-semibold-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-semibold-webfont.woff2" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-thin-webfont.woff" />
+    <Content Include="Content\themes\Hola10\fonts\montserrat\montserrat-thin-webfont.woff2" />
     <None Include="Properties\PublishProfiles\Raviteja.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -1081,12 +1170,12 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\AuthorPosts.cshtml" />
-    <Content Include="Views\Shared\_BlogLayout_old.cshtml" />
+    <Content Include="Views\Shared\_BlogLayout_old_Simple.cshtml" />
     <Content Include="Views\Blog\List.cshtml" />
     <Content Include="Views\Shared\_PostTemplate.cshtml" />
     <Content Include="Views\Shared\_Pager.cshtml" />
     <Content Include="Views\Shared\_Search.cshtml" />
-    <Content Include="Views\Blog\Post.cshtml" />
+    <Content Include="Views\Blog\Post_Old.cshtml" />
     <Content Include="Views\Shared\_Sidebars.cshtml" />
     <Content Include="Views\Shared\_Categories.cshtml" />
     <Content Include="Views\Shared\_Tags.cshtml" />
@@ -1115,11 +1204,15 @@
     <Content Include="Views\Account\UserProfile.cshtml" />
     <Content Include="Views\Blog\About.cshtml" />
     <Content Include="Views\Account\Comments.cshtml" />
-    <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
-    <Content Include="Views\Shared\_BlogLayout.cshtml" />
+    <Content Include="Views\Blog\LoadCommentsForPost_Old.cshtml" />
+    <Content Include="Views\Shared\_BlogLayout_old_CleanBlog.cshtml" />
     <Content Include="Views\Blog\Contact.cshtml" />
     <Content Include="Views\Account\SubscribersView.cshtml" />
     <Content Include="Views\Account\NotifyPostToSubscribers.cshtml" />
+    <Content Include="Views\Shared\_BlogLayout.cshtml" />
+    <Content Include="Views\Blog\List_old.cshtml" />
+    <Content Include="Views\Blog\Post.cshtml" />
+    <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

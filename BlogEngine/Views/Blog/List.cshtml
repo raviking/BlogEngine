@@ -3,59 +3,76 @@
 @{
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
-<style>
-    input {
-        max-width: 400px;
-    }
-</style>
-@*<h1>@ViewBag.Title</h1>*@
-<!-- Page Header -->
-<header class="masthead" style="background-image: url('../Content/themes/Clean-Blog/img/home-bg.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mx-auto">
-                <div class="site-heading">
-                    <h1>Be your own Boss</h1>
-                    <span class="subheading">Sign up and receive our exclusive blogging and digital marketing tips right in your inbox</span>
-                    <div class="input-group" style="padding:30px;">
-                        <input type="text" class="form-control" id="txt_Name" placeholder="Your Name" />&nbsp;
-                        <input type="email" required class="form-control" id="txt_Email" placeholder="Your Email" />&nbsp;
-                        <input type="button" class="btn btn-default" value="submit" />
-                    </div>                    
-                </div>                
+
+<!-- page header
+    ================================================== -->
+<section class="page-header page-hero" style="background-image:url(@Url.Content("~/Content/themes/Hola10/images/blog/blog-bg-01.jpg"))">
+
+    <div class="row page-header__content">
+        <article class="col-full">
+
+            <div class="page-header__info">
+                <div class="page-header__cat">
+                    <a href="#0">Branding</a><a href="#0">Design</a>
+                </div>
+                <div class="page-header__date">
+                    Sept 16, 2017
+                </div>
             </div>
+
+            <h1 class="page-header__title">
+                <a href="#0" title="">
+                    The 10 Golden Rules of Clean Simple Design.
+                </a>
+            </h1>
+            <p>Pellentesque in ipsum id orci porta dapibus amet dui. Ad id deserunt ratione autem eius et minima ut et. Nihil sed quis velit aut enim aliquam. Quas non ad sint eveniet voluptatem est iure...</p>
+            <p>
+                <a href="#0" class="btn btn--stroke page-header__btn">Read More</a>
+            </p>
+        </article>
+    </div>
+
+</section> <!-- end page-header -->
+<!-- blog
+================================================== -->
+<section class="blog-content-wrap">
+
+    <div class="row blog-content">
+        <div class="col-full">
+
+            <div class="blog-list block-1-2 block-tab-full">
+                @if (Model.Posts.Count > 0)
+                {
+                    foreach (var post in Model.Posts)
+                    {
+                        @Html.Partial("_PostTemplate", post)                        
+                    }
+                }
+                else
+                {
+                    <p>No Post Found</p>
+                }
+
+            </div> <!-- end blog-list -->
+
+        </div> <!-- end col-full -->
+    </div> <!-- end blog-content -->
+
+    <div class="row blog-entries-nav">
+        <div class="col-full">
+            @*<a href="#0" class="btn btn--stroke">
+                <i class="im im-arrow-left"></i>                
+            </a>
+            <a href="#0" class="btn btn--stroke">
+                
+                <i class="im im-arrow-right"></i>
+            </a>*@
+            @Html.Partial("_Pager", Model)
         </div>
     </div>
-</header>
 
-<!-- Main Content -->
+</section> <!-- end blog-content-wrap -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            @if (Model.Posts.Count > 0)
-            {
-                foreach (var post in Model.Posts)
-                {
-                    @Html.Partial("_PostTemplate", post)
-                }
-            }
-            else
-            {
-                <p>No posts found!</p>
-            }
-
-            <!-- Pager -->
-            <div class="clearfix">
-                @Html.Partial("_Pager", Model)                
-            </div>
-        </div>
-        <div class="col-md-4">
-            @*@Html.Action("Sidebars")*@
-        </div>               
-    </div>    
-</div>
 
 
 

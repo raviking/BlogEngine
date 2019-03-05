@@ -1,86 +1,89 @@
-﻿
+﻿@using System.Globalization
 @model BlogEngine.DTO.Post
 @{
     ViewBag.Title = Model.Title;
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
 }
 
-<style>
-    input{
-        max-width:400px
-    }
-</style>
- <!-- Page Header -->
-<header class="masthead">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 mx-auto">
-                <div class="post-heading">
-                    <h1>@Model.Title</h1>
-                    <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                    <span class="meta">
-                        Posted by
-                        <a href="#">Start Bootstrap</a>
-                        on @Model.CreatedDate
-                    </span>
-                </div>
-            </div>            
-        </div>
-    </div>
-</header>
+<article class="blog-single">
 
- <!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 mx-auto">
-                @Html.Raw(Model.PostDescription)
-                <hr/>
-                @Html.Action("LoadCommentsForPost", new { postId = Model.PostId })
-            </div>
-            <div class="col-md-4">
-                @Html.Action("Sidebars", "Blog")
-            </div>
+    <!-- page header/blog hero
+    ================================================== -->
+    <div class="page-header page-header--single page-hero" style="background-image:url(@Url.Content("~/Content/themes/Hola10/images/blog/blog-bg-02.jpg"))">
+
+        <div class="row page-header__content narrow">
+            <article class="col-full">
+                <div class="page-header__info">
+                    <div class="page-header__cat">
+                        <a href="#0">@Model.Category.CategoryName</a>
+                    </div>
+                </div>
+                <h1 class="page-header__title">
+                    <a href="#0" title="">
+                        @Model.Title
+                    </a>
+                </h1>
+                <ul class="page-header__meta">                    
+                    @{
+                        DateTime dt = new DateTime();
+                        dt = Convert.ToDateTime(Model.PostedOn);
+                     }
+                    <li class="date">@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(dt.Month) @dt.Day, @dt.Year</li>
+                    <li class="author"> By <span>@Model.CreatedBy</span></li>
+                </ul>
+
+            </article>
         </div>
-    </div>
+
+    </div> <!-- end page-header -->
+
+    <div class="row blog-content">
+        <div class="col-full blog-content__main">   
+
+            <!-- Post Description-->         
+            @Html.Raw(Model.PostDescription)
+
+            <p class="blog-content__tags">
+                <span>Post Tags</span>
+                <span class="blog-content__tag-list">
+                    @if (Model.Tags.Count > 0)
+                    {
+                        foreach (var tag in Model.Tags)
+                        {
+                            @Html.TagLink(tag)
+                        }
+                    }
+                </span>                
+
+            </p>
+
+            <div class="blog-content__pagenav">
+                <div class="blog-content__nav">
+                    <div class="blog-content__prev">
+                        <a href="#0" rel="prev">
+                            <span>Previous Post</span>
+                            Tips on Minimalist Design
+                        </a>
+                    </div>
+                    <div class="blog-content__next">
+                        <a href="#0" rel="next">
+                            <span>Next Post</span>
+                            Less Is More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog-content__all">
+                    <a href="@Url.Action("Posts", "Blog", new { page = 1})" class="btn btn--primary">View All Post</a>
+                </div>
+            </div>
+
+        </div><!-- end blog-content__main -->
+    </div> <!-- end blog-content -->
+
 </article>
 
-
-@*<div id="content">
-    <div class="post">
-        <div class="post-meta">
-            <div class="row">
-                <div class="post-title">
-                    <h1>@Html.PostLink(Model)</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="post-category">
-                    <span>Category:</span> @Html.CategoryLink(Model.Category)
-                </div>
-                <div class="post-tags">
-                    <span>Tags:</span> @Helpers.Tags(Html, Model.Tags)
-                    @if (Model.Comments.Count() > 0)
-                    {
-                        <span>Comments(@Model.Comments.Count)</span>
-                    }
-                    else
-                    {
-                        <span>Comments(0)</span>
-                    }
-                </div>
-                <div class="posted-date">
-                    @Model.PostedOn
-                </div>
-            </div>
-        </div>
-        <div class="post-body">
-            @Html.Raw(Model.PostDescription)
-        </div>
-        <hr />
-        @Html.Action("LoadCommentsForPost",new { postId=Model.PostId})
-    </div>
-</div>*@
-
-
+@*@Html.Action("LoadCommentsForPost", new
+{
+    postId = Model.PostId
+})*@

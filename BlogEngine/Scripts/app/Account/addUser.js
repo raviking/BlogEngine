@@ -10,7 +10,7 @@ $(function () {
                 $("#txtEmail").val(data.Email);
                 $("#txtFirstName").val(data.FirstName);
                 $("#txtLastName").val(data.LastName);
-                if (data.Gender == "Male") {
+                if (data.Gender == "Male" || data.Gender=="MALE") {
                     $("#rdlMale").prop("checked", true);
                 }
                 else {
@@ -77,7 +77,7 @@ function addNewUser(type) {
             Email: $("#txtEmail").val().trim(),
             UserStatus: $("#ddlUserStatus").val(),    //101 for active,102 for inactive
             Country: $("#ddlCountry").val(),
-            Designation: null,
+            Designation: "nothing",
         }
 
         $.ajax({

@@ -1,101 +1,184 @@
-﻿
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
+
+    <!--- basic page needs
+    ================================================== -->
     <title>@ViewBag.Title</title>
 
     <!--meta tag section for blog begin-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
     <meta name="author" content="raviteja swayampu" />
     <meta name="language" content="en-us" />
 
-    <!--meta tag section for blog begin-->
-    <link href="~/Content/themes/Clean-Blog/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom fonts for this template -->
-    <link href="~/Content/AdminLTE/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- CSS
+    ================================================== -->
+    <link href="~/Content/themes/Hola10/css/base.css" rel="stylesheet" />
+    <link href="~/Content/themes/Hola10/css/vendor.css" rel="stylesheet" />
+    <link href="~/Content/themes/Hola10/css/main.css" rel="stylesheet" />
 
-    <!-- Custom styles for this template -->    
-    <link href="~/Content/themes/Clean-Blog/css/clean-blog.css" rel="stylesheet" />       
+    <!-- script
+    ================================================== -->
+    <script src="~/Content/themes/Hola10/js/modernizr.js"></script>
+    <script src="~/Content/themes/Hola10/js/pace.min.js"></script>
 
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">    
+    
 </head>
 @using System.Configuration
 @{
     string webhostUrl = ConfigurationManager.AppSettings["WebHostAddress"].ToString();
 }
-<body>    
+<body id="top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="@Url.Action("Posts","Blog")">Start Bootstrap</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        @*<a class="nav-link" href="@Url.Action("Posts","Blog")">Home</a>*@
-                        <a class="nav-link" href="@webhostUrl">Home</a>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="@webhostUrl"><img src="~/Content/themes/Hola10/images/logo.png" alt="Homepage"></a>            
+        </div>
+
+        <nav class="header-nav-wrap">
+            <ul class="header-nav">
+                <li class="current"><a href="@webhostUrl" title="home">Home</a></li>                                               
+                <li><a href="@Url.Action("Contact","Blog")" title="contact">Contact</a></li>
+                <li><a href="#" onclick="javascript: openSearch();">Search</a></li>
+            </ul>           
+        </nav>
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+    
+    <!-- home
+    ================================================== -->
+      
+    <!-- RenderBody
+    ================================================== -->
+    @RenderBody()
+       
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full">
+
+                <div class="footer-logo">
+                    <a class="footer-site-logo" href="#0"><img src="~/Content/themes/Hola10/images/logo.png" alt="Homepage"></a>
+                </div>
+
+                <ul class="footer-social">
+                    <li>
+                        <a href="#0">
+                            <i class="im im-facebook" aria-hidden="true"></i>
+                            <span>Facebook</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("About","Blog")">About</a>
+                    <li>
+                        <a href="#0">
+                            <i class="im im-twitter" aria-hidden="true"></i>
+                            <span>Twitter</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Contact","Blog")">Contact</a>
+                    <li>
+                        <a href="#0">
+                            <i class="im im-instagram" aria-hidden="true"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <i class="im im-behance" aria-hidden="true"></i>
+                            <span>Behance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <i class="im im-pinterest" aria-hidden="true"></i>
+                            <span>Pinterest</span>
+                        </a>
                     </li>
                 </ul>
+
             </div>
         </div>
-    </nav>      
 
-    @RenderBody()
+        <div class="row footer-bottom">
 
-    <!-- Footer -->
-    <footer>                                                    
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2017</p>
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright 2019</span>
+                    <span>Design by <a href="https://localhost/BlogEngine">BlogEngine</a></span>
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JavaScript -->
-    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
-    <script src="~/Content/themes/Clean-Blog/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="~/Content/themes/Clean-Blog/js/clean-blog.js"></script>
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title="Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- end photoSwipe background -->
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="~/Content/themes/Hola10/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/themes/Hola10/js/plugins.js"></script>
+    <script src="~/Content/themes/Hola10/js/main.js"></script>
+    <script src="~/Scripts/app/Blog/BlogLayout.js"></script>
+
 </body>
+
 </html>

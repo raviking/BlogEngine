@@ -76,22 +76,25 @@ namespace BlogEngine.DAL
         public ResponseDTO SaveUser(User objUser)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveUser -Begin");
-            ResponseDTO response = null;
+            ResponseDTO response = new ResponseDTO();
             try
             {
-                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_GetCurrentUser @userId,@firstName,@lastName,@userName,@password,@role,@gender,@email,@country,@designation",
+                response.Count = dbcontext.Database.ExecuteSqlCommand("sp_AddorUpdateUser @userId,@firstName,@lastName,@userName,@password,@role,@userStatus,@gender,@email,@country,@designation",
                             new SqlParameter("userId", objUser.UserId),
                             new SqlParameter("firstName", objUser.FirstName),
                             new SqlParameter("lastName", objUser.LastName),
-                            new SqlParameter("userName",objUser.UserName),
+                            new SqlParameter("userName", objUser.UserName),
                             new SqlParameter("password", objUser.Password),
                             new SqlParameter("role", objUser.Role),
+                            new SqlParameter("userStatus",objUser.UserStatus),
                             new SqlParameter("gender", objUser.Gender),
                             new SqlParameter("email", objUser.Email),
                             new SqlParameter("country", objUser.Country),
                             new SqlParameter("designation", objUser.Designation));
-                if (response.Id > 0)
+                if (response.Count > 0)
+                {
                     response.IsSucess = true;
+                }                
             }
             catch (Exception ex)
             {
@@ -665,7 +668,7 @@ namespace BlogEngine.DAL
         public ResponseDTO deletePost(long postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: deletePost -Begin");
-            ResponseDTO response = null;
+            ResponseDTO response = new ResponseDTO();
             try
             {
                 response.Id = dbcontext.Database.ExecuteSqlCommand("sp_DeletePost @postId",
@@ -1098,31 +1101,7 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCommentReply -End");
             return response;
         }
-        #endregion Comments
-
-        #region Subscribers
-
-        /// <summary>
-        /// Get all subscribers from database
-        /// </summary>
-        /// <returns>User List</returns>
-        public List<User> GetAllSubscribers()
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllSubscribers - Begin");
-            List<User> _lstSubscribers = new List<DTO.User>();
-            try
-            {
-                _lstSubscribers = dbcontext.Users.Where(x => x.Role == "4").ToList();
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " ::  GetAllSubscribers" + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetAllSubscribers - End");
-            return _lstSubscribers;
-        }
-
-        #endregion Subscribers
+        #endregion Comments       
 
         #endregion Account
     }

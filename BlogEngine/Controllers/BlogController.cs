@@ -40,19 +40,27 @@ namespace BlogEngine.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public JsonResult Contact(ContactDTO objContact)
+        {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Contact -Begin");
+            ResponseDTO res = new ResponseDTO();
             try
             {
-                ViewBag.Message = "Your contact page.";
+                //res.IsSucess=dataaccess.SendMessage()
             }
             catch (Exception ex)
             {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Contact" + ex);
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Posts " + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Contact -End");
-            return View();
+            return Json(res, JsonRequestBehavior.AllowGet);
         }
 
         public ViewResult Posts(int page = 1)
@@ -169,6 +177,8 @@ namespace BlogEngine.Controllers
             return View("Post",post);
         }
 
+        #region Sidebars
+
         [ChildActionOnly]
         public PartialViewResult Sidebars()
         {
@@ -185,6 +195,11 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Sidebars - End");
             return PartialView("_Sidebars", widgetviewmodel);
         }
+
+        #endregion Sidebars
+
+        #region Comments
+
         public PartialViewResult LoadCommentsForPost(long postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - Begin");
@@ -200,7 +215,8 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - End");
             return PartialView(_lstComments);
-        }   
+        }
+
         public JsonResult SaveComment(Comment objComment)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - Begin");
@@ -216,5 +232,8 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - Begin");
             return Json(response);
         }
+
+        #endregion Comments
+
     }
 }
