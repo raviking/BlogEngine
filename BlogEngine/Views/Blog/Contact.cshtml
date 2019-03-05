@@ -37,7 +37,7 @@
                         <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
-                        <button class="full-width btn--primary">Submit</button>
+                        <button class="full-width btn--primary" onclick="javascript: SendMessage();">Submit</button>
                         <div class="submit-loader">
                             <div class="text-loader">Sending...</div>
                             <div class="s-loader">
@@ -87,3 +87,22 @@
     </div>
 
 </section> <!-- end s-contact -->
+
+<script type="text/javascript">
+    function SendMessage() {
+        var objContact={
+            ContactName:$("#contactName").val(),
+            ContactEmail:$("#contactEmail").val(),
+            ContactSubject:$("#contactSubject").val(),
+            ContactMessage:$("#contactMessage").val()
+        }
+        $.post("@Url.Action("Contact","Blog")", { objContact: objContact }, function (res) {
+            if (res.IsSucess) {
+                alert("Mail sent to Author");
+            }
+            else {
+                alert("Sending failed some error occured");
+            }
+        });
+    }
+</script>

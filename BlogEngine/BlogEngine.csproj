@@ -18,7 +18,7 @@
     <AssemblyName>BlogEngine</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -76,15 +76,15 @@
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <HintPath>..\ExternalDlls\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <HintPath>..\ExternalDlls\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <HintPath>..\ExternalDlls\Microsoft.AspNet.Identity.Owin.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -93,65 +93,83 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PHP.VisualStudio.PhalangerTasks, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PHP.VisualStudio.PhalangerTasks.dll</HintPath>
+      <HintPath>..\ExternalDlls\PHP.VisualStudio.PhalangerTasks.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetClassLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4af37afe3cde05fb, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetClassLibrary.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetClassLibrary.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0a8e8c4c76728c71, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetCore.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetCore.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetCore.CodeDom, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0a8e8c4c76728c71, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetCore.CodeDom.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetCore.CodeDom.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetCore.DuckTyping, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0a8e8c4c76728c71, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetCore.DuckTyping.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetCore.DuckTyping.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetCore.Parsers, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0a8e8c4c76728c71, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetCore.Parsers.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetCore.Parsers.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetCurl, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetCurl.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetCurl.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetGd2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetGd2.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetGd2.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetIconv, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetIconv.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetIconv.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetMbstring, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetMbstring.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetMbstring.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetMsSql, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetMsSql.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetMsSql.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetPDO, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetPDO.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetPDO.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetPDOSQLite, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetPDOSQLite.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetPDOSQLite.dll</HintPath>
     </Reference>
     <Reference Include="PhpNetPDOSQLServer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2771987119c16a03, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\PhpNetPDOSQLServer.dll</HintPath>
+      <HintPath>..\ExternalDlls\PhpNetPDOSQLServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetSoap">
+      <HintPath>..\ExternalDlls\PhpNetSoap.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetSQLite">
+      <HintPath>..\ExternalDlls\PhpNetSQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetXml">
+      <HintPath>..\ExternalDlls\PhpNetXml.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetXmlDom">
+      <HintPath>..\ExternalDlls\PhpNetXmlDom.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetZip">
+      <HintPath>..\ExternalDlls\PhpNetZip.dll</HintPath>
+    </Reference>
+    <Reference Include="PhpNetZlib">
+      <HintPath>..\ExternalDlls\PhpNetZlib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite, Version=1.0.81.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\ExternalDlls\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
@@ -243,6 +261,10 @@
     <Compile Include="ViewEngine\PhpViewEngine.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\BlogEngine.mdf" />
+    <Content Include="App_Data\BlogEngine_log.ldf">
+      <DependentUpon>BlogEngine.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\AdminLTE\AdminLTE.css" />
     <Content Include="Content\AdminLTE\AdminLTE.min.css" />
     <Content Include="Content\AdminLTE\bootstrap.min.css" />
@@ -1170,12 +1192,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Account\AuthorPosts.cshtml" />
-    <Content Include="Views\Shared\_BlogLayout_old_Simple.cshtml" />
     <Content Include="Views\Blog\List.cshtml" />
     <Content Include="Views\Shared\_PostTemplate.cshtml" />
     <Content Include="Views\Shared\_Pager.cshtml" />
     <Content Include="Views\Shared\_Search.cshtml" />
-    <Content Include="Views\Blog\Post_Old.cshtml" />
     <Content Include="Views\Shared\_Sidebars.cshtml" />
     <Content Include="Views\Shared\_Categories.cshtml" />
     <Content Include="Views\Shared\_Tags.cshtml" />
@@ -1204,18 +1224,18 @@
     <Content Include="Views\Account\UserProfile.cshtml" />
     <Content Include="Views\Blog\About.cshtml" />
     <Content Include="Views\Account\Comments.cshtml" />
-    <Content Include="Views\Blog\LoadCommentsForPost_Old.cshtml" />
-    <Content Include="Views\Shared\_BlogLayout_old_CleanBlog.cshtml" />
     <Content Include="Views\Blog\Contact.cshtml" />
     <Content Include="Views\Account\SubscribersView.cshtml" />
     <Content Include="Views\Account\NotifyPostToSubscribers.cshtml" />
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
-    <Content Include="Views\Blog\List_old.cshtml" />
     <Content Include="Views\Blog\Post.cshtml" />
     <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <ProjectReference Include="..\BlogEngine.BusinessLogic\BlogEngine.BusinessLogicLayer.csproj">
+      <Project>{F6EE871D-F7FA-4FED-AE71-3B7B9C5B8E78}</Project>
+      <Name>BlogEngine.BusinessLogicLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -1244,7 +1264,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56615</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/BlogEngine</IISUrl>
+          <IISUrl>http://localhost:56615/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

@@ -8,6 +8,7 @@ using BlogEngine.Log;
 using BlogEngine.DAL;
 using BlogEngine.Models;
 using BlogEngine.DTO;
+using BlogEngine.BusinessLogicLayer;
 //using System.Web.Routing;
 
 namespace BlogEngine.Controllers
@@ -18,11 +19,13 @@ namespace BlogEngine.Controllers
         public string classname = "BlogController";
         LoggingHelper logginghelper = new LoggingHelper();
         BlogEngineDAL dataaccess = null;
+        BusinessLogic objBusinessLogic = null;
 
         //constructor
         public BlogController() : base()
         {
             dataaccess = new BlogEngineDAL();
+            objBusinessLogic = new BusinessLogic();
         }        
 
         public ActionResult About()
@@ -53,7 +56,7 @@ namespace BlogEngine.Controllers
             ResponseDTO res = new ResponseDTO();
             try
             {
-                //res.IsSucess=dataaccess.SendMessage()
+                res.IsSucess = objBusinessLogic.SendContactMail(objContact);
             }
             catch (Exception ex)
             {

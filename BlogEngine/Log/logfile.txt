@@ -7071,3 +7071,11 @@
 2019-03-05 13:22:44,669 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Contact -End
 2019-03-05 13:25:44,408 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Contact -Begin
 2019-03-05 13:25:44,408 [55] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Contact -End
+2019-03-05 20:38:13,851 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-05 20:38:14,086 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-05 20:40:53,130 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-05 20:40:53,132 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-05 20:41:00,546 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-05 20:41:00,547 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-05 20:41:55,575 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-05 20:41:58,673 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
