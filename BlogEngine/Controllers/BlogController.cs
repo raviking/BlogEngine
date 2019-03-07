@@ -26,8 +26,9 @@ namespace BlogEngine.Controllers
         {
             dataaccess = new BlogEngineDAL();
             objBusinessLogic = new BusinessLogic();
-        }        
+        }
 
+        #region Pages
         public ActionResult About()
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: About -Begin");
@@ -64,24 +65,7 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Contact -End");
             return Json(res, JsonRequestBehavior.AllowGet);
-        }
-
-        public ViewResult Posts(int page = 1)
-        {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Posts -Begin");
-            ListViewModel viewModel = null;
-            try
-            {
-                viewModel = new ListViewModel(dataaccess, page);
-                ViewBag.Title = "Latest Posts";
-            }
-            catch (Exception ex)
-            {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Posts " + ex);
-            }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Posts -End");
-            return View("List", viewModel);
-        }
+        }        
 
         public ViewResult category(string catUrlSlug, int p = 1)
         {
@@ -102,6 +86,8 @@ namespace BlogEngine.Controllers
             return View("List", viewModel);
         }
 
+        #endregion Pages
+
         public ViewResult tag(string tagSlug, int tp = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Tag - Begin");
@@ -121,21 +107,52 @@ namespace BlogEngine.Controllers
             return View("List", viewModel);
         }
 
-        public ViewResult Search(string s,int p = 1)
+        #region Search
+
+        [HttpGet]
+        public ViewResult Search()
         {
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search - Begin");
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Search(string searchText,int page = 1)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search[HttpPost] - Begin");
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, s, p, "Search");
-                ViewBag.Title = String.Format(@"Lists of posts found for search text ""{0}""", s);
+                viewModel = new ListViewModel(dataaccess, searchText, page, "Search");
+                ViewBag.Title = String.Format(@"Lists of posts found for search text ""{0}""", searchText);
+                ViewBag.PreviousPage = "SEARCH";
             }
             catch(Exception ex)
             {
-                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Search " + ex);
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Search[HttpPost] " + ex);
             }
-            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search - End");
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search[HttpPost] - End");
             return View("List",viewModel);
+        }
+
+        #endregion Search
+
+        #region Posts
+
+        public ViewResult Posts(int page = 1)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Posts -Begin");
+            ListViewModel viewModel = null;
+            try
+            {
+                viewModel = new ListViewModel(dataaccess, page);
+                ViewBag.PreviousPage = "HOME";
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Posts " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Posts -End");
+            return View("List", viewModel);
         }
 
         //Get post by post urlslug
@@ -179,6 +196,8 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Post - End");
             return View("Post",post);
         }
+
+        #endregion Posts
 
         #region Sidebars
 

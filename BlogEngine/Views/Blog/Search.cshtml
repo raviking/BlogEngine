@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<section id="contact" class="s-contact target-section">
+
+    <div class="overlay"></div>
+
+    <div class="row narrow section-intro">
+        <div class="col-full">
+            <h1>What are you looking for?</h1>
+            <p class="lead">Type the name of the post you are looking for.</p>
+        </div>
+    </div>
+
+    <div class="row contact__main">
+        <div class="col-twelve tab-full contact__form">
+            <form>
+                <fieldset>
+
+                    <div class="form-field">
+                        <input type="text" id="txtPostSearch" style="text-align:center;" placeholder="type here" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input type="button" onclick="SearchPosts();" class="full-width btn--primary" value="Submit" />
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>       
+    </div>
+
+</section>
+
+<script type="text/javascript">
+
+    function SearchPosts() {
+        debugger;
+        var searchText = $("#txtPostSearch").val();
+        if (searchText != null && searchText != "") {
+            $.post("@Url.Action("Search", "Blog")", { searchText: searchText, page: 1 }, function (res) {
+                if (res != null) {
+                    window.location.href = '@Url.Action("Posts","Blog")';
+                }
+            });
+        }
+        else {
+            alert("Please Enter text to search");
+        }
+    }
+
+    $(function () {
+        @*var postTitles=[];
+        $.get(@Url.Action("GetAllPostTitles","Blog"),null,function(res){
+            if(res!=null){
+                postTitles=res;
+            }
+        });
+
+        $("#txtPostSearch").autocomplete({
+            source: postTitles,
+            select:function(event,ui){
+                window.location.href=ui.
+            }
+        });*@
+    });
+</script>
+

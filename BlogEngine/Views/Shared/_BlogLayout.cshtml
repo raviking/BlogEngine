@@ -29,13 +29,19 @@
     <!-- script
     ================================================== -->
     <script src="~/Content/themes/Hola10/js/modernizr.js"></script>
-    <script src="~/Content/themes/Hola10/js/pace.min.js"></script>
+    <script src="~/Content/themes/Hola10/js/pace.min.js"></script>    
+
+    <!-- Jquery and JqueryUI
+    ================================================== -->
+    <script src="~/Content/themes/Hola10/js/jquery-3.2.1.min.js"></script>    
+    <link href="~/Content/jquery-ui-1.12.1.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-ui.1.12.1.js"></script>
 
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">    
-    
+    <link rel="icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">       
+
 </head>
 @using System.Configuration
 @{
@@ -55,7 +61,8 @@
             <ul class="header-nav">
                 <li class="current"><a href="@webhostUrl" title="home">Home</a></li>                                               
                 <li><a href="@Url.Action("Contact","Blog")" title="contact">Contact</a></li>
-                <li><a href="#" onclick="javascript: openSearch();">Search</a></li>
+                <li><a href="@Url.Action("Search","Blog")" title="Search">Search</a></li>    
+                <li></li>
             </ul>           
         </nav>
 
@@ -170,15 +177,15 @@
 
     <div id="preloader">
         <div id="loader"></div>
-    </div>
+    </div>    
 
     <!-- Java Script
-    ================================================== -->
-    <script src="~/Content/themes/Hola10/js/jquery-3.2.1.min.js"></script>
+    ================================================== -->    
     <script src="~/Content/themes/Hola10/js/plugins.js"></script>
     <script src="~/Content/themes/Hola10/js/main.js"></script>
     <script src="~/Scripts/app/Blog/BlogLayout.js"></script>
 
+    
 </body>
 
 </html>

@@ -18,7 +18,7 @@
     <AssemblyName>BlogEngine</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -46,6 +46,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BlogEngine.BusinessLogic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BlogEngine.BusinessLogic\bin\Debug\BlogEngine.BusinessLogic.dll</HintPath>
+    </Reference>
     <Reference Include="BlogEngine.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\BlogEngine.DAL\bin\Debug\BlogEngine.DAL.dll</HintPath>
@@ -274,6 +278,7 @@
     <Content Include="Content\choosen\chosen.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\jquery-ui-1.12.1.css" />
     <Content Include="Content\jquery-ui-bootstrap\images\ui-bg_flat_0_999999_40x100.png" />
     <Content Include="Content\jquery-ui-bootstrap\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\jquery-ui-bootstrap\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -1230,6 +1235,7 @@
     <Content Include="Views\Shared\_BlogLayout.cshtml" />
     <Content Include="Views\Blog\Post.cshtml" />
     <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
+    <Content Include="Views\Blog\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogEngine.BusinessLogic\BlogEngine.BusinessLogicLayer.csproj">
@@ -1264,7 +1270,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>56615</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56615/</IISUrl>
+          <IISUrl>http://localhost/BlogEngine</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

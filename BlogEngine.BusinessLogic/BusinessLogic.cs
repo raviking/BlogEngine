@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Configuration;
 using System.Net;
+using System.Web.Configuration;
 
 namespace BlogEngine.BusinessLogicLayer
 {
@@ -33,14 +34,11 @@ namespace BlogEngine.BusinessLogicLayer
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: ContactMail - Begin");
             bool result = false;
-            string adminEmailUsername = ConfigurationManager.AppSettings["AdminEmailUsername"].ToString();
-            string adminEmailPassword=ConfigurationManager.AppSettings["AdminEmailPassword"].ToString();
+            string ToMailAddress = WebConfigurationManager.AppSettings["ToMailAddress"].ToString();
             try
             {
                 MailMessage mail = new MailMessage();
-                SmtpClient client = new SmtpClient();
-                mail.From = new MailAddress(adminEmailUsername);
-                mail.To.Add(new MailAddress(adminEmailUsername));
+                mail.To.Add(new MailAddress(ToMailAddress));
                 mail.Subject = contact.ContactSubject;
                 string body = "<table><tbody><td>Name : " + contact.ContactName + "</td>"
                                 + "<td>Email  : " + contact.ContactEmail + "</td>"
@@ -49,14 +47,12 @@ namespace BlogEngine.BusinessLogicLayer
                                 + "<tbody></table>";                               
 
                 mail.Body = body;
-                client.Port = 587;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-                client.UseDefaultCredentials = false;
-                client.Host = "smtp.gmail.com";
-                client.Credentials = new NetworkCredential(adminEmailUsername, adminEmailPassword);
-                client.Send(mail);
-
-                result = true;
+                mail.IsBodyHtml = true;
+                using (var smtp=new SmtpClient())
+                {
+                    smtp.Send(mail);
+                    result = true;
+                }
             }     
             catch(Exception ex)
             {
