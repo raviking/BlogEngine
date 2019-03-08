@@ -18,10 +18,6 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
-        public bool Comment_Approved
-        {
-            get;set;
-        }
         public DateTime Comment_Date
         {
             get;set;
@@ -34,19 +30,7 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
-        public long Comment_Parent
-        {
-            get;set;
-        }
         public long Comment_PostId
-        {
-            get;set;
-        }
-        public long? UserId
-        {
-            get;set;                            
-        }
-        public string postName
         {
             get;set;
         }

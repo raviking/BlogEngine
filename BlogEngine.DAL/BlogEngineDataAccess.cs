@@ -539,8 +539,6 @@ namespace BlogEngine.DAL
                                 new SqlParameter("comment_Date", objComment.Comment_Date),
                                 new SqlParameter("comment_Author", objComment.Comment_Author),
                                 new SqlParameter("Comment_AuthorEmail", objComment.Comment_AuthorEmail),
-                                new SqlParameter("Comment_Parent", objComment.Comment_Parent),
-                                new SqlParameter("Comment_Approved", objComment.Comment_Approved),
                                 new SqlParameter("Comment_PostId",objComment.Comment_PostId));
                 if (count > 0)
                     response.IsSucess = true;
@@ -1103,13 +1101,10 @@ namespace BlogEngine.DAL
                 int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment_Reply @commentId,@commentContent,@commentApproved,@commentDate,@commentAuthor,@commentAuthorEmail,@commentParent,@commentPostId,@userId",
                                 new SqlParameter("commentId",objReply.Comment_Id),
                                 new SqlParameter("commentContent", objReply.Comment_Content),
-                                new SqlParameter("commentApproved", objReply.Comment_Approved),
                                 new SqlParameter("commentDate", objReply.Comment_Date),
                                 new SqlParameter("commentAuthor", objReply.Comment_Author),
                                 new SqlParameter("commentAuthorEmail", objReply.Comment_AuthorEmail),
-                                new SqlParameter("commentParent", objReply.Comment_Parent),
-                                new SqlParameter("commentPostId", objReply.Comment_PostId),
-                                new SqlParameter("userId",objReply.UserId));
+                                new SqlParameter("commentPostId", objReply.Comment_PostId));
                 if (count > 0)
                     response.IsSucess = true;
                 else

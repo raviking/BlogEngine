@@ -502,7 +502,6 @@ namespace BlogEngine.Controllers
                     User _currentUser = Session["CurrentUser"] as User;
                     objReply.Comment_Author = _currentUser.FirstName + _currentUser.LastName;
                     objReply.Comment_AuthorEmail = _currentUser.Email;
-                    objReply.UserId = _currentUser.UserId;
 
                     response = dataaccess.SaveCommentReply(objReply);
                 }                
