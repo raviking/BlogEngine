@@ -11,7 +11,7 @@
         <a href="blog-single.html">@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(dt.Month) @dt.Day, @dt.Year</a>
     </div>
     <h2 class="h01">
-        <a href="@Url.Action("Post","Blog",new { urlslug =Model.PostUrlSlug})">@Model.Title @Html.PostLink(Model) </a>
+        @Html.PostLink(Model)
     </h2>
     <p>
         Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh dolore irure esse Duis nulla sint.
@@ -21,66 +21,4 @@
     </div>
 </article>
 
-@*<div class="post-preview">
-    <a href="@Url.Action("Post","Blog",new { urlslug =Model.PostUrlSlug})">
-        <h2 class="post-title">                     
-            @Model.Title @Html.PostLink(Model)  
-        </h2>
-        <h3 class="post-subtitle">            
-            Problems look mighty small from 150 miles up  @Html.Raw(Model.ShortDescription)
-        </h3>
-    </a>
-    <p class="post-meta">
-        Posted by
-        <a href="#">Raviteja Swayampu</a>
-        on @Model.CreatedDate
-    </p>
-</div>*@
-
-@*<div class="post">
-    <div class="post-meta">
-        <div class="row">
-            <!-- Post Heading -->
-            <div class="post-title">
-                <h2>@Html.PostLink(Model)</h2>
-            </div>
-        </div>
-        <div class="row">
-            
-            <!--Categories-->
-            <div class="post-category">                
-                <span>Category:</span>@Html.CategoryLink(Model.Category)
-            </div>
-
-            <!--Tags-->
-            <div class="post-tags">
-                <span>Tags:</span>@Helpers.Tags(Html,Model.Tags)
-            </div>
-
-            <!--Posted date-->
-            <div class="posted-date">
-                @Model.PostedOn
-            </div>
-        </div>
-    </div>
-    
-    <!-- Post short description-->
-    <div class="post-body">
-       @Html.Raw(Model.ShortDescription)
-    </div>
-
-    <!--Post footer-->
-    <div class="post-foot">
-        @Html.ActionLink("Continue...", "Post", "Blog",
-         new
-         {
-             urlslug = Model.PostUrlSlug
-         },
-         new
-         {
-             title="Continue.."
-         }
-       )
-    </div>
-</div>*@
 

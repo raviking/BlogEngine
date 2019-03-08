@@ -1,7 +1,13 @@
-﻿@model BlogEngine.Models.ListViewModel
+﻿@using System.Globalization
+@model BlogEngine.Models.ListViewModel
 
 @{
     Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+@{
+    DateTime dt = new DateTime();
+    dt = Convert.ToDateTime(Model.LatestPost.PostedOn);
 }
 
 <!-- page header
@@ -14,21 +20,20 @@
             {
                 <div class="page-header__info">
                     <div class="page-header__cat">
-                        <a href="#0">Branding</a><a href="#0">Design</a>
+                        @Html.CategoryLink(Model.LatestPost.Category)
                     </div>
                     <div class="page-header__date">
                         Sept 16, 2017
+                        @CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(dt.Month) @dt.Day, @dt.Year
                     </div>
                 </div>
 
                 <h1 class="page-header__title">
-                    <a href="#0" title="">
-                        The 10 Golden Rules of Clean Simple Design.
-                    </a>
+                    @Html.PostLink(Model.LatestPost)
                 </h1>
                 <p>Pellentesque in ipsum id orci porta dapibus amet dui. Ad id deserunt ratione autem eius et minima ut et. Nihil sed quis velit aut enim aliquam. Quas non ad sint eveniet voluptatem est iure...</p>
                 <p>
-                    <a href="#0" class="btn btn--stroke page-header__btn">Read More</a>
+                    <a href="@Url.Action("Post","Blog",new { urlslug= Model.LatestPost.PostUrlSlug })" class="btn btn--stroke page-header__btn">Read More</a>
                 </p>
             }
             else

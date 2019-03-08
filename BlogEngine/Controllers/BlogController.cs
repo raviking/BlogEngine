@@ -116,22 +116,29 @@ namespace BlogEngine.Controllers
         }
 
         [HttpPost]
-        public ViewResult Search(string searchText,int page = 1)
+        public ViewResult Search(FormCollection form)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search[HttpPost] - Begin");
+            string searchText = form["txtPostSearch"].ToString().Trim();
             ListViewModel viewModel = null;
             try
             {
-                viewModel = new ListViewModel(dataaccess, searchText, page, "Search");
-                ViewBag.Title = String.Format(@"Lists of posts found for search text ""{0}""", searchText);
-                ViewBag.PreviousPage = "SEARCH";
+                if (!string.IsNullOrEmpty(searchText))
+                {
+                    viewModel = new ListViewModel(dataaccess, searchText, 1, "Search");
+                    ViewBag.Title = String.Format(@"Lists of posts found for search text ""{0}""", searchText);
+                    ViewBag.PreviousPage = "SEARCH";                    
+                }
             }
             catch(Exception ex)
             {
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Search[HttpPost] " + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Search[HttpPost] - End");
-            return View("List",viewModel);
+            if (!string.IsNullOrEmpty(searchText))
+                return View("List", viewModel);
+            else
+                return View();            
         }
 
         #endregion Search

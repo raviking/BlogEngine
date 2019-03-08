@@ -17,18 +17,19 @@
 
     <div class="row contact__main">
         <div class="col-twelve tab-full contact__form">
-            <form>
+            @using (Html.BeginForm("Search","Blog",FormMethod.Post))
+            {
                 <fieldset>
 
                     <div class="form-field">
-                        <input type="text" id="txtPostSearch" style="text-align:center;" placeholder="type here" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        <input type="text" name="txtPostSearch" id="txtPostSearch" style="text-align:center;" placeholder="type here" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input type="button" onclick="SearchPosts();" class="full-width btn--primary" value="Submit" />
+                        <input type="submit" class="full-width btn--primary" value="Submit" />
                     </div>
 
                 </fieldset>
-            </form>
+            }
         </div>       
     </div>
 
@@ -40,11 +41,8 @@
         debugger;
         var searchText = $("#txtPostSearch").val();
         if (searchText != null && searchText != "") {
-            $.post("@Url.Action("Search", "Blog")", { searchText: searchText, page: 1 }, function (res) {
-                if (res != null) {
-                    window.location.href = '@Url.Action("Posts","Blog")';
-                }
-            });
+
+            //window.location.href = "@Url.Action("Search","Blog")?searchText="+searchText+"&page=1";
         }
         else {
             alert("Please Enter text to search");
