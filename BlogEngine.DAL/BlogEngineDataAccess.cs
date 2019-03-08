@@ -684,6 +684,27 @@ namespace BlogEngine.DAL
             return response;
         }
 
+        public ResponseDTO PublishPost(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_PublishPost @postId,@postedOn",
+                                new SqlParameter("postId", postId),
+                                new SqlParameter("postedOn",DateTime.Now));
+                if (response.Id > 0)
+                {
+                    response.IsSucess = true;
+                }                    
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: PublishPost " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost -End");
+            return response;
+        }
         #endregion Posts
 
         #region Users

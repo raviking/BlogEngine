@@ -107,6 +107,7 @@ namespace BlogEngine.Controllers
                     {
                         postObj.UserId = _currentuser.UserId;
                         postObj.CreatedBy = _currentuser.UserId;
+                        postObj.CreatedDate = DateTime.Now;
                         response = dataaccess.SavePost(postObj);
                     }                                      
                 }                
@@ -165,6 +166,27 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: DeletePost - Begin");
             return Json(response,JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult PublishPost(long postId)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost - Begin");
+            try
+            {
+                response = dataaccess.PublishPost(postId);
+                if (Session["CurrentUser"] != null)
+                {
+                    User currentuser = Session["CurrentUser"] as User;
+                    response.Id = currentuser.UserId;
+                }                
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: PublishPost" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost - Begin");
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
         #endregion Posts
 

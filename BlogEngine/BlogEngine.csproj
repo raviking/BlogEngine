@@ -840,7 +840,6 @@
     <Content Include="Scripts\app\Account\Tags.js" />
     <Content Include="Scripts\app\Account\updatePost.js" />
     <Content Include="Scripts\app\Account\Users.js" />
-    <Content Include="Scripts\app\Blog\BlogLayout.js" />
     <Content Include="Scripts\app\Config.js" />
     <Content Include="Content\themes\simple\images\arrow.png" />
     <Content Include="Content\themes\simple\images\back.png" />
@@ -1250,6 +1249,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\app\Blog\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

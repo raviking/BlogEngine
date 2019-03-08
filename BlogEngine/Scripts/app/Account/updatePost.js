@@ -1,6 +1,6 @@
 ﻿
 $(function () {
-    debugger;
+
     InitializeTinyMCE();
     var postid = $("#hdnPostId").val();
     $.ajax({
@@ -11,13 +11,13 @@ $(function () {
         success: function (data) {
             $("#txtPostTitle").val(data.Title);
             $("#txtPostUrlSlug").val(data.PostUrlSlug);
-            $("#txtSearchDescription").val(data.PostMeta);
-            tinymce.get("txtPostBody").setContent(data.PostDescription);
-            //tinymce.activeEditor.setContent(data.PostDescription);
+            $("#txtSearchDescription").val(data.PostMeta);            
             $("#rdlCategory_" + data.CategoryId).prop('checked', true);
             for (var i = 0; i < data.Tags.length; i++) {
                 $("#ddlTags option[value='"+data.Tags[i].TagId+"']").prop("selected", "selected");
             }
+            tinymce.get("txtPostBody").setContent(data.PostDescription);
+            //tinymce.activeEditor.setContent(data.PostDescription);
         },
         error: function () {
             alert("Unable to get post details from server");
@@ -68,55 +68,121 @@ function InitializeTinyMCE() {
     });
 }
 
+function publishPost() {
+    debugger;
+    var postid = $("#hdnPostId").val();
+    $.ajax({
+        url: 'PublishPost',
+        method: 'POST',
+        datatype: 'json',
+        data: { postId: postid },
+        success: function (res) {
+            if (res.IsSucess) {
+                alert("Post published Successfully");
+                window.location.href = HostAddress + "/Account/AuthorCreatedPosts?UserId=" + res.Id;
+            }            
+        },
+        error: function () {
+            alert("Unable to get publish post pls try again");
+            console.log("Unable to get publish post");
+        }
+    });
+}
+
+
 //save post data
 function savePostData() {
     debugger;
-    var _postslug = "";
-    var postTags = [];
+    if (validatePost()) {
+        var _postslug = "";
+        var postTags = [];
 
-    if ($.trim($("#PostUrlSlug").val()) != null && $.trim($("#PostUrlSlug").val()) != "") {
-        _postslug = $.trim($("#PostUrlSlug").val());
-    }
-    else {
-        var _postslug = $.trim($("#txtPostTitle").val());
-        _postslug = _postslug.replace(/\ /g, '-'); //regular expression to replace space with '-'
-    }
-    $.each($("#ddlTags option:selected"), function () {
-        postTags.push({ TagId: $(this).val() });
-    });
-
-    var postBody = tinyMCE.activeEditor.getContent();
-
-    var postData = {
-        PostId: $("#hdnPostId").val(),
-        Title: $("#txtPostTitle").val().trim(),
-        PostDescription: postBody,
-        PostUrlSlug: _postslug,
-        postStatus: 101, //for publish
-        PostMeta: $("#txtSearchDescription").val(),
-        CategoryId: $("input[name='rdlPostCategories']:checked").val(),
-        Tags: postTags
-    };
-
-    $.ajax({
-        url: 'NewPost',
-        method: 'POST',
-        datatype: 'json',
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(postData),
-        success: function (data) {
-            debugger;
-            if (data.IsSucess == true)
-                alert("post data updated successfully");
-        },
-        error: function () {
-            debugger;
-            alert("post updation failed");
-            console.log("post updation failed");
+        if ($.trim($("#PostUrlSlug").val()) != null && $.trim($("#PostUrlSlug").val()) != "") {
+            _postslug = $.trim($("#PostUrlSlug").val());
         }
-    });
+        else {
+            var _postslug = $.trim($("#txtPostTitle").val());
+            _postslug = _postslug.replace(/\ /g, '-'); //regular expression to replace space with '-'
+        }
+        $.each($("#ddlTags option:selected"), function () {
+            postTags.push({ TagId: $(this).val() });
+        });
+
+        var postBody = tinyMCE.activeEditor.getContent();
+
+        var postData = {
+            PostId: $("#hdnPostId").val(),
+            Title: $("#txtPostTitle").val().trim(),
+            PostDescription: postBody,
+            PostUrlSlug: _postslug,
+            postStatus: 101, //for publish
+            IsPublished:true,
+            PostMeta: $("#txtSearchDescription").val().trim(),
+            CategoryId: $("input[name='rdlPostCategories']:checked").val(),
+            Tags: postTags
+        };
+
+        $.ajax({
+            url: 'NewPost',
+            method: 'POST',
+            datatype: 'json',
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(postData),
+            success: function (data) {
+                if (data.IsSucess == true) {
+                    $("#btnPublish").attr("disabled", true);
+                    alert("Post data saved!");
+                }
+            },
+            error: function () {
+                alert("Post saving failed pls try again!");
+            }
+        });
+    }
 
 }
 
+function validatePost() {
+
+    var result = true;
+    var CategoriesCount = parseInt('@Model.Categories.Count');
+    var postBody = tinyMCE.activeEditor.getContent();
+    if ($("#txtPostTitle").val() == null || $("#txtPostTitle").val() == "") {
+        $("#spntxtPostTitle").text("Post title can not be empty");
+        result = false;
+    }
+    else {
+        $("#spntxtPostTitle").text("");
+    }
+    if ($("#txtPostUrlSlug").val() == null || $("#txtPostUrlSlug").val() == "") {
+        $("#spntxtPostUrlSlug").text("Post Urlslug required");
+        result = false;
+    }
+    else {
+        $("#spntxtPostUrlSlug").text("");
+    }
+    if (postBody == null || postBody == "") {
+        result = false;
+        $("#spntxtPostBody").text("Please write atleast 100 words as PostDescription");
+    }
+    else {
+        $("#spntxtPostBody").text("");
+    }
+    if ($("input[name='rdlPostCategories']:checked").val() == undefined || $("input[name='rdlPostCategories']:checked").val() == "") {
+        $("#spnrdlPostCategories").text("Please select atleast one Category");
+        result = false;
+    }
+    else {
+        $("#spnrdlPostCategories").text("");
+    }
+    if ($("#txtSearchDescription").val() == null || $("#txtSearchDescription").val() == "") {
+        $("#spntxtSearchDescription").text("Search description can not be empty");
+        result = false;
+    }
+    else {
+        $("#spntxtSearchDescription").text("");
+    }
+    return result;
+}
 
 

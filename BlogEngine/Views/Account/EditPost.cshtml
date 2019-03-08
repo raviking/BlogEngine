@@ -44,14 +44,14 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <a id="btnSaveDraft" href="#" class="btn btn-default">Save Draft</a>
-                        <a id="btnPreview" href="#" style="float:right;" class="btn btn-default">Preview</a>
+                        <a id="btnSaveDraft" onclick="javascript:savePostData();" href="#" class="btn btn-default">Update Post</a>
+                        <a id="btnPreview" target="_blank" href="@Url.Action("PostById","Blog",new { postId=Convert.ToInt64(ViewBag.PostId) })" style="float:right;" class="btn btn-default">Preview</a>
                         <div class="margin-top-10px">
                             <p><i class="fa-map-pin"></i>Status:<strong> &nbsp;Draft &nbsp;</strong><a href="#">Edit</a></p>
                             <p><i class="fa-tag"></i>Visibility: &nbsp;<strong>Public &nbsp;</strong><a href="#">Edit</a></p>                            
                         </div>
                         <div>
-                            <button id="btnPublish" onclick="javascript:savePostData();" style="float:right;" class="btn btn-success">Publish</button>
+                            <input type="button" id="btnPublish" value="Publish" onclick="javascript:publishPost();" style="float:right;" class="btn btn-success" />
                         </div>
                     </div>
                 </div>
@@ -71,9 +71,9 @@
                             <input type="radio" name="rdlPostCategories" id="rdlCategory_@cat.CategoryId" value="@cat.CategoryId" />@cat.CategoryName
                         }
 
-                        <div class="margin-top-10px">
+                        @*<div class="margin-top-10px">
                             <a href="#"><u>Add New Category</u></a>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
                 <!--Tags-->
@@ -93,9 +93,9 @@
                                 <option value="@tag.TagId">@tag.TagName</option>
                             }
                         </select>
-                        <div class="margin-top-10px">
+                        @*<div class="margin-top-10px">
                             <a href="#"><u>Add New Tag</u></a>
-                        </div>
+                        </div>*@
                     </div>
                 </div>
                 <!--Search description-->

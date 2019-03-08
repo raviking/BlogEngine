@@ -18,10 +18,6 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
-        public string ShortDescription
-        {
-            get;set;
-        }
         public string PostDescription
         {
             get; set;

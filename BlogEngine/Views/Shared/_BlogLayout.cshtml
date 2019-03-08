@@ -42,6 +42,10 @@
     <link rel="shortcut icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">
     <link rel="icon" href="~/Content/themes/Hola10/favicon.ico" type="image/x-icon">       
 
+    <script type="text/javascript">
+        var HostAddress = "@ConfigurationManager.AppSettings["WebHostAddress"].ToString()";
+    </script>
+
 </head>
 @using System.Configuration
 @{
@@ -128,7 +132,7 @@
             <div class="col-twelve">
                 <div class="copyright">
                     <span>© Copyright 2019</span>
-                    <span>Design by <a href="https://localhost/BlogEngine">BlogEngine</a></span>
+                    <span>Design by <a href="http://localhost/BlogEngine/Security/Login">BlogEngine</a></span>
                 </div>
 
                 <div class="go-top">
@@ -183,8 +187,6 @@
     ================================================== -->    
     <script src="~/Content/themes/Hola10/js/plugins.js"></script>
     <script src="~/Content/themes/Hola10/js/main.js"></script>
-    <script src="~/Scripts/app/Blog/BlogLayout.js"></script>
-
     
 </body>
 
