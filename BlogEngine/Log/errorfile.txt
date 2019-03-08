@@ -8579,3 +8579,5 @@ Error Number:2627,State:1,Class:14
    at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
    at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
    at BlogEngine.DAL.BlogEngineDAL.GetCommentsByPostId(Int64 postId) in D:\GitHub\BlogEngine\BlogEngine.DAL\BlogEngineDataAccess.cs:line 494
+2019-03-08 18:58:07,915 [8] ERROR BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById System.NullReferenceException: Object reference not set to an instance of an object.
+   at BlogEngine.DAL.BlogEngineDAL.GetPostDetailsById(Int64 postId) in D:\GitHub\BlogEngine\BlogEngine.DAL\BlogEngineDataAccess.cs:line 651
