@@ -34,5 +34,10 @@ namespace BlogEngine.DTO
         {
             get;set;
         }
+        public bool IsReply
+        {
+
+            get;set;
+        }
     }
 }

@@ -493,6 +493,7 @@ namespace BlogEngine.DAL
             {
                 _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
                                      new SqlParameter("postId", postId)).ToList();
+
             }
             catch (Exception ex)
             {
@@ -533,12 +534,12 @@ namespace BlogEngine.DAL
             ResponseDTO response = new ResponseDTO();
             try
             {
-                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment @comment_Id,@comment_Content,@comment_Date,@comment_Author,@Comment_AuthorEmail,@Comment_Parent,@Comment_Approved,@Comment_PostId",
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment @comment_Id,@comment_Content,@comment_Date,@comment_Author,@Comment_AuthorEmail,@Comment_PostId",
                                 new SqlParameter("comment_Id", objComment.Comment_Id),
                                 new SqlParameter("comment_Content", objComment.Comment_Content),
                                 new SqlParameter("comment_Date", objComment.Comment_Date),
                                 new SqlParameter("comment_Author", objComment.Comment_Author),
-                                new SqlParameter("Comment_AuthorEmail", objComment.Comment_AuthorEmail),
+                                new SqlParameter("Comment_AuthorEmail", objComment.Comment_AuthorEmail),                                
                                 new SqlParameter("Comment_PostId",objComment.Comment_PostId));
                 if (count > 0)
                     response.IsSucess = true;
@@ -551,6 +552,28 @@ namespace BlogEngine.DAL
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveComment - End");
             return response;
+        }
+
+        /// <summary>
+        /// Gets the Reply for comment if exists
+        /// </summary>
+        /// <param name="commentId"></param>
+        /// <returns></returns>
+        public Reply GetReplyForComment(long commentId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetReplyForComment - Begin");
+            Reply objReply = new Reply();
+            try
+            {
+                objReply = dbcontext.Database.SqlQuery<Reply>("sp_GetReplyForComment @CommentId",
+                            new SqlParameter("CommentId",commentId)).FirstOrDefault();      
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetReplyForComment " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetReplyForComment - End");
+            return objReply;
         }
 
         #endregion Posts
@@ -1092,19 +1115,18 @@ namespace BlogEngine.DAL
         /// </summary>
         /// <param name="objReply"></param>
         /// <returns>ResponseDTO</returns>
-        public ResponseDTO SaveCommentReply(Comment objReply)
+        public ResponseDTO SaveCommentReply(Reply objReply)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveCommentReply -Begin");
             ResponseDTO response = new ResponseDTO();
             try
             {
-                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment_Reply @commentId,@commentContent,@commentApproved,@commentDate,@commentAuthor,@commentAuthorEmail,@commentParent,@commentPostId,@userId",
-                                new SqlParameter("commentId",objReply.Comment_Id),
-                                new SqlParameter("commentContent", objReply.Comment_Content),
-                                new SqlParameter("commentDate", objReply.Comment_Date),
-                                new SqlParameter("commentAuthor", objReply.Comment_Author),
-                                new SqlParameter("commentAuthorEmail", objReply.Comment_AuthorEmail),
-                                new SqlParameter("commentPostId", objReply.Comment_PostId));
+                int count = dbcontext.Database.ExecuteSqlCommand("sp_SaveComment_Reply @ReplyId,@ReplyContent,@ReplyDate,@ReplyAuthor,@ReplyCommentId",
+                                new SqlParameter("ReplyId", objReply.ReplyId),
+                                new SqlParameter("ReplyContent", objReply.Reply_Content),
+                                new SqlParameter("ReplyDate", objReply.Reply_Date),
+                                new SqlParameter("ReplyAuthor", objReply.Reply_Author),
+                                new SqlParameter("ReplyCommentId", objReply.Reply_CoommentId));
                 if (count > 0)
                     response.IsSucess = true;
                 else

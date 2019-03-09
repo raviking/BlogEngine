@@ -232,10 +232,25 @@ namespace BlogEngine.Controllers
         public PartialViewResult LoadCommentsForPost(long postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - Begin");
-            List<Comment> _lstComments = new List<Comment>();
+            List<CommentsViewModel> _lstCommentsViewModel = new List<CommentsViewModel>();
             try
             {
-                _lstComments = dataaccess.GetCommentsByPostId(postId);
+                List<Comment> _lstComments = dataaccess.GetCommentsByPostId(postId);
+                if(_lstComments!=null && _lstComments.Count > 0)
+                {
+                    foreach (var comment in _lstComments)
+                    {
+                        CommentsViewModel objCommentViewModel = new CommentsViewModel();
+                        objCommentViewModel.Comment = comment;
+                        if (comment.IsReply == true)
+                        {
+                            Reply reply = new Reply();
+                            reply = dataaccess.GetReplyForComment(comment.Comment_Id);
+                            objCommentViewModel.Reply = reply;                                                               
+                        }
+                        _lstCommentsViewModel.Add(objCommentViewModel);
+                    }
+                }                                                   
                 ViewBag.PostId = postId;
             }
             catch(Exception ex)
@@ -243,7 +258,7 @@ namespace BlogEngine.Controllers
                 logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: LoadCommentsForPost " + ex);
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: LoadCommentsForPost - End");
-            return PartialView(_lstComments);
+            return PartialView(_lstCommentsViewModel);
         }
 
         public JsonResult SaveComment(Comment objComment)
@@ -253,6 +268,7 @@ namespace BlogEngine.Controllers
             try
             {
                 response = dataaccess.SaveComment(objComment);
+                ViewBag.PostUrlSlug = dataaccess.GetPostDetailsById(objComment.Comment_PostId).PostUrlSlug;
             }
             catch (Exception ex)
             {

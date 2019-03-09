@@ -24,7 +24,7 @@ function displayEditCommentForm(commentid) {
 
 function displayReplyTextBox(commentId,postId) {
     debugger;
-    var element = "<textarea rows='10' id='txt_reply_content" + commentId + "' class='form-control'></textarea>";
+    var element = "<textarea rows='10' id='txt_reply_content' class='form-control'></textarea>";
     element += "<span id='spn_txt_reply_content' style='display:none;'></span>";
     $("#reply_comment").empty();
     $("#reply_comment").html(element);
@@ -45,33 +45,31 @@ function displayReplyTextBox(commentId,postId) {
                 "class": "btn btn-primary",
                 click: function () {
                     //save reply content
-                    if ($("#txt_reply_content").val().trim() != "" || $("#txt_reply_content").val().trim() != null) {
+                    if ($("#txt_reply_content").val() != "" || $("#txt_reply_content").val() != null) {
                         var objReply = {
-                            Comment_Id: 0,
-                            Comment_Content: $("#txt_reply_content").val().trim(),//reply content
-                            Comment_Approved: true,
-                            Comment_Date: new Date(),
-                            Comment_Author: null,//will get comment author name from session
-                            Comment_AuthorEmail: null,//will get author email from session
-                            Comment_Parent: commentId,
-                            Comment_PostId: postId,
+                            ReplyId: 0,
+                            Reply_Content: $("#txt_reply_content").val(),//reply content
+                            Reply_Author: null,
+                            Reply_Date: new Date(),
+                            Reply_CoommentId: commentId,//will get comment author name from session                            
                         };
 
                         $.ajax({
-                            url: 'Account/SaveCommentReply',
+                            url: 'SaveCommentReply',
                             method: 'POST',
                             datatype: 'json',
                             contentType: "application/json; charset=utf-8",
                             data: JSON.stringify(objReply),
                             success: function (response) {
-                                if (response.IsSucess == true) {
-                                    $(this).dialog("close");
+                                if (response.IsSucess == true) {                                    
+                                    swal("Reply sent for the Comment");
+                                    //$(this).dialog("close");
                                     window.location.href = HostAddress + "/Account/Comments";
                                 }
                             },
                             error: function () {
                                 console.log("Reply saving failed");
-                                alert("Error occured while saving reply!");
+                                swal("Error occured while saving reply!");
                             }
                         });
                     }

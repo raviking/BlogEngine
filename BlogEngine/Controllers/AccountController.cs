@@ -491,7 +491,7 @@ namespace BlogEngine.Controllers
             return Json(response,JsonRequestBehavior.AllowGet);
         }
 
-        public JsonResult SaveCommentReply(Comment objReply)
+        public JsonResult SaveCommentReply(Reply objReply)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: SaveReply - Begin");
             ResponseDTO response = new ResponseDTO();
@@ -500,8 +500,7 @@ namespace BlogEngine.Controllers
                 if (Session["CurrentUser"] != null)
                 {
                     User _currentUser = Session["CurrentUser"] as User;
-                    objReply.Comment_Author = _currentUser.FirstName + _currentUser.LastName;
-                    objReply.Comment_AuthorEmail = _currentUser.Email;
+                    objReply.Reply_Author = _currentUser.FirstName + _currentUser.LastName;                    
 
                     response = dataaccess.SaveCommentReply(objReply);
                 }                

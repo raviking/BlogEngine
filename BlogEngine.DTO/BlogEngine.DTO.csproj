@@ -47,6 +47,7 @@
     <Compile Include="ContactDTO.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Post.cs" />
+    <Compile Include="Reply.cs" />
     <Compile Include="ResponseDTO.cs" />
     <Compile Include="Roles.cs" />
     <Compile Include="Tag.cs" />

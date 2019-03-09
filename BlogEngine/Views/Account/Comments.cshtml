@@ -39,18 +39,16 @@
                                         <td>@comment.Comment_AuthorEmail</td>
                                         <td>
                                             <p>@comment.Comment_Content</p>
-                                            <p>
-                                                <a href="@Url.Action("ApproveOrUnApproveComment","Account",new {commentId=comment.Comment_Id})">Approve</a> |
+                                            <p>                                                
                                                 <a href="#" onclick="javascript:displayReplyTextBox(@comment.Comment_Id,@comment.Comment_PostId);">Reply</a> |
                                                 <a href="#" onclick="javascript: displayEditCommentForm(@comment.Comment_Id);">Edit</a> |
                                                 <a href="#" onclick="javascript:DeleteComment(@comment.Comment_Id);">Delete</a>                                               
                                             </p>
                                         </td>
-                                        <td>
-                                            <p>@comment.postName</p>
+                                        <td>                                            
                                             <p><a target="_blank" href="@Url.Action("PostById","Blog",new {postId=comment.Comment_PostId})">View Post</a></p>
                                         </td>
-                                        <td>@comment.Comment_Date</td>                                                                               
+                                        <td>@comment.Comment_Date.ToShortDateString()</td>                                                                               
                                     </tr>
                                  }
                             </tbody>
@@ -65,7 +63,6 @@
         <!-- /.row -->
     </section>
 </div>
-
 <div id="reply_comment"></div>
 
 <script src="~/Scripts/jquery-3.2.1.min.js"></script>
