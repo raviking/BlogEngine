@@ -18,9 +18,9 @@
 
         <div class="pager">
             <!--Home page pagination links-->
-            <a href="@webhostUrl@_previous" title="Previous" class="btn btn-primary float-left"
+            <a href="@webhostUrl@_previous" title="Previous" class="btn btn--stroke float-left"
                style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
-            <a href="@webhostUrl@_next" title="Next" class="btn btn-primary float-right"
+            <a href="@webhostUrl@_next" title="Next" class="btn btn--stroke float-right"
                style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
         </div>
     }
@@ -36,13 +36,13 @@
                     {
                         catUrlSlug = Model.Category.CategoryUrlSlug,
                         p = _previd
-                    })" title="Previous" class="btn btn-primary float-left"
+                    })" title="Previous" class="btn btn--stroke float-left"
                    style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
                 <a href="@Url.Action("category", "Blog", new
                     {
                         catUrlSlug = Model.Category.CategoryUrlSlug,
                         p = _nextid
-                    })" title="Next" class="btn btn-primary float-right"
+                    })" title="Next" class="btn btn--stroke float-right"
                    style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
             </div>
         }
@@ -54,13 +54,13 @@
                     {
                         tagSlug = Model.Tag.TagUrlSlug,
                         tp = _previd
-                    })" title="Previous" class="btn btn-primary float-left"
+                    })" title="Previous" class="btn btn--stroke float-left"
                    style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
                 <a href="@Url.Action("tag", "Blog", new
                     {
                         tagSlug = Model.Tag.TagUrlSlug,
                         tp = _nextid
-                    })" title="Next" class="btn btn-primary float-right"
+                    })" title="Next" class="btn btn--stroke float-right"
                    style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
             </div>
         }
@@ -72,13 +72,13 @@
                     {
                         s = Model.Search,
                         p = _previd
-                    })" title="Previous" class="btn btn-primary float-left"
+                    })" title="Previous" class="btn btn--stroke float-left"
                    style="visibility:@(Model.PageNo > 1 ? "visible" : "collapse")"><< previous</a>
                 <a href="@Url.Action("Search", "Blog", new
                     {
                         s = Model.Search,
                         p = _nextid
-                    })" title="Next" class="btn btn-primary float-right"
+                    })" title="Next" class="btn btn--stroke float-right"
                    style="visibility:@(Model.PageNo < totalPages ? "visible" : "collapse")">next >></a>
             </div>
         }

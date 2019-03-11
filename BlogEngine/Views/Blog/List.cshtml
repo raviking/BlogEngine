@@ -31,7 +31,7 @@
                 <h1 class="page-header__title">
                     @Html.PostLink(Model.LatestPost)
                 </h1>
-                <p>Pellentesque in ipsum id orci porta dapibus amet dui. Ad id deserunt ratione autem eius et minima ut et. Nihil sed quis velit aut enim aliquam. Quas non ad sint eveniet voluptatem est iure...</p>
+                <p>@Model.LatestPost.PostMeta</p>
                 <p>
                     <a href="@Url.Action("Post","Blog",new { urlslug= Model.LatestPost.PostUrlSlug })" class="btn btn--stroke page-header__btn">Read More</a>
                 </p>
@@ -93,6 +93,22 @@
 
 </section> <!-- end blog-content-wrap -->
 
+<!--Subscription section-->
+<section id="stats" class="s-stats">
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+            <h2>Subscribe to our new letter.</h2>
+            <p class="lead">
+                To get the latest updates from our site subscribe to our site.
+            </p>
+            <a href="@Url.Action("Subscribe","Blog")" class="btn btn--stroke">Click to Subscribe</a>
+        </div>
+    </div>
+
+</section><!--end Subscription -->
+
+<script src="~/Scripts/app/Blog/List.js"></script>
 
 
 

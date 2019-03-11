@@ -65,8 +65,41 @@ namespace BlogEngine.Controllers
             }
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Contact -End");
             return Json(res, JsonRequestBehavior.AllowGet);
-        }        
+        }
 
+        [HttpGet]
+        public ActionResult Subscribe()
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Subscribe(HttpGet) -Begin");
+            UserDropdowns objuserDropdowns = null;
+            try
+            {
+                objuserDropdowns = new UserDropdowns(dataaccess);
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Subscribe(HttpGet) " + ex);
+            }            
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Subscribe(HttpGet) -End");
+            return View(objuserDropdowns);
+        }
+
+        [HttpPost]
+        public JsonResult Subscribe(User objUser)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Subscribe(HttpPost) -Begin");
+            ResponseDTO response = null;
+            try
+            {
+                response = dataaccess.SaveUser(objUser);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: Subscribe(HttpPost) " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Subscribe(HttpPost) -End");
+            return Json(response,JsonRequestBehavior.AllowGet);
+        }
         public ViewResult category(string catUrlSlug, int p = 1)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: Category - Begin");

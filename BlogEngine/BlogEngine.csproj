@@ -840,6 +840,8 @@
     <Content Include="Scripts\app\Account\Tags.js" />
     <Content Include="Scripts\app\Account\updatePost.js" />
     <Content Include="Scripts\app\Account\Users.js" />
+    <Content Include="Scripts\app\Blog\List.js" />
+    <Content Include="Scripts\app\Blog\Subscribe.js" />
     <Content Include="Scripts\app\Config.js" />
     <Content Include="Content\themes\simple\images\arrow.png" />
     <Content Include="Content\themes\simple\images\back.png" />
@@ -1235,6 +1237,7 @@
     <Content Include="Views\Blog\Post.cshtml" />
     <Content Include="Views\Blog\LoadCommentsForPost.cshtml" />
     <Content Include="Views\Blog\Search.cshtml" />
+    <Content Include="Views\Blog\Subscribe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogEngine.BusinessLogic\BlogEngine.BusinessLogicLayer.csproj">
@@ -1250,9 +1253,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Scripts\app\Blog\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

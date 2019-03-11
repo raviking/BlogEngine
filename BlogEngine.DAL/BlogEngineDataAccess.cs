@@ -83,14 +83,14 @@ namespace BlogEngine.DAL
                             new SqlParameter("userId", objUser.UserId),
                             new SqlParameter("firstName", objUser.FirstName),
                             new SqlParameter("lastName", objUser.LastName),
-                            new SqlParameter("userName", objUser.UserName),
-                            new SqlParameter("password", objUser.Password),
+                            new SqlParameter("userName", objUser.UserName ==null ? "" : objUser.UserName),
+                            new SqlParameter("password", objUser.Password == null ? "" : objUser.Password),
                             new SqlParameter("role", objUser.Role),
                             new SqlParameter("userStatus",objUser.UserStatus),
-                            new SqlParameter("gender", objUser.Gender),
+                            new SqlParameter("gender", objUser.Gender == null ? "" : objUser.Gender),
                             new SqlParameter("email", objUser.Email),
                             new SqlParameter("country", objUser.Country),
-                            new SqlParameter("designation", objUser.Designation));
+                            new SqlParameter("designation", objUser.Designation ==null ? "" : objUser.Designation));
                 if (response.Count > 0)
                 {
                     response.IsSucess = true;

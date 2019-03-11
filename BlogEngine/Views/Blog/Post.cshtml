@@ -83,7 +83,27 @@
 
 </article>
 
+<!--Subscription section-->
+<section id="stats" class="s-stats">
+
+    <div class="row narrow section-intro has-bottom-sep">
+        <div class="col-full">
+            <h2>Subscribe to our new letter.</h2>
+            <p class="lead">
+                To get the latest updates from our site subscribe to our site.
+            </p>
+            <a href="@Url.Action("Subscribe","Blog")" class="btn btn--stroke">Click to Subscribe</a>
+        </div>
+    </div>
+
+</section><!--end Subscription -->
+
+<!--start Comments-->
+
 @Html.Action("LoadCommentsForPost", new
 {
     postId = Model.PostId
 })
+
+<!--end Comments-->
+

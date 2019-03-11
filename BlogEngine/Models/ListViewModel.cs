@@ -21,7 +21,7 @@ namespace BlogEngine.Models
             PageNo = p;
             isHomePage = true;
             Posts = dataaccess.Posts(p - 1, postsCountInHomePage);
-            LatestPost = Posts[0];
+            LatestPost = dataaccess.Posts(0, postsCountInHomePage).FirstOrDefault();
             TotalPosts = dataaccess.TotalPosts();
         }
 

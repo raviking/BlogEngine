@@ -1,0 +1,74 @@
+﻿@model BlogEngine.Models.UserDropdowns
+@{
+    ViewBag.Title = "Subscribe";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<section class="page-header page-hero" style="background-image:url(/BlogEngine/Content/themes/Hola10/images/blog/blog-bg-01.jpg)">
+
+    <div class="row page-header__content">
+        <article class="col-full">
+            <h2 class="page-header__title">
+                <a title="This is Big image post buddy">Let me In</a>
+            </h2>
+        </article>
+    </div>
+
+</section>
+
+
+<div class="comments-wrap">
+
+    <div id="comments" class="row">
+        <div class="col-full">
+
+            <!-- commentlist -->
+            <!-- respond -->
+            <div class="respond">
+                <form id="SubscribeForm" name="SubscribeForm" action="">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <label for="First Name">First Name</label>
+                            <input type="text" id="txtfirstname" class="full-width" placeholder="Ex: Ravi">
+                            <span id="spntxtfirstname" style="color:red"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="Last Name">Last Name</label>
+                            <input type="text" id="txtlastname" class="full-width" placeholder="Ex: Teja">
+                            <span id="spntxtlastname" style="color:red"></span>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="Email">Email</label>
+                            <input type="text" id="txtemail" class="full-width" placeholder="Ex: ravitejaswayampu@gmail.com">
+                            <span id="spntxtemail" style="color:red"></span>
+                        </div>
+
+                        <div>
+                            <label for="Country">Country</label>
+                            <div class="ss-custom-select">
+                                <select class="full-width" id="ddlCountry">
+                                    <option value="">Select Country</option>
+                                    @foreach (var country in Model.Countries)
+                                    {
+                                        <option value="@country.Id">@country.CountryName</option>
+                                    }
+                                </select>
+                                <span id="spnddlCountry" style="color:red"></span>
+                            </div>
+                        </div>
+
+                        <button type="button" onclick="javascript: saveSubscriberInfo();" class="btn--primary">Subscribe</button>
+
+                    </fieldset>
+                </form>
+            </div> <!-- Respond End -->
+
+        </div> <!-- end col-full -->
+    </div> <!-- end row comments -->
+</div>
+
+<script src="~/Scripts/app/Blog/Subscribe.js"></script>
+
