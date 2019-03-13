@@ -2806,3 +2806,1429 @@
 2019-03-11 18:13:39,034 [45] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
 2019-03-11 18:13:39,037 [45] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
 2019-03-11 18:13:39,040 [45] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-12 09:43:47,709 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-12 09:43:47,809 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-12 09:43:57,537 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-12 09:43:58,303 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-12 09:43:58,303 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-12 09:43:58,303 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-12 09:43:58,335 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-12 09:43:58,383 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-12 09:43:58,383 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-12 09:43:58,384 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-12 09:43:58,387 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-12 09:43:58,428 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-12 13:06:15,638 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-12 13:06:15,670 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-12 13:06:28,732 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-12 13:06:28,733 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-12 13:06:29,417 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-12 13:06:29,418 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-12 13:06:30,076 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-12 13:06:30,079 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetReplyForComment - Begin
+2019-03-12 13:06:30,367 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetReplyForComment - End
+2019-03-12 13:06:30,373 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 12:40:07,897 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 12:40:08,070 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:40:23,292 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:40:23,557 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:40:23,557 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:40:23,557 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:40:23,561 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:40:23,599 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:40:23,599 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:40:23,600 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 12:40:23,604 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 12:40:23,833 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 12:40:43,919 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 12:40:43,925 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 12:40:48,827 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 12:40:48,828 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 12:40:50,240 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 12:40:50,243 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 12:40:50,279 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 12:40:50,282 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 12:42:13,565 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 12:42:13,573 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:42:13,710 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:42:13,712 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 12:42:13,738 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 12:42:13,739 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:42:13,777 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:42:14,138 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:42:14,138 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:42:14,139 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 12:43:29,425 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:43:29,428 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:43:29,861 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:43:29,863 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:43:44,191 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - Begin
+2019-03-13 12:43:44,202 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -Begin
+2019-03-13 12:43:44,326 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -End
+2019-03-13 12:43:44,327 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - End
+2019-03-13 12:43:47,967 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:43:47,969 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:43:48,395 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:43:48,395 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:06,680 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:44:06,683 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:44:06,844 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:44:06,845 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:44:16,004 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - Begin
+2019-03-13 12:44:16,004 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -Begin
+2019-03-13 12:44:16,123 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -End
+2019-03-13 12:44:16,124 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - End
+2019-03-13 12:44:24,870 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:24,880 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:44:24,984 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:44:24,985 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:31,160 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:31,170 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:44:31,471 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:44:31,471 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:31,715 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:44:31,715 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:44:31,835 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:44:31,835 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:46:31,251 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:46:34,551 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:47:07,217 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:47:07,217 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:48:09,715 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 12:48:09,729 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:48:12,993 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:48:13,319 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:48:13,320 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:48:13,320 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:48:13,377 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:48:13,630 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:48:13,631 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:48:13,631 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 12:48:13,683 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 12:48:13,687 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 12:48:17,825 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 12:48:17,827 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 12:48:20,345 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 12:48:20,346 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 12:48:20,491 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 12:48:20,493 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 12:48:20,544 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 12:48:20,547 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 12:48:24,720 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:48:24,721 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:48:25,134 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:48:25,137 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:48:36,490 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - Begin
+2019-03-13 12:48:36,492 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -Begin
+2019-03-13 12:48:36,605 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsCategorySlugExists -End
+2019-03-13 12:48:36,606 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsCategorySlugExists - End
+2019-03-13 12:48:43,924 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:48:45,395 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - Begin
+2019-03-13 12:48:48,956 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveCategory - End
+2019-03-13 12:48:50,699 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveCategory - Begin
+2019-03-13 12:48:52,279 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:48:52,279 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:48:52,538 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:48:52,539 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Categories - Begin
+2019-03-13 12:49:00,126 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:49:00,128 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 12:49:00,219 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 12:49:00,221 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:50:29,918 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 12:50:29,931 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:50:32,138 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 12:50:32,141 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 12:50:32,577 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:50:33,125 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:50:33,125 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:50:33,125 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:50:33,140 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:50:33,179 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:50:33,179 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:50:33,179 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 12:50:33,182 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 12:50:33,184 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 12:50:36,282 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 12:50:36,283 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 12:50:36,439 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 12:50:36,440 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 12:50:36,468 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 12:50:36,470 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 12:50:39,862 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:50:39,864 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 12:50:39,973 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 12:50:39,976 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:50:56,343 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsTagSlugExists - Begin
+2019-03-13 12:50:56,345 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsTagSlugExists -Begin
+2019-03-13 12:50:56,555 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: IsTagSlugExists -End
+2019-03-13 12:50:56,556 [23] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: IsTagSlugExists - End
+2019-03-13 12:50:56,946 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveTag - Begin
+2019-03-13 12:50:56,947 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveTag -Begin
+2019-03-13 12:50:57,246 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SaveTag -End
+2019-03-13 12:50:57,247 [22] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: SaveTag - End
+2019-03-13 12:50:58,575 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:50:58,575 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 12:50:58,897 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 12:50:58,898 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Tags - Begin
+2019-03-13 12:51:05,433 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditTag - Begin
+2019-03-13 12:51:05,436 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagById -Begin
+2019-03-13 12:51:05,570 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagById -End
+2019-03-13 12:51:05,574 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditTag - End
+2019-03-13 12:51:11,048 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 12:51:11,049 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 12:51:19,135 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 12:51:19,140 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 12:51:22,187 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:51:22,283 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:51:22,284 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 12:51:22,284 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 12:51:22,581 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 12:51:22,593 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 12:51:34,700 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 12:51:34,702 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 12:51:35,056 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:51:35,472 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:51:35,473 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 12:51:35,473 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 12:51:35,521 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 12:51:35,521 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 12:51:47,759 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 12:51:47,768 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 12:51:47,873 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 12:51:47,874 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 12:51:47,886 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 12:51:47,886 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 12:51:47,897 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 12:51:48,405 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 12:51:48,406 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 12:51:48,407 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 13:02:32,856 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:02:35,678 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:02:36,706 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:02:50,303 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:04:31,227 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:04:31,228 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:04:44,366 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:04:50,001 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:10:16,691 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:10:16,691 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:12:10,807 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:12:14,837 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:12:23,358 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 13:12:25,018 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 13:12:26,475 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:12:26,480 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:12:26,491 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:12:26,492 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:12:26,498 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:12:26,498 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:12:26,504 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:12:26,549 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:12:26,550 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:12:26,550 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:12:29,634 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:12:29,637 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:12:29,646 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:12:29,651 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:12:29,651 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:12:29,651 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:27,221 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:27,223 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:13:27,232 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:13:27,233 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:13:27,242 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:13:27,243 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:13:27,248 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:13:27,298 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:13:27,298 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:13:27,298 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:27,524 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:27,524 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:13:27,532 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:13:27,536 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:13:27,537 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:13:27,537 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:29,618 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:29,620 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:13:29,630 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:13:29,631 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:13:29,642 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:13:29,642 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:13:29,648 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:13:29,699 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:13:29,699 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:13:29,699 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:29,833 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:29,834 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:13:29,848 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:13:29,854 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:13:29,854 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:13:29,855 [31] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:31,957 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:13:31,957 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 13:13:31,966 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:13:32,023 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:13:32,023 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 13:13:32,023 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:13:32,045 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:13:32,046 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:13:36,497 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:36,498 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:13:36,513 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:13:36,514 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:13:36,519 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:13:36,520 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:13:36,525 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:13:36,605 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:13:36,606 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:13:36,606 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:13:36,765 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:36,765 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:13:36,769 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:13:36,772 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:13:36,772 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:13:36,773 [30] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:13:41,679 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:13:41,680 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:13:41,696 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:13:41,696 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:13:41,707 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:13:41,708 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:13:41,710 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:13:41,712 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:16:22,838 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:16:22,839 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:16:22,865 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:16:22,866 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:16:22,868 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:16:22,868 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:16:22,871 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:16:22,871 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:16:58,964 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:16:58,964 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:16:58,997 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:16:59,014 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:16:59,016 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:16:59,017 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:16:59,029 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:16:59,029 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:18:22,719 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:18:22,720 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:18:22,741 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:18:22,749 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:18:22,750 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:18:22,751 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:18:22,753 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:18:22,753 [13] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:20:53,151 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:20:53,152 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:20:53,179 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:20:53,201 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:20:53,204 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:20:53,205 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:20:53,212 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:20:53,212 [34] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:22:14,664 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:22:14,666 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:14,677 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:14,723 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:14,723 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:14,723 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:14,728 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:14,756 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:14,756 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:14,756 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:22:14,759 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:22:14,760 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:22:19,277 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:22:19,278 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:19,293 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:19,332 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:19,332 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:19,332 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:19,335 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:19,360 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:19,360 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:19,360 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:22:19,363 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:22:19,363 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:22:25,384 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:22:25,386 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:25,397 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:25,437 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:25,437 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:25,437 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:22:25,441 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:22:25,473 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:22:25,473 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:22:25,474 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:22:25,477 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:22:25,477 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:22:39,122 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 13:22:39,126 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 13:23:45,308 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 13:23:45,309 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 13:25:01,864 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 13:25:01,865 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 13:25:03,796 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 13:25:03,797 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 13:25:03,802 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 13:25:03,803 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 13:25:03,812 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:03,812 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:03,817 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:03,817 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:03,820 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:03,820 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:03,823 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:03,867 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:03,867 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:03,867 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:04,225 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:04,226 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:04,230 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:04,233 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:04,233 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:04,233 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:09,090 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:09,094 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:09,099 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:09,100 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:09,106 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:09,107 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:09,111 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:09,159 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:09,159 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:09,159 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:09,451 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:09,451 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:09,458 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:09,462 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:09,462 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:09,462 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:11,129 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:11,130 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:11,135 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:11,135 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:11,141 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:11,142 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:11,147 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:11,194 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:11,194 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:11,194 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:11,455 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:11,456 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:11,461 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:11,464 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:11,465 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:11,465 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:13,396 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:13,397 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:13,413 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:13,413 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:13,418 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:13,419 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:13,423 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:13,469 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:13,469 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:13,470 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:13,734 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:13,736 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:13,744 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:13,749 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:13,749 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:13,749 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:17,262 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:17,263 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:17,281 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:17,282 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:17,286 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:17,286 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:17,289 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:17,337 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:17,337 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:17,337 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:17,630 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:17,633 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:17,639 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:17,644 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:17,644 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:17,645 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:19,842 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:25:19,843 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 13:25:19,849 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:19,906 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:19,906 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 13:25:19,906 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:25:19,908 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:25:19,908 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:25:24,492 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:24,529 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:24,534 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:24,534 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:24,539 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:24,540 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:24,545 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:24,646 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:24,646 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:24,646 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:24,898 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:24,899 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:24,907 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:24,910 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:24,911 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:24,911 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:26,390 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:26,390 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:26,394 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:26,394 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:26,398 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:26,398 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:26,402 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:26,447 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:26,447 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:26,447 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:26,690 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:26,694 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:26,700 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:26,705 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:26,705 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:26,705 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:29,052 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:29,053 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:29,066 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:29,066 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:29,073 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:29,077 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:29,081 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:29,123 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:29,123 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:29,123 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:29,395 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:29,398 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:29,403 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:29,406 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:29,407 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:29,407 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:31,445 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:31,446 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:31,454 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:31,455 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:31,461 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:31,462 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:31,469 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:31,516 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:31,516 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:31,516 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:31,782 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:31,783 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:31,789 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:31,793 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:31,793 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:31,793 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:33,758 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:33,759 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:33,764 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:33,764 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:33,767 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:33,767 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:33,773 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:33,826 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:33,826 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:33,826 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:34,085 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:34,086 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:34,095 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:34,101 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:34,101 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:34,102 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:42,189 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:42,190 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:42,194 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:42,194 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:42,196 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:42,197 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:42,201 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:42,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:42,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:42,250 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:42,572 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:42,573 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:42,578 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:42,586 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:42,586 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:42,586 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:44,742 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:44,742 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:25:44,745 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:25:44,745 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:25:44,748 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:25:44,749 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:25:44,754 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:25:44,804 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:25:44,804 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:25:44,805 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:25:45,119 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:25:45,120 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:25:45,130 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:25:45,136 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:25:45,136 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:25:45,136 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:26:08,300 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:26:08,300 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:08,304 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:08,332 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:08,332 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:08,332 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:08,336 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:08,361 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:08,362 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:08,362 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:26:08,364 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:26:08,364 [15] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:26:11,830 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 13:26:11,831 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 13:26:14,388 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 13:26:14,389 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 13:26:14,395 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 13:26:14,396 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 13:26:14,407 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 13:26:14,407 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 13:26:18,190 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:26:18,194 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 13:26:18,201 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:18,263 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:18,264 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 13:26:18,264 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:26:18,266 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:26:18,266 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:26:21,110 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:26:21,110 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:26:21,122 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:26:21,123 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:26:21,128 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:26:21,128 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:21,132 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:21,181 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:21,181 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:21,181 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:26:21,557 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:26:21,568 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:26:21,579 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:26:21,582 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:26:21,582 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:26:21,582 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:26:24,110 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:26:24,112 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 13:26:24,123 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 13:26:24,124 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 13:26:24,130 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 13:26:24,130 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:24,135 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:24,204 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:24,205 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:24,205 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 13:26:24,369 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:26:24,369 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 13:26:24,383 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 13:26:24,397 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 13:26:24,397 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 13:26:24,398 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 13:26:33,430 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: PublishPost - Begin
+2019-03-13 13:26:35,379 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: PublishPost -Begin
+2019-03-13 13:26:40,361 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: PublishPost -End
+2019-03-13 13:26:41,978 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: PublishPost - Begin
+2019-03-13 13:26:43,507 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:26:43,509 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 13:26:43,518 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:43,583 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:43,583 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 13:26:43,583 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:26:43,586 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:26:43,587 [16] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:26:59,378 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:26:59,378 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:59,407 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:59,442 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:59,442 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:59,442 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:26:59,446 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:26:59,473 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:26:59,474 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:26:59,474 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:26:59,476 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:26:59,476 [28] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:29:21,366 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:29:21,367 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:29:21,387 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:29:21,388 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:29:21,390 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:29:21,390 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:29:21,394 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:29:21,394 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:29:34,387 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:29:34,388 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:29:34,402 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:29:34,443 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:29:34,443 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:29:34,443 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:29:34,446 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:29:34,471 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:29:34,472 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:29:34,472 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:29:34,474 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:29:34,475 [19] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:29:41,769 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 13:29:41,770 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:29:41,791 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:29:41,792 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 13:29:41,793 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 13:29:41,793 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 13:29:41,796 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 13:29:41,797 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 13:37:12,615 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:37:12,615 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:37:12,626 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:37:12,658 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:37:12,658 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:37:12,658 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:37:12,660 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:37:12,687 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:37:12,687 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:37:12,688 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:37:12,691 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:37:12,691 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:37:15,810 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Subscribe(HttpGet) -Begin
+2019-03-13 13:37:15,815 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCountryDropdowns -Begin
+2019-03-13 13:37:16,194 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCountryDropdowns -End
+2019-03-13 13:37:16,196 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:37:16,210 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:37:16,211 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Subscribe(HttpGet) -End
+2019-03-13 13:37:20,773 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 13:37:20,774 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:37:20,785 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:37:20,824 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:37:20,825 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:37:20,825 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 13:37:20,827 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:37:20,853 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:37:20,853 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 13:37:20,853 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 13:37:20,856 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 13:37:20,856 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 13:37:29,752 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 13:37:29,755 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 13:37:31,343 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 13:37:31,344 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -Begin
+2019-03-13 13:37:31,357 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 13:37:31,440 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 13:37:31,440 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostsByUserId -End
+2019-03-13 13:37:31,441 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -Begin
+2019-03-13 13:37:31,444 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserDetailsById -End
+2019-03-13 13:37:31,444 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: AuthorCreatedPosts - Begin
+2019-03-13 14:34:01,089 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 14:34:01,136 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 14:34:02,680 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 14:34:02,682 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 14:34:06,772 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 14:34:06,772 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 14:34:06,797 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 14:34:06,799 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 14:34:08,698 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 14:34:08,701 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 14:34:11,042 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 14:34:11,048 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 14:34:11,076 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 14:34:11,077 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 14:34:11,088 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 14:34:11,089 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:34:11,103 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:34:11,142 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:34:11,142 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:34:11,142 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 14:35:23,463 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 14:35:23,464 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 14:35:23,469 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 14:35:23,470 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 14:35:23,474 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 14:35:23,474 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:35:23,479 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:35:23,568 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:35:23,569 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:35:23,592 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 14:35:29,291 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:35:29,292 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:35:29,310 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:35:29,311 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:35:30,351 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:35:30,354 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:35:30,363 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:35:30,367 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:36:48,019 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:36:48,029 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:36:49,423 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:36:49,424 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:36:49,570 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:36:49,597 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:36:50,124 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:36:50,125 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:36:50,127 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:36:50,129 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:37:04,617 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:37:04,618 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:37:04,627 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:37:04,659 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:37:04,659 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:37:04,660 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:37:04,662 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:37:04,687 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:37:04,687 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:37:04,687 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:37:04,690 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:37:04,692 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:37:10,899 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:37:12,400 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:37:12,417 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:37:21,572 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:37:21,576 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:37:41,868 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:37:41,872 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:37:41,877 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:37:41,884 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:37:41,884 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:38:25,163 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:38:25,178 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:38:26,655 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:38:26,700 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:38:26,700 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:38:26,700 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:38:26,703 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:38:26,731 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:38:26,731 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:38:26,732 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:38:26,734 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:38:26,737 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:38:32,792 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:38:33,754 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:38:33,777 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:38:37,724 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:38:37,736 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:38:56,532 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:38:56,555 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:38:56,556 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:38:56,559 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:38:56,560 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:39:17,446 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:39:17,458 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:39:18,915 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:39:18,953 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:39:18,954 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:39:18,954 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:39:18,956 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:39:18,986 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:39:18,986 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:39:18,987 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:39:18,990 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:39:18,993 [20] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:39:27,675 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:39:28,370 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:39:28,386 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:39:30,032 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:39:30,042 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:39:41,089 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:39:41,105 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:39:41,105 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:39:41,109 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:39:41,110 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:40:23,054 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:40:23,066 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:40:24,584 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:40:24,624 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:40:24,624 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:40:24,625 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:40:24,629 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:40:24,656 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:40:24,656 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:40:24,657 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:40:24,663 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:40:24,666 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:40:54,914 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:40:54,926 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:40:56,317 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:40:56,319 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:40:56,831 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:40:56,854 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:40:56,854 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:40:56,865 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:40:56,866 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:40:56,870 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:40:56,870 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:40:56,871 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:40:56,874 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:40:56,912 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:40:56,912 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:40:56,913 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:40:56,916 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:40:56,929 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:40:56,980 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:40:56,981 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:40:56,983 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:40:56,986 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:41:02,028 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:41:04,735 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:41:04,754 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:41:06,545 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:41:06,551 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:41:22,767 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:41:22,768 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:41:22,769 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:41:22,776 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:41:22,776 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:42:27,376 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 14:42:27,387 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:42:28,742 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:42:28,779 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:42:28,780 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:42:28,780 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 14:42:28,783 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 14:42:28,811 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 14:42:28,811 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 14:42:28,812 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 14:42:28,814 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 14:42:28,817 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 14:42:43,334 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:42:43,988 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:42:44,009 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:42:44,259 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:42:44,270 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:42:47,680 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:42:47,710 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:42:47,710 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:42:47,713 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:42:47,714 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:43:38,825 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:43:38,825 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:43:38,851 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:43:38,852 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:43:38,856 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:43:38,856 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:43:41,159 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:43:41,159 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:43:41,161 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:43:41,162 [12] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:54:25,367 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:54:25,369 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:54:25,407 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:54:25,407 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:54:25,413 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:54:25,413 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:54:28,128 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:54:28,129 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:54:28,131 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:54:28,131 [41] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:55:14,352 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:55:14,353 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:55:14,377 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:55:14,378 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:55:14,381 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:55:14,381 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:55:16,587 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:55:16,588 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:55:16,590 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:55:16,590 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:56:14,014 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:56:14,015 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:56:14,035 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:56:14,036 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:56:14,040 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:56:14,040 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:56:16,313 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:56:16,313 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:56:16,315 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:56:16,315 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:57:05,304 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:57:05,305 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:57:05,323 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:57:05,324 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:57:05,327 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:57:05,327 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:57:07,794 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:57:07,795 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:57:07,797 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:57:07,797 [42] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 14:59:40,620 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 14:59:40,622 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:59:40,638 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:59:40,638 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 14:59:40,641 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 14:59:40,642 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 14:59:42,904 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 14:59:42,905 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 14:59:42,907 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 14:59:42,907 [44] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:02:16,113 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:02:16,114 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:02:16,124 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:02:16,124 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:02:16,127 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:02:16,127 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:02:18,472 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:02:18,472 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:02:18,475 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:02:18,475 [24] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:06:46,946 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:06:46,948 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:06:46,982 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:06:46,983 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:06:46,988 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:06:46,988 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:06:49,250 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:06:49,251 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:06:49,253 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:06:49,253 [43] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:11:10,281 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:11:10,284 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:11:10,305 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:11:10,306 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:11:10,309 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:11:10,309 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:11:12,606 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:11:12,606 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:11:12,609 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:11:12,609 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:12:01,283 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:12:01,284 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:12:01,308 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:12:01,309 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:12:01,313 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:12:01,313 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:12:01,315 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:12:01,315 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:12:01,319 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:12:01,319 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:12:04,723 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:12:04,725 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:12:04,750 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:12:04,751 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:12:04,755 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:12:04,755 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:12:04,756 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:12:04,756 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:12:04,759 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:12:04,760 [47] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:14:06,693 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:14:06,693 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:14:06,709 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:14:06,710 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:14:06,715 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:14:06,715 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:14:06,717 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:14:06,717 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:14:06,721 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:14:06,721 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:15:23,335 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:15:23,336 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:15:23,368 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:15:23,368 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:15:23,372 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:15:23,372 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:15:26,077 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:15:26,077 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:15:26,080 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:15:26,081 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:15:57,910 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:15:57,911 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:15:57,962 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:15:57,964 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:15:58,100 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:15:58,101 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:16:00,605 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:16:00,605 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:16:00,608 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:16:00,609 [18] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:17:07,706 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:17:07,707 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:17:07,723 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:17:07,723 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:17:07,727 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:17:07,727 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:17:09,952 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:17:09,952 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:17:09,955 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:17:09,955 [46] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:18:03,427 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:18:03,427 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:18:03,459 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:18:03,459 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:18:03,463 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:18:03,464 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:18:05,715 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:18:05,715 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:18:05,717 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:18:05,717 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:18:59,593 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:18:59,593 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:18:59,620 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:18:59,620 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:18:59,623 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:18:59,623 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:19:01,864 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:19:01,864 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:19:01,868 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:19:01,868 [10] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:19:14,486 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:19:14,498 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:19:16,047 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:19:16,048 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:19:16,060 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:19:16,064 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:19:18,757 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:19:18,758 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:19:18,761 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:19:18,762 [14] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:23:29,267 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:23:29,268 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:23:29,294 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:23:29,295 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:23:29,299 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:23:29,299 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:23:34,002 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:23:34,015 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:23:35,506 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:23:35,506 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:23:35,514 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:23:35,520 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:23:38,141 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:23:38,141 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:23:38,144 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:23:38,147 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:23:49,933 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:23:49,934 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:23:49,960 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:23:49,960 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:23:49,964 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:23:49,964 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:23:49,965 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:23:49,966 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:23:49,969 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:23:49,969 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:24:08,914 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:24:08,915 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:24:08,936 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:24:08,937 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:24:08,940 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:24:08,941 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:24:08,942 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:24:08,943 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:24:08,946 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:24:08,947 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:24:32,106 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:24:32,107 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:24:32,122 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:24:32,123 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:24:32,125 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:24:32,126 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:24:32,128 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:24:32,128 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:24:32,131 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:24:32,132 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:25:33,367 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:25:33,368 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:25:33,386 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:25:33,387 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:25:33,391 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:25:33,392 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:25:35,569 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:25:35,569 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:25:35,572 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:25:35,572 [9] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:26:33,100 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:26:33,101 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:26:33,130 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:26:33,130 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:26:33,133 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:26:33,133 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:26:35,455 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:26:35,455 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:26:35,457 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:26:35,458 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:31:46,312 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:31:46,314 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:31:46,337 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:31:46,337 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:31:46,341 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:31:46,342 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:31:48,645 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:31:48,646 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:31:48,649 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:31:48,650 [17] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:33:17,353 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:33:17,355 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:33:17,379 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:33:17,379 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:33:17,382 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:33:17,383 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:33:17,385 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:33:17,385 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:33:17,387 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:33:17,388 [26] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:34:31,890 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:34:31,892 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:34:31,910 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:34:31,910 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:34:31,915 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:34:31,915 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:34:31,917 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:34:31,918 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:34:31,922 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:34:31,922 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:35:28,373 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:35:28,376 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:35:28,397 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:35:28,398 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:35:28,401 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:35:28,401 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:35:28,403 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:35:28,403 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:35:28,406 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:35:28,406 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:35:49,905 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:35:49,906 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:35:49,930 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:35:49,930 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:35:49,933 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:35:49,933 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:35:52,145 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:35:52,145 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:35:52,148 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:35:52,148 [21] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:42:56,854 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:42:56,854 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:42:56,876 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:42:56,876 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:42:56,881 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:42:56,881 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:42:59,453 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:42:59,453 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:42:59,455 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:42:59,455 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 15:44:45,183 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 15:44:45,184 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:44:45,199 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:44:45,199 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 15:44:45,203 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 15:44:45,203 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 15:44:47,476 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - Begin
+2019-03-13 15:44:47,476 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 15:44:47,478 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 15:44:47,479 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: LoadCommentsForPost - End
+2019-03-13 16:02:13,301 [52] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 16:02:13,304 [52] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 16:02:18,705 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 16:02:18,705 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 16:02:18,828 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 16:02:18,828 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 16:02:18,832 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 16:02:18,862 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 16:02:37,598 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - Begin
+2019-03-13 16:02:37,598 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -Begin
+2019-03-13 16:02:37,661 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Post -End
+2019-03-13 16:02:37,661 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -Begin
+2019-03-13 16:02:37,666 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetUserList -End
+2019-03-13 16:02:37,679 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Post - End
+2019-03-13 16:03:03,454 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 16:03:03,458 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:03:03,478 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:03:03,515 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:03:03,516 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:03:03,516 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:03:03,521 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:03:03,549 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:03:03,549 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:03:03,550 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 16:03:03,553 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 16:03:03,554 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 16:03:20,717 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 16:03:20,717 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 16:03:20,721 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 16:03:20,723 [62] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 16:03:20,737 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:03:20,741 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 16:03:20,745 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 16:03:20,746 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 16:03:20,749 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 16:03:20,750 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:03:20,752 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:03:20,792 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:03:20,792 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:03:20,792 [54] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:04:09,969 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:04:09,971 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 16:04:09,977 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 16:04:09,977 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 16:04:09,982 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 16:04:09,984 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:04:09,988 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:04:10,057 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:04:10,057 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:04:10,057 [59] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:05:54,464 [57] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 16:05:56,620 [57] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 16:05:57,584 [57] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 16:06:06,787 [57] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 16:15:58,788 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 16:15:58,797 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 16:15:58,811 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 16:15:58,811 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 16:15:58,815 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 16:15:58,816 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:15:58,820 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:15:58,865 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:15:58,865 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:15:58,865 [38] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 16:15:59,206 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 16:15:59,209 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 16:15:59,216 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 16:15:59,219 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 16:15:59,220 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 16:15:59,220 [33] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 16:16:09,063 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:16:09,064 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 16:16:09,070 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 16:16:09,071 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 16:16:09,076 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 16:16:09,076 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:16:09,081 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:16:09,144 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:16:09,144 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:16:09,144 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 16:16:58,550 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 16:17:01,588 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 16:17:15,437 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 16:17:17,898 [39] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 16:17:35,846 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 16:17:38,575 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 16:17:38,582 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 16:17:38,582 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 16:17:38,586 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 16:17:38,586 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:17:38,591 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:17:38,639 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:17:38,640 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:17:39,013 [35] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 16:17:41,456 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 16:17:41,467 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 16:17:41,472 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 16:17:41,478 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 16:17:41,478 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 16:17:41,478 [32] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 16:39:29,715 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 16:39:29,725 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:39:30,733 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:39:30,803 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:39:30,804 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:39:30,804 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 16:39:30,806 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 16:39:30,829 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 16:39:30,829 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 16:39:30,830 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 16:39:30,833 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 16:39:30,837 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 17:09:24,789 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -Begin
+2019-03-13 17:09:24,802 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:09:26,449 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:09:26,487 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:09:26,487 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:09:26,487 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:09:26,490 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:09:26,537 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:09:26,537 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:09:26,539 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -Begin
+2019-03-13 17:09:26,542 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: TotalPosts -End
+2019-03-13 17:09:26,553 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogController :: Posts -End
+2019-03-13 17:09:34,354 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - Begin
+2019-03-13 17:09:34,355 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpGet) - End
+2019-03-13 17:09:36,511 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - Begin
+2019-03-13 17:09:36,512 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -Begin
+2019-03-13 17:09:36,522 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetCurrentUser -End
+2019-03-13 17:09:36,523 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: HomeController :: Login(HttpPost) - End
+2019-03-13 17:09:36,536 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - Begin
+2019-03-13 17:09:36,538 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: Dashboard - End
+2019-03-13 17:09:41,756 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 17:09:41,763 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 17:09:41,768 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 17:09:41,769 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 17:09:41,775 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 17:09:41,775 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:09:41,780 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:09:41,825 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:09:41,825 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:09:41,825 [11] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost - Begin
+2019-03-13 17:10:22,416 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 17:10:25,628 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 17:10:30,697 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: SavePost -Begin
+2019-03-13 17:10:30,698 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: NewPost(httppost) - Begin
+2019-03-13 17:10:37,316 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:37,327 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 17:10:37,331 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 17:10:37,333 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 17:10:37,337 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 17:10:37,337 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:10:37,341 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:10:37,447 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:10:37,448 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:10:37,448 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:37,800 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:37,802 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 17:10:37,805 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 17:10:37,809 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 17:10:37,809 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 17:10:37,810 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:42,166 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:42,169 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 17:10:42,180 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 17:10:42,181 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 17:10:42,188 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 17:10:42,189 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:10:42,193 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:10:42,241 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:10:42,241 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:10:42,241 [8] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:42,536 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:42,538 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 17:10:42,546 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 17:10:42,556 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 17:10:42,557 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 17:10:42,557 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:47,017 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:47,020 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 17:10:47,027 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 17:10:47,028 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 17:10:47,033 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 17:10:47,033 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:10:47,042 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:10:47,086 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:10:47,087 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:10:47,087 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:47,427 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:47,434 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 17:10:47,442 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 17:10:47,446 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 17:10:47,447 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 17:10:47,447 [7] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:48,287 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:48,287 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - Begin
+2019-03-13 17:10:48,291 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Categories - End
+2019-03-13 17:10:48,292 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - Begin
+2019-03-13 17:10:48,295 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Tags - End
+2019-03-13 17:10:48,296 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -Begin
+2019-03-13 17:10:48,299 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - Begin
+2019-03-13 17:10:48,356 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagAndCategoriesByPost - End
+2019-03-13 17:10:48,357 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: Posts -End
+2019-03-13 17:10:48,357 [6] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: EditPost - Begin
+2019-03-13 17:10:48,672 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin
+2019-03-13 17:10:48,679 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -Begin
+2019-03-13 17:10:48,688 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - Begin
+2019-03-13 17:10:48,713 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetTagsByPostId - End
+2019-03-13 17:10:48,715 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: BlogEngineDataAccess :: GetPostDetailsById -End
+2019-03-13 17:10:48,715 [5] INFO  BlogEngine.Log.LoggingHelper [(null)] - Class: AccountController :: GetPostDetailsById - Begin

@@ -69,8 +69,7 @@ function InitializeTinyMCE() {
 }
 
 function publishPost() {
-    debugger;
-    var postid = $("#hdnPostId").val();
+    var postid = parseInt($("#hdnPostId").val());
     $.ajax({
         url: 'PublishPost',
         method: 'POST',
@@ -92,7 +91,6 @@ function publishPost() {
 
 //save post data
 function savePostData() {
-    debugger;
     if (validatePost()) {
         var _postslug = "";
         var postTags = [];

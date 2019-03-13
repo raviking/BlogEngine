@@ -469,7 +469,7 @@ namespace BlogEngine.DAL
                     List<Comment> _lstComments = dbcontext.Database.SqlQuery<Comment>("sp_GetCommentsByPostId @postId",
                                     new SqlParameter("postId", post.PostId)).ToList();
                     if (_lstComments != null)
-                        post.Comments = _lstComments;
+                        post.Comments = _lstComments;                  
                 }
             }
             catch (Exception ex)
@@ -627,8 +627,8 @@ namespace BlogEngine.DAL
                     }
                     tagString = tagString.TrimEnd(',');
                 }
-
-                response.Id = dbcontext.Database.ExecuteSqlCommand("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
+                
+                response.Id = dbcontext.Database.SqlQuery<long>("sp_SavePostDetails @postId,@title,@postDescription,@postMeta,@postUrlSlug,@isPublished,@postedOn,@modifiedDate,@createdBy,@createdDate,@postStatus,@categoryId,@userId,@modifiedBy,@tagString",
                             new SqlParameter("postId", objPost.PostId),
                             new SqlParameter("title", objPost.Title),
                             new SqlParameter("postDescription", objPost.PostDescription),
@@ -643,7 +643,7 @@ namespace BlogEngine.DAL
                             new SqlParameter("categoryId", objPost.CategoryId),
                             new SqlParameter("userId", objPost.UserId > 0 ? objPost.UserId:(object)DBNull.Value),
                             new SqlParameter("modifiedBy", objPost.ModifiedBy != null ? objPost.ModifiedBy : (object)DBNull.Value),
-                            new SqlParameter("tagString", tagString));
+                            new SqlParameter("tagString", tagString)).Single();
                 if (response.Id > 0)
                     response.IsSucess = true;
             }
@@ -839,7 +839,7 @@ namespace BlogEngine.DAL
                             new SqlParameter("tagId", objTag.TagId),
                             new SqlParameter("tagName",objTag.TagName),
                             new SqlParameter("tagUrlSlug",objTag.TagUrlSlug),
-                            new SqlParameter("tagDescription",objTag.TagDescription));
+                            new SqlParameter("tagDescription",objTag.TagDescription == null ? String.Empty : objTag.TagDescription));
                 if (count > 0)
                     response.IsSucess = true;                
             }
@@ -954,7 +954,7 @@ namespace BlogEngine.DAL
                             new SqlParameter("categoryId",objCategory.CategoryId),
                             new SqlParameter("categoryName",objCategory.CategoryName),
                             new SqlParameter("categoryUrlSlug",objCategory.CategoryUrlSlug),
-                            new SqlParameter("categoryDescription",objCategory.CategoryDescription));
+                            new SqlParameter("categoryDescription",objCategory.CategoryDescription == null ? String.Empty : objCategory.CategoryDescription));
                 if (count > 0)
                     response.IsSucess = true;
                 else
