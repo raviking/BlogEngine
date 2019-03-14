@@ -18,12 +18,10 @@ function DeleteComment(commentid) {
 }
 
 function displayEditCommentForm(commentid) {
-    debugger;
     var url = HostAddress + "/Account/EditCommentViewPartial?commentId=" + commentid;
 }
 
 function displayReplyTextBox(commentId,postId) {
-    debugger;
     var element = "<textarea rows='10' id='txt_reply_content' class='form-control'></textarea>";
     element += "<span id='spn_txt_reply_content' style='display:none;'></span>";
     $("#reply_comment").empty();

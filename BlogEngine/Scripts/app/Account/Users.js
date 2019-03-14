@@ -12,12 +12,10 @@ $(function () {
 });
 
 function DeleteUser(userid) {
-    debugger;
     var url = HostAddress + "/Account/DeleteUser?userId=" + userid;
     var result = confirm("Sure you want to delete user?");
     if (result) {
         $.post(url, function (data) {
-            debugger;
             if (data.IsSucess == true) {
                 alert("User deleted successfully!");
                 console.log("User deleted successfully!");

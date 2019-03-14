@@ -227,6 +227,9 @@ namespace BlogEngine.Controllers
             try
             {
                 post = dataaccess.Post(null, postId);
+                post.PostNavDetails = dataaccess.GetNextAndPreviousPostIds(post.PostId);
+                User objuser = dataaccess.GetUserList().Where(x => x.UserId.Equals(post.UserId)).FirstOrDefault();
+                ViewBag.AuthorName = objuser.FirstName + " " + objuser.LastName;
                 if (post == null)
                     throw new HttpException(404, "Post Not Found");
                 else if (post.IsPublished == false && User.Identity.IsAuthenticated == false)

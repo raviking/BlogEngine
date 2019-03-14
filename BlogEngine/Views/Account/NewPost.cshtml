@@ -219,15 +219,13 @@
         var postUrlSlug = $.trim($("#txtPostUrlSlug").val());
         if (postUrlSlug != "" || postUrlSlug == undefined) {
             $.post("@Url.Action("IsPostUrlSlugExists","Account")", { postUrlSlug: postUrlSlug }, function (res) {
-                if (res != null && res.IsSucess == false) {                    
+                if (res != null && res.IsSucess == false) {
                     $("#spntxtPostUrlSlug").text("");
                     alert("Post UrlSlug not existed");
                 }
                 else {
                     $("#spntxtPostUrlSlug").text("UrlSlug already existed please change it");
                 }
-            }).error(function () {
-                alert("Error occured while checking");
             });
         }
     }

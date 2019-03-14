@@ -19,7 +19,6 @@ $(function () {
 function saveSubscriberInfo() {
 
     if (validateform()) {
-        debugger;
         var url = HostAddress + "/Blog/Subscribe";
         var objData = {
             UserId:0,
