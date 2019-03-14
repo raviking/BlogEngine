@@ -82,6 +82,11 @@ namespace BlogEngine.DTO
             get;set;
         }
 
+        public PostNavDetails PostNavDetails
+        {
+            get;set;
+        }
+
         public long CategoryId
         {
             get;set;
@@ -93,5 +98,29 @@ namespace BlogEngine.DTO
         }
     }
 
+    public class PostNavDetails
+    {
+        [Key]
+        public long PostId
+        {
+            get;set;
+        }
+        public string PreviousPostTitle
+        {
+            get;set;
+        }
+        public string PreviousPostUrlSlug
+        {
+            get;set;
+        }
+        public string NextPostTitle
+        {
+            get; set;
+        }
+        public string NextPostUrlSlug
+        {
+            get; set;
+        }
+    }
 }
 

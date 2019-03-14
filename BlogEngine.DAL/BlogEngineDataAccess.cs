@@ -726,6 +726,23 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost -End");
             return response;
         }
+
+        public PostNavDetails GetNextAndPreviousPostIds(long postId)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetNextAndPreviousPostIds -Begin");
+            PostNavDetails objDetails = new PostNavDetails();
+            try
+            {
+                objDetails = dbcontext.Database.SqlQuery<PostNavDetails>("sp_GetPreAndNextPosts @postId",
+                            new SqlParameter("postId", postId)).FirstOrDefault();
+            }
+            catch(Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: GetNextAndPreviousPostIds " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetNextAndPreviousPostIds -Begin");
+            return objDetails;
+        }
         #endregion Posts
 
         #region Users

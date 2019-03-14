@@ -28,7 +28,8 @@ namespace BlogEngine.Db
         {
             get;set;
         }
-        public DbSet<Comment> Comments {
+        public DbSet<Comment> Comments
+        {
             get; set;
         }
         public DbSet<User> Users
@@ -36,6 +37,10 @@ namespace BlogEngine.Db
             get;set;
         }
         public DbSet<ResponseDTO> ResponseDTOs
+        {
+            get;set;
+        }
+        public DbSet<PostNavDetails> PostNavigations
         {
             get;set;
         }
