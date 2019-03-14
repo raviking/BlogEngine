@@ -188,6 +188,22 @@ namespace BlogEngine.Controllers
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost - Begin");
             return Json(response, JsonRequestBehavior.AllowGet);
         }
+
+        public JsonResult IsPostUrlSlugExists(string postUrlSlug)
+        {
+            ResponseDTO response = null;
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsPostUrlSlugExists - Begin");
+            try
+            {
+                response = dataaccess.IsPostUrlSlugExists(postUrlSlug);
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsPostUrlSlugExists" + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsPostUrlSlugExists - Begin");
+            return Json(response, JsonRequestBehavior.AllowGet);
+        }
         #endregion Posts
 
         #region Categories

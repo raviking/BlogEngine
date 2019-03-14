@@ -705,6 +705,11 @@ namespace BlogEngine.DAL
             return response;
         }
 
+        /// <summary>
+        /// Publish the post by changing Ispublish column value to true
+        /// </summary>
+        /// <param name="postId"></param>
+        /// <returns></returns>
         public ResponseDTO PublishPost(long postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: PublishPost -Begin");
@@ -727,6 +732,11 @@ namespace BlogEngine.DAL
             return response;
         }
 
+        /// <summary>
+        /// Gets the navigation for selected post 
+        /// </summary>
+        /// <param name="postId"></param>
+        /// <returns></returns>
         public PostNavDetails GetNextAndPreviousPostIds(long postId)
         {
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetNextAndPreviousPostIds -Begin");
@@ -743,6 +753,30 @@ namespace BlogEngine.DAL
             logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: GetNextAndPreviousPostIds -Begin");
             return objDetails;
         }
+
+        public ResponseDTO IsPostUrlSlugExists(string postUrlSlug)
+        {
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsPostUrlSlugExists -Begin");
+            ResponseDTO response = new ResponseDTO();
+            try
+            {
+                List<Post> _lstpost = dbcontext.Database.SqlQuery<Post>("sp_IsPostUrlSlugExists @postUrlSlug",
+                                new SqlParameter("postUrlSlug", postUrlSlug)).ToList();
+                if (_lstpost != null && _lstpost.Count > 0)
+                {
+                    response.IsSucess = true;
+                }
+                else
+                    response.IsSucess = false;
+            }
+            catch (Exception ex)
+            {
+                logginghelper.Log(LoggingLevels.Error, "Class: " + classname + " :: IsPostUrlSlugExists " + ex);
+            }
+            logginghelper.Log(LoggingLevels.Info, "Class: " + classname + " :: IsPostUrlSlugExists -End");
+            return response;
+        }
+
         #endregion Posts
 
         #region Users

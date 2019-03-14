@@ -28,7 +28,7 @@
                         <span style="color:red" id="spntxtPostTitle"></span>                        
                         <div class="margin-top-20px">
                             @*<button type="button" class="btn btn-default margin-bottom-10px"><i class="fa fa-fw fa-file"></i>Add Media</button>*@
-                            <span><strong><i>create premalink</i></strong>:</span><br/>
+                            <span><strong><i>create premalink</i></strong>:</span><span style="float:right;"><a style="cursor:pointer;" onclick="javascript: checkUrlSlugExists();">Check premalink exists</a></span><br/>                            
                             <p>@ViewBag.HostUrl/<input type="text" id="txtPostUrlSlug" class="form-control" /></p>
                             <span id="spntxtPostUrlSlug" style="color:red"></span>
                             <textarea id="txtPostBody" class="txtPostBody" rows="50" cols="50"></textarea>
@@ -215,8 +215,24 @@
         
     }
 
+    function checkUrlSlugExists() {
+        var postUrlSlug = $.trim($("#txtPostUrlSlug").val());
+        if (postUrlSlug != "" || postUrlSlug == undefined) {
+            $.post("@Url.Action("IsPostUrlSlugExists","Account")", { postUrlSlug: postUrlSlug }, function (res) {
+                if (res != null && res.IsSucess == false) {                    
+                    $("#spntxtPostUrlSlug").text("");
+                    alert("Post UrlSlug not existed");
+                }
+                else {
+                    $("#spntxtPostUrlSlug").text("UrlSlug already existed please change it");
+                }
+            }).error(function () {
+                alert("Error occured while checking");
+            });
+        }
+    }
+
     function validatePost() {
-        debugger;
         var result = true;
         var CategoriesCount = parseInt('@Model.Categories.Count');
         var postBody = tinyMCE.activeEditor.getContent();
